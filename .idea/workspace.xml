@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="14d3020d-5916-4a03-9981-0a2aa4a5f73f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DrupalConfiguration">
+    <drupalPath />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JoomlaConfiguration">
+    <joomlaConfigPath />
+    <joomlaPath />
+  </component>
+  <component name="ProjectId" id="1uILFINCWqNLmpqbpb6kWnR2pwy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university/app/public" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14d3020d-5916-4a03-9981-0a2aa4a5f73f" name="Default Changelist" comment="" />
+      <created>1624348050794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624348050794</updated>
+      <workItem from="1624348051905" duration="151000" />
+      <workItem from="1624963013104" duration="461000" />
+      <workItem from="1625009778320" duration="5535000" />
+      <workItem from="1625019150107" duration="754000" />
+      <workItem from="1625904556593" duration="7091000" />
+      <workItem from="1625979166078" duration="6552000" />
+      <workItem from="1626061431669" duration="3918000" />
+      <workItem from="1626142727462" duration="3982000" />
+      <workItem from="1626690556359" duration="1745000" />
+      <workItem from="1626778077720" duration="644000" />
+      <workItem from="1626820206194" duration="4742000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Deployment" timestamp="1624348188798">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1624348188798" />
+    <state x="637" y="214" key="#Options" timestamp="1624348173734">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="637" y="214" key="#Options/0.0.1920.1040@0.0.1920.1040" timestamp="1624348173734" />
+    <state x="771" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626849497517">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626849497517" />
+    <state x="189" y="61" key="#minify/Dockerfile" timestamp="1625009810788">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="189" y="61" key="#minify/Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1625009810788" />
+    <state x="465" y="124" width="1109" height="840" key="DiffContextDialog" timestamp="1626856749514">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="465" y="124" width="1109" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626856749514" />
+    <state x="306" y="260" key="FileChooserDialogImpl" timestamp="1626821977843">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="306" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1626821977843" />
+    <state x="27" y="164" key="SettingsEditor" timestamp="1626856850910">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="27" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1626856850910" />
+    <state x="1368" y="215" key="ftp.server.browser" timestamp="1624348144564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1368" y="215" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1624348144564" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public</wordpressPath>
+  </component>
+</project>

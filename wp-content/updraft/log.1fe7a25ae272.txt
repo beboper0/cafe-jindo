@@ -1,0 +1,168 @@
+0000.000 (0) Opened log file at time: Wed, 16 Jun 2021 10:05:15 +0000 on https://cafejindo.ca
+0000.080 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.56 WP: 5.7.2 PHP: 7.3.28 (cgi-fcgi, Linux box5393.bluehost.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) MySQL: 5.6.41-84.1 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 61M | 63M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.120 (0) Free space on disk containing Updraft's temporary directory: 859556.8 MB
+0000.124 (0) Tasks: Backup files: 0 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.126 (0) Requesting semaphore lock (d) (apparently not via scheduler)
+0000.128 (0) Set semaphore last lock (d) time to 2021-06-16 10:05:15
+0000.130 (0) Semaphore lock (d) complete
+0000.133 (0) Backup run: resumption=0, nonce=1fe7a25ae272, file_nonce=1fe7a25ae272 begun at=1623837915 (0s ago), job type=backup
+0000.136 (0) Scheduling a resumption (1) after 300 seconds (1623838215) in case this run gets aborted
+0000.154 (0) This backup run is not intended for files - skipping
+0000.155 (0) Beginning creation of database dump (WordPress DB)
+0000.157 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0000.159 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.180 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `ZNs_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCR (truncated - 1243 bytes total)
+0000.182 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.214 (0) Table ZNs_options: Total expected rows (approximate): 434
+0000.253 (0) Table ZNs_options: Rows added in this batch (next record: 152899): 441 (uncompressed bytes in this segment=930815) in 0.04 seconds
+0000.258 (0) Table ZNs_options: finishing file(s) (2, 108.2 KB)
+0000.260 (0) Table ZNs_users: Total expected rows (approximate): 0
+0000.264 (0) Table ZNs_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1381) in 0.00 seconds
+0000.267 (0) Table ZNs_users: finishing file(s) (2, 0.6 KB)
+0000.270 (0) Table ZNs_usermeta: Total expected rows (approximate): 52
+0000.273 (0) Table ZNs_usermeta: Rows added in this batch (next record: 59): 52 (uncompressed bytes in this segment=5073) in 0.00 seconds
+0000.276 (0) Table ZNs_usermeta: finishing file(s) (2, 2.1 KB)
+0000.278 (0) Table ZNs_actionscheduler_actions: Total expected rows (approximate): 61
+0000.284 (0) Table ZNs_actionscheduler_actions: Rows added in this batch (next record: 369): 61 (uncompressed bytes in this segment=29158) in 0.00 seconds
+0000.287 (0) Table ZNs_actionscheduler_actions: finishing file(s) (2, 2.8 KB)
+0000.288 (0) Table ZNs_actionscheduler_claims: Total expected rows (approximate): 0
+0000.290 (0) Table ZNs_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=642) in 0.00 seconds
+0000.293 (0) Table ZNs_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.295 (0) Table ZNs_actionscheduler_groups: Total expected rows (approximate): 2
+0000.297 (0) Table ZNs_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=713) in 0.00 seconds
+0000.300 (0) Table ZNs_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.310 (0) Table ZNs_actionscheduler_logs: Total expected rows (approximate): 166
+0000.315 (0) Table ZNs_actionscheduler_logs: Rows added in this batch (next record: 1087): 175 (uncompressed bytes in this segment=15912) in 0.00 seconds
+0000.317 (0) Table ZNs_actionscheduler_logs: finishing file(s) (2, 2.2 KB)
+0000.320 (0) Table ZNs_commentmeta: Total expected rows (approximate): 0
+0000.322 (0) Table ZNs_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=691) in 0.00 seconds
+0000.325 (0) Table ZNs_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.327 (0) Table ZNs_comments: Total expected rows (approximate): 0
+0000.330 (0) Table ZNs_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1711) in 0.00 seconds
+0000.332 (0) Table ZNs_comments: finishing file(s) (2, 0.5 KB)
+0000.335 (0) Table ZNs_links: Total expected rows (approximate): 0
+0000.337 (0) Table ZNs_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1316) in 0.00 seconds
+0000.339 (0) Table ZNs_links: finishing file(s) (2, 0.5 KB)
+0000.342 (0) Table ZNs_postmeta: Total expected rows (approximate): 173
+0000.349 (0) Table ZNs_postmeta: Rows added in this batch (next record: 1253): 173 (uncompressed bytes in this segment=84793) in 0.01 seconds
+0000.352 (0) Table ZNs_postmeta: finishing file(s) (2, 9.6 KB)
+0000.354 (0) Table ZNs_posts: Total expected rows (approximate): 81
+0000.362 (0) Table ZNs_posts: Rows added in this batch (next record: 518): 81 (uncompressed bytes in this segment=98675) in 0.01 seconds
+0000.366 (0) Table ZNs_posts: finishing file(s) (2, 11.4 KB)
+0000.368 (0) Table ZNs_term_relationships: Total expected rows (approximate): 6
+0000.372 (0) Table ZNs_term_relationships: Rows added in this batch (next record: 100000): 6 (uncompressed bytes in this segment=776) in 0.00 seconds
+0000.374 (0) Table ZNs_term_relationships: finishing file(s) (2, 0.4 KB)
+0000.377 (0) Table ZNs_term_taxonomy: Total expected rows (approximate): 10
+0000.380 (0) Table ZNs_term_taxonomy: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=1280) in 0.00 seconds
+0000.383 (0) Table ZNs_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0000.385 (0) Table ZNs_termmeta: Total expected rows (approximate): 8
+0000.388 (0) Table ZNs_termmeta: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=1367) in 0.00 seconds
+0000.391 (0) Table ZNs_termmeta: finishing file(s) (2, 0.5 KB)
+0000.394 (0) Table ZNs_terms: Total expected rows (approximate): 10
+0000.396 (0) Table ZNs_terms: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=1017) in 0.00 seconds
+0000.399 (0) Table ZNs_terms: finishing file(s) (2, 0.5 KB)
+0000.401 (0) Table ZNs_tm_taskmeta: Total expected rows (approximate): 0
+0000.404 (0) Table ZNs_tm_taskmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=664) in 0.00 seconds
+0000.406 (0) Table ZNs_tm_taskmeta: finishing file(s) (2, 0.4 KB)
+0000.408 (0) Table ZNs_tm_tasks: Total expected rows (approximate): 0
+0000.410 (0) Table ZNs_tm_tasks: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=882) in 0.00 seconds
+0000.413 (0) Table ZNs_tm_tasks: finishing file(s) (2, 0.4 KB)
+0000.416 (0) Table ZNs_wpforms_tasks_meta: Total expected rows (approximate): 48
+0000.419 (0) Table ZNs_wpforms_tasks_meta: Rows added in this batch (next record: 58): 58 (uncompressed bytes in this segment=5086) in 0.00 seconds
+0000.422 (0) Table ZNs_wpforms_tasks_meta: finishing file(s) (2, 1.1 KB)
+0000.425 (0) Table ZNs_yoast_indexable: Total expected rows (approximate): 49
+0000.431 (0) Table ZNs_yoast_indexable: Rows added in this batch (next record: 80): 51 (uncompressed bytes in this segment=35035) in 0.01 seconds
+0000.433 (0) Table ZNs_yoast_indexable: finishing file(s) (2, 5.4 KB)
+0000.436 (0) Table ZNs_yoast_indexable_hierarchy: Total expected rows (approximate): 31
+0000.439 (0) Table ZNs_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 32 (uncompressed bytes in this segment=1348) in 0.00 seconds
+0000.441 (0) Table ZNs_yoast_indexable_hierarchy: finishing file(s) (2, 0.5 KB)
+0000.443 (0) Table ZNs_yoast_migrations: Total expected rows (approximate): 21
+0000.446 (0) Table ZNs_yoast_migrations: Rows added in this batch (next record: 21): 21 (uncompressed bytes in this segment=1157) in 0.00 seconds
+0000.449 (0) Table ZNs_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0000.451 (0) Table ZNs_yoast_primary_term: Total expected rows (approximate): 0
+0000.454 (0) Table ZNs_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=864) in 0.00 seconds
+0000.456 (0) Table ZNs_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0000.459 (0) Table ZNs_yoast_seo_links: Total expected rows (approximate): 14
+0000.462 (0) Table ZNs_yoast_seo_links: Rows added in this batch (next record: 1071): 14 (uncompressed bytes in this segment=3409) in 0.00 seconds
+0000.465 (0) Table ZNs_yoast_seo_links: finishing file(s) (2, 0.9 KB)
+0000.467 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_options.table.tmpr152900.gz (1/24): adding to final database dump
+0000.504 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_options.table.gz (2/24): adding to final database dump
+0000.505 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_users.table.tmpr2.gz (3/24): adding to final database dump
+0000.506 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_users.table.gz (4/24): adding to final database dump
+0000.507 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_usermeta.table.tmpr60.gz (5/24): adding to final database dump
+0000.508 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_usermeta.table.gz (6/24): adding to final database dump
+0000.509 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_actions.table.tmpr370.gz (7/24): adding to final database dump
+0000.510 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_actions.table.gz (8/24): adding to final database dump
+0000.513 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_claims.table.tmpr0.gz (9/24): adding to final database dump
+0000.514 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_claims.table.gz (10/24): adding to final database dump
+0000.515 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_groups.table.tmpr3.gz (11/24): adding to final database dump
+0000.516 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_groups.table.gz (12/24): adding to final database dump
+0000.517 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_logs.table.tmpr1088.gz (13/24): adding to final database dump
+0000.519 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_actionscheduler_logs.table.gz (14/24): adding to final database dump
+0000.519 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_commentmeta.table.tmpr0.gz (15/24): adding to final database dump
+0000.520 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_commentmeta.table.gz (16/24): adding to final database dump
+0000.521 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_comments.table.tmpr0.gz (17/24): adding to final database dump
+0000.522 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_comments.table.gz (18/24): adding to final database dump
+0000.523 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_links.table.tmpr0.gz (19/24): adding to final database dump
+0000.524 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_links.table.gz (20/24): adding to final database dump
+0000.525 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_postmeta.table.tmpr1254.gz (21/24): adding to final database dump
+0000.528 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_postmeta.table.gz (22/24): adding to final database dump
+0000.528 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_posts.table.tmpr519.gz (23/24): adding to final database dump
+0000.532 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_posts.table.gz (24/24): adding to final database dump
+0000.532 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_term_relationships.table.tmpr100001.gz (25/24): adding to final database dump
+0000.533 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_term_relationships.table.gz (26/24): adding to final database dump
+0000.534 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_term_taxonomy.table.tmpr11.gz (27/24): adding to final database dump
+0000.535 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_term_taxonomy.table.gz (28/24): adding to final database dump
+0000.535 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_termmeta.table.tmpr9.gz (29/24): adding to final database dump
+0000.536 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_termmeta.table.gz (30/24): adding to final database dump
+0000.536 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_terms.table.tmpr11.gz (31/24): adding to final database dump
+0000.537 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_terms.table.gz (32/24): adding to final database dump
+0000.537 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_tm_taskmeta.table.tmpr0.gz (33/24): adding to final database dump
+0000.538 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_tm_taskmeta.table.gz (34/24): adding to final database dump
+0000.539 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_tm_tasks.table.tmpr0.gz (35/24): adding to final database dump
+0000.539 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_tm_tasks.table.gz (36/24): adding to final database dump
+0000.540 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_wpforms_tasks_meta.table.tmpr59.gz (37/24): adding to final database dump
+0000.542 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_wpforms_tasks_meta.table.gz (38/24): adding to final database dump
+0000.542 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_indexable.table.tmpr81.gz (39/24): adding to final database dump
+0000.545 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_indexable.table.gz (40/24): adding to final database dump
+0000.545 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_indexable_hierarchy.table.tmpr1001.gz (41/24): adding to final database dump
+0000.546 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_indexable_hierarchy.table.gz (42/24): adding to final database dump
+0000.547 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_migrations.table.tmpr22.gz (43/24): adding to final database dump
+0000.547 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_migrations.table.gz (44/24): adding to final database dump
+0000.548 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_primary_term.table.tmpr0.gz (45/24): adding to final database dump
+0000.549 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_primary_term.table.gz (46/24): adding to final database dump
+0000.550 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_seo_links.table.tmpr1072.gz (47/24): adding to final database dump
+0000.551 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db-table-ZNs_yoast_seo_links.table.gz (48/24): adding to final database dump
+0000.556 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db.gz: finished writing out complete database file (128 KB)
+0000.565 (0) Total database tables backed up: 24 (backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db.gz, size: 147898, sha1: c6c8e23e81c2e14829a8c73e0a8884b9b1aeef98, sha256: 3e03687228f65e460be7955c7459d3f095850cc88f4368f779319c76fc13f967)
+0000.580 (0) backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.581 (0) Saving backup history. Total backup size: 144.4 KB
+0000.583 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.585 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0000.586 (0) No remote despatch: user chose no remote backup service
+0000.586 (0) Recording as successfully uploaded: backup_2021-06-16-1005_Caf_Jindo_1fe7a25ae272-db.gz
+0000.589 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0000.590 (0) Number of backup sets in history: 4; groups (db): 1
+0000.591 (0) Examining (for databases) backup set with group_id=0, nonce=1fe7a25ae272, datestamp=1623837915 (Jun 16 2021 10:05:15)
+0000.592 (0) This backup set is the backup set just made, so will not be deleted.
+0000.592 (0) Examining (for databases) backup set with group_id=0, nonce=21125d3debaf, datestamp=1623837031 (Jun 16 2021 09:50:31)
+0000.592 (0) This backup set (1623837031) was an automatic backup, and we have not yet reached any retain limits, so it will not be counted or pruned. Skipping.
+0000.592 (0) Examining (for databases) backup set with group_id=0, nonce=c5d47922315f, datestamp=1623646189 (Jun 14 2021 04:49:49)
+0000.592 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0000.592 (0) Examining (for databases) backup set with group_id=0, nonce=bb270685bf36, datestamp=1612134300 (Jan 31 2021 23:05:00)
+0000.592 (0) Number of backup sets in history: 4; groups (files): 1
+0000.593 (0) Examining (for files) backup set with nonce=1fe7a25ae272, datestamp=1623837915 (Jun 16 2021 10:05:15)
+0000.593 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0000.593 (0) Examining (for files) backup set with nonce=21125d3debaf, datestamp=1623837031 (Jun 16 2021 09:50:31)
+0000.593 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0000.594 (0) Examining (for files) backup set with nonce=c5d47922315f, datestamp=1623646189 (Jun 14 2021 04:49:49)
+0000.594 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0000.594 (0) Examining (for files) backup set with nonce=bb270685bf36, datestamp=1612134300 (Jan 31 2021 23:05:00)
+0000.594 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0000.595 (0) Retain: saving new backup history (sets now: 4) and finishing retain operation
+0000.596 (0) Resume backup (1fe7a25ae272, 0): finish run
+0000.598 (0) Decremented the semaphore (d) by 1
+0000.599 (0) Semaphore (d) unlocked
+0000.600 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0000.603 (0) No email will/can be sent - the user has not configured an email address.
+0000.604 (0) The backup apparently succeeded and is now complete

@@ -1,0 +1,311 @@
+0000.000 (0) Opened log file at time: Mon, 14 Jun 2021 04:49:49 +0000 on https://cafejindo.ca
+0000.050 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.56 WP: 5.7.2 PHP: 7.3.28 (cgi-fcgi, Linux box5393.bluehost.com 4.19.150-76.ELK.el6.x86_64 #1 SMP Wed Oct 7 01:34:10 CDT 2020 x86_64) MySQL: 5.6.41-84.1 WPLANG: en_US Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 58.4M | 61M) multisite: N openssl: OpenSSL 1.1.1k  25 Mar 2021 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.087 (0) Free space on disk containing Updraft's temporary directory: 860485.4 MB
+0000.089 (0) Deleting old log file: log.bb270685bf36.txt
+0000.091 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.093 (0) Semaphore (fd, ZNs_options) being initialised
+0000.095 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.096 (0) Set semaphore last lock (fd) time to 2021-06-14 04:49:49
+0000.097 (0) Semaphore lock (fd) complete
+0000.099 (0) Backup run: resumption=0, nonce=c5d47922315f, file_nonce=c5d47922315f begun at=1623646189 (0s ago), job type=backup
+0000.100 (0) Scheduling a resumption (1) after 300 seconds (1623646489) in case this run gets aborted
+0000.111 (0) Checking if we have a zip executable available
+0000.112 (0) Testing: /usr/bin/zip
+0000.117 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.118 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.118 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.119 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.119 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.123 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.124 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.129 (0) Working binary zip found: /usr/bin/zip
+0000.130 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.131 (0) Creation of backups of directories: beginning
+0000.133 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.628 (0) Total entities for the zip file: 1211 directories, 6482 files (0 skipped as non-modified), 102.7 MB
+0000.630 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.632 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.633 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.635 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.636 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.638 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.639 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.641 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.642 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.4 MB, 6482 files batched, 842 (842) added so far); re-opening (prior size: 0 KB)
+0001.959 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: size is now: 10.70 MB
+0001.961 (0) A useful amount of data was added after this amount of zip processing: 2.1 s (normalised: 2.1 s, rate: 12467.4 KB/s)
+0001.963 (0) Performance is good - will increase the amount of data we attempt to batch (time=2.0827059745789, normalised_time=2.0533565982622, max_time=1.9617080688477, data points known=1, old_max_bytes=26214400, new_max_bytes=76599651)
+0001.965 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 900 files added (on-disk size: 10922.5 KB)
+0001.967 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1000 files added (on-disk size: 10922.5 KB)
+0001.970 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1100 files added (on-disk size: 10922.5 KB)
+0001.972 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1200 files added (on-disk size: 10922.5 KB)
+0001.974 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1300 files added (on-disk size: 10922.5 KB)
+0001.977 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1400 files added (on-disk size: 10922.5 KB)
+0001.979 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1500 files added (on-disk size: 10922.5 KB)
+0001.981 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1600 files added (on-disk size: 10922.5 KB)
+0001.983 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1700 files added (on-disk size: 10922.5 KB)
+0001.986 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1800 files added (on-disk size: 10922.5 KB)
+0001.987 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (14.3 MB, 6482 files batched, 1001 (1843) added so far); re-opening (prior size: 10922.5 KB)
+0002.945 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: size is now: 15.50 MB
+0002.948 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 1900 files added (on-disk size: 15851.5 KB)
+0002.949 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2000 files added (on-disk size: 15851.5 KB)
+0002.951 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2100 files added (on-disk size: 15851.5 KB)
+0002.953 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2200 files added (on-disk size: 15851.5 KB)
+0002.954 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2300 files added (on-disk size: 15851.5 KB)
+0002.956 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2400 files added (on-disk size: 15851.5 KB)
+0002.957 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2500 files added (on-disk size: 15851.5 KB)
+0002.959 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2600 files added (on-disk size: 15851.5 KB)
+0002.961 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2700 files added (on-disk size: 15851.5 KB)
+0002.962 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2800 files added (on-disk size: 15851.5 KB)
+0002.963 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (5.7 MB, 6482 files batched, 1001 (2844) added so far); re-opening (prior size: 15851.5 KB)
+0003.567 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 2900 files added (on-disk size: 18148.4 KB)
+0003.568 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3000 files added (on-disk size: 18148.4 KB)
+0003.570 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3100 files added (on-disk size: 18148.4 KB)
+0003.571 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3200 files added (on-disk size: 18148.4 KB)
+0003.573 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3300 files added (on-disk size: 18148.4 KB)
+0003.574 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3400 files added (on-disk size: 18148.4 KB)
+0003.575 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3500 files added (on-disk size: 18148.4 KB)
+0003.577 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3600 files added (on-disk size: 18148.4 KB)
+0003.578 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3700 files added (on-disk size: 18148.4 KB)
+0003.579 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3800 files added (on-disk size: 18148.4 KB)
+0003.580 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (18 MB, 6482 files batched, 1001 (3845) added so far); re-opening (prior size: 18148.4 KB)
+0004.689 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: size is now: 24.40 MB
+0004.692 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 3900 files added (on-disk size: 25003.3 KB)
+0004.693 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4000 files added (on-disk size: 25003.3 KB)
+0004.695 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4100 files added (on-disk size: 25003.3 KB)
+0004.696 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4200 files added (on-disk size: 25003.3 KB)
+0004.697 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4300 files added (on-disk size: 25003.3 KB)
+0004.699 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4400 files added (on-disk size: 25003.3 KB)
+0004.700 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4500 files added (on-disk size: 25003.3 KB)
+0004.702 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4600 files added (on-disk size: 25003.3 KB)
+0004.703 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4700 files added (on-disk size: 25003.3 KB)
+0004.704 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4800 files added (on-disk size: 25003.3 KB)
+0004.705 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7 MB, 6482 files batched, 1001 (4846) added so far); re-opening (prior size: 25003.3 KB)
+0005.439 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 4900 files added (on-disk size: 27258.4 KB)
+0005.441 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5000 files added (on-disk size: 27258.4 KB)
+0005.442 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5100 files added (on-disk size: 27258.4 KB)
+0005.445 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5200 files added (on-disk size: 27258.4 KB)
+0005.447 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5300 files added (on-disk size: 27258.4 KB)
+0005.448 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5400 files added (on-disk size: 27258.4 KB)
+0005.450 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5500 files added (on-disk size: 27258.4 KB)
+0005.452 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5600 files added (on-disk size: 27258.4 KB)
+0005.453 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5700 files added (on-disk size: 27258.4 KB)
+0005.455 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5800 files added (on-disk size: 27258.4 KB)
+0005.456 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (24 MB, 6482 files batched, 1001 (5847) added so far); re-opening (prior size: 27258.4 KB)
+0007.016 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: size is now: 35.00 MB
+0007.018 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 5900 files added (on-disk size: 35880.3 KB)
+0007.020 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 6000 files added (on-disk size: 35880.3 KB)
+0007.022 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 6100 files added (on-disk size: 35880.3 KB)
+0007.024 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 6200 files added (on-disk size: 35880.3 KB)
+0007.026 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 6300 files added (on-disk size: 35880.3 KB)
+0007.028 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip.tmp: 6400 files added (on-disk size: 35880.3 KB)
+0008.128 (0) Created plugins zip (0) - 40057.4 KB in 8 s (5034.2 KB/s) (sha1: 5121118671b623f4b8bbdc05ea02d0c06e238c33, sha256: 7e93e8285257c6caaae03a9f67ae918ecc0523b1f902a3d55d14831780a489e4)
+0008.130 (0) Beginning creation of dump of themes (split every: 400 MB)
+0008.288 (0) Total entities for the zip file: 310 directories, 1739 files (0 skipped as non-modified), 36.2 MB
+0008.290 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0008.292 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0008.294 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0008.295 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 400 files added (on-disk size: 0 KB)
+0008.296 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 500 files added (on-disk size: 0 KB)
+0008.298 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 600 files added (on-disk size: 0 KB)
+0008.299 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 700 files added (on-disk size: 0 KB)
+0008.301 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 800 files added (on-disk size: 0 KB)
+0008.303 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 900 files added (on-disk size: 0 KB)
+0008.304 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0008.305 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (21 MB, 1739 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0009.512 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: size is now: 9.10 MB
+0009.516 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1100 files added (on-disk size: 9308 KB)
+0009.518 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1200 files added (on-disk size: 9308 KB)
+0009.520 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1300 files added (on-disk size: 9308 KB)
+0009.522 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1400 files added (on-disk size: 9308 KB)
+0009.523 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1500 files added (on-disk size: 9308 KB)
+0009.525 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1600 files added (on-disk size: 9308 KB)
+0009.527 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: 1700 files added (on-disk size: 9308 KB)
+0010.516 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip.tmp: size is now: 16.80 MB
+0010.748 (0) Created themes zip (0) - 17180.1 KB in 2.6 s (6656.4 KB/s) (sha1: dd442f0faae98f09de90484b1027c5f538bc0cde, sha256: a3b3d99a7003aea423b2bbc589ad44de1c5c3cea5e608b1f5b6f3e6631edcd8f)
+0010.750 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0010.751 (0) Looking for candidates to backup in: /home3/cafejind/public_html/wp-content/uploads
+0010.751 (0) finding files: wpforms: adding to list (1)
+0010.752 (0) finding files: bb-plugin: adding to list (2)
+0010.752 (0) finding files: 2020: adding to list (3)
+0010.753 (0) finding files: elementor: adding to list (4)
+0010.753 (0) finding files: 2021: adding to list (5)
+0010.754 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0010.812 (0) Total entities for the zip file: 18 directories, 224 files (0 skipped as non-modified), 47.2 MB
+0010.815 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.817 (0) Zip: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-uploads.zip.tmp: 200 files added (on-disk size: 0 KB)
+0011.264 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-uploads.zip.tmp: size is now: 47.10 MB
+0011.905 (0) Created uploads zip (0) - 48246.8 KB in 1.1 s (43543.7 KB/s) (sha1: 7bc530041154fb2408bfdc210e5536d72e52c379, sha256: 3c43c89fe251f80d318c785fff37add65fff411e756be1c6a7040643c8c0a061)
+0011.907 (0) Beginning backup of other directories found in the content directory (index: 0)
+0011.908 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0011.909 (0) Looking for candidates to backup in: /home3/cafejind/public_html/wp-content
+0011.909 (0) finding files: plugins: skipping: this is the plugins directory
+0011.910 (0) finding files: uploads: skipping: this is the uploads directory
+0011.910 (0) finding files: mu-plugins: adding to list (1)
+0011.910 (0) finding files: updraft: skipping: this is the updraft directory
+0011.911 (0) finding files: upgrade: skipping: excluded by options
+0011.911 (0) finding files: themes: skipping: this is the themes directory
+0011.912 (0) finding files: fonts: adding to list (2)
+0011.912 (0) finding files: index.php: adding to list (3)
+0011.959 (0) Total entities for the zip file: 9 directories, 26 files (0 skipped as non-modified), 0.3 MB
+0011.989 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-others.zip.tmp: size is now: 0.30 MB
+0011.997 (0) Created others zip (0) - 303.4 KB in 0 s (6977.5 KB/s) (sha1: 44353216206418437aaad0fb4ae09ab44564ceda, sha256: d66a95e90b042a4862698016b326ea80a2c2e6f8a6293a9befa99a1b71b0b6fb)
+0012.000 (0) Saving backup status to database (elements: 8)
+0012.001 (0) Beginning creation of database dump (WordPress DB)
+0012.002 (0) SQL compatibility mode is: NO_ENGINE_SUBSTITUTION
+0012.003 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0012.020 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `ZNs_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCR (truncated - 1243 bytes total)
+0012.022 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0012.045 (0) Table ZNs_options: Total expected rows (approximate): 402
+0012.087 (0) Table ZNs_options: Rows added in this batch (next record: 149192): 409 (uncompressed bytes in this segment=899844) in 0.04 seconds
+0012.090 (0) Table ZNs_options: finishing file(s) (2, 105.6 KB)
+0012.093 (0) Table ZNs_users: Total expected rows (approximate): 0
+0012.095 (0) Table ZNs_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1381) in 0.00 seconds
+0012.097 (0) Table ZNs_users: finishing file(s) (2, 0.6 KB)
+0012.099 (0) Table ZNs_usermeta: Total expected rows (approximate): 52
+0012.101 (0) Table ZNs_usermeta: Rows added in this batch (next record: 59): 52 (uncompressed bytes in this segment=4814) in 0.00 seconds
+0012.103 (0) Table ZNs_usermeta: finishing file(s) (2, 2 KB)
+0012.105 (0) Table ZNs_actionscheduler_actions: Total expected rows (approximate): 58
+0012.108 (0) Table ZNs_actionscheduler_actions: Rows added in this batch (next record: 363): 58 (uncompressed bytes in this segment=28379) in 0.00 seconds
+0012.110 (0) Table ZNs_actionscheduler_actions: finishing file(s) (2, 2.8 KB)
+0012.112 (0) Table ZNs_actionscheduler_claims: Total expected rows (approximate): 0
+0012.114 (0) Table ZNs_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=641) in 0.00 seconds
+0012.116 (0) Table ZNs_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0012.118 (0) Table ZNs_actionscheduler_groups: Total expected rows (approximate): 2
+0012.119 (0) Table ZNs_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=713) in 0.00 seconds
+0012.121 (0) Table ZNs_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0012.124 (0) Table ZNs_actionscheduler_logs: Total expected rows (approximate): 166
+0012.127 (0) Table ZNs_actionscheduler_logs: Rows added in this batch (next record: 1069): 166 (uncompressed bytes in this segment=15126) in 0.00 seconds
+0012.129 (0) Table ZNs_actionscheduler_logs: finishing file(s) (2, 2.1 KB)
+0012.133 (0) Table ZNs_commentmeta: Total expected rows (approximate): 0
+0012.136 (0) Table ZNs_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=691) in 0.00 seconds
+0012.139 (0) Table ZNs_commentmeta: finishing file(s) (2, 0.4 KB)
+0012.141 (0) Table ZNs_comments: Total expected rows (approximate): 0
+0012.144 (0) Table ZNs_comments: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1711) in 0.00 seconds
+0012.146 (0) Table ZNs_comments: finishing file(s) (2, 0.5 KB)
+0012.150 (0) Table ZNs_links: Total expected rows (approximate): 0
+0012.153 (0) Table ZNs_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1316) in 0.00 seconds
+0012.155 (0) Table ZNs_links: finishing file(s) (2, 0.5 KB)
+0012.159 (0) Table ZNs_postmeta: Total expected rows (approximate): 173
+0012.164 (0) Table ZNs_postmeta: Rows added in this batch (next record: 1253): 173 (uncompressed bytes in this segment=84793) in 0.00 seconds
+0012.167 (0) Table ZNs_postmeta: finishing file(s) (2, 9.6 KB)
+0012.169 (0) Table ZNs_posts: Total expected rows (approximate): 81
+0012.178 (0) Table ZNs_posts: Rows added in this batch (next record: 518): 81 (uncompressed bytes in this segment=98675) in 0.01 seconds
+0012.181 (0) Table ZNs_posts: finishing file(s) (2, 11.4 KB)
+0012.184 (0) Table ZNs_term_relationships: Total expected rows (approximate): 6
+0012.187 (0) Table ZNs_term_relationships: Rows added in this batch (next record: 100000): 6 (uncompressed bytes in this segment=776) in 0.00 seconds
+0012.189 (0) Table ZNs_term_relationships: finishing file(s) (2, 0.4 KB)
+0012.192 (0) Table ZNs_term_taxonomy: Total expected rows (approximate): 10
+0012.194 (0) Table ZNs_term_taxonomy: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=1280) in 0.00 seconds
+0012.196 (0) Table ZNs_term_taxonomy: finishing file(s) (2, 0.5 KB)
+0012.201 (0) Table ZNs_termmeta: Total expected rows (approximate): 8
+0012.203 (0) Table ZNs_termmeta: Rows added in this batch (next record: 8): 8 (uncompressed bytes in this segment=1367) in 0.00 seconds
+0012.205 (0) Table ZNs_termmeta: finishing file(s) (2, 0.5 KB)
+0012.208 (0) Table ZNs_terms: Total expected rows (approximate): 10
+0012.210 (0) Table ZNs_terms: Rows added in this batch (next record: 10): 10 (uncompressed bytes in this segment=1017) in 0.00 seconds
+0012.212 (0) Table ZNs_terms: finishing file(s) (2, 0.5 KB)
+0012.215 (0) Table ZNs_mprm_customer: Total expected rows (approximate): 0
+0012.218 (0) Table ZNs_mprm_customer: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=984) in 0.00 seconds
+0012.220 (0) Table ZNs_mprm_customer: finishing file(s) (2, 0.4 KB)
+0012.223 (0) Table ZNs_wpforms_tasks_meta: Total expected rows (approximate): 48
+0012.225 (0) Table ZNs_wpforms_tasks_meta: Rows added in this batch (next record: 56): 56 (uncompressed bytes in this segment=4934) in 0.00 seconds
+0012.227 (0) Table ZNs_wpforms_tasks_meta: finishing file(s) (2, 1.1 KB)
+0012.230 (0) Table ZNs_yoast_indexable: Total expected rows (approximate): 49
+0012.234 (0) Table ZNs_yoast_indexable: Rows added in this batch (next record: 80): 51 (uncompressed bytes in this segment=35217) in 0.00 seconds
+0012.236 (0) Table ZNs_yoast_indexable: finishing file(s) (2, 5.4 KB)
+0012.239 (0) Table ZNs_yoast_indexable_hierarchy: Total expected rows (approximate): 31
+0012.241 (0) Table ZNs_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 32 (uncompressed bytes in this segment=1348) in 0.00 seconds
+0012.243 (0) Table ZNs_yoast_indexable_hierarchy: finishing file(s) (2, 0.5 KB)
+0012.248 (0) Table ZNs_yoast_migrations: Total expected rows (approximate): 21
+0012.251 (0) Table ZNs_yoast_migrations: Rows added in this batch (next record: 21): 21 (uncompressed bytes in this segment=1157) in 0.00 seconds
+0012.253 (0) Table ZNs_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0012.256 (0) Table ZNs_yoast_primary_term: Total expected rows (approximate): 0
+0012.259 (0) Table ZNs_yoast_primary_term: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=864) in 0.00 seconds
+0012.262 (0) Table ZNs_yoast_primary_term: finishing file(s) (2, 0.4 KB)
+0012.264 (0) Table ZNs_yoast_seo_links: Total expected rows (approximate): 14
+0012.266 (0) Table ZNs_yoast_seo_links: Rows added in this batch (next record: 1071): 14 (uncompressed bytes in this segment=3409) in 0.00 seconds
+0012.269 (0) Table ZNs_yoast_seo_links: finishing file(s) (2, 0.9 KB)
+0012.270 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_options.table.tmpr149193.gz (1/23): adding to final database dump
+0012.297 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_options.table.gz (2/23): adding to final database dump
+0012.298 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_users.table.tmpr2.gz (3/23): adding to final database dump
+0012.299 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_users.table.gz (4/23): adding to final database dump
+0012.299 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_usermeta.table.tmpr60.gz (5/23): adding to final database dump
+0012.301 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_usermeta.table.gz (6/23): adding to final database dump
+0012.301 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_actions.table.tmpr364.gz (7/23): adding to final database dump
+0012.302 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_actions.table.gz (8/23): adding to final database dump
+0012.303 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_claims.table.tmpr0.gz (9/23): adding to final database dump
+0012.303 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_claims.table.gz (10/23): adding to final database dump
+0012.304 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_groups.table.tmpr3.gz (11/23): adding to final database dump
+0012.305 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_groups.table.gz (12/23): adding to final database dump
+0012.305 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_logs.table.tmpr1070.gz (13/23): adding to final database dump
+0012.306 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_actionscheduler_logs.table.gz (14/23): adding to final database dump
+0012.307 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_commentmeta.table.tmpr0.gz (15/23): adding to final database dump
+0012.308 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_commentmeta.table.gz (16/23): adding to final database dump
+0012.308 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_comments.table.tmpr0.gz (17/23): adding to final database dump
+0012.309 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_comments.table.gz (18/23): adding to final database dump
+0012.309 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_links.table.tmpr0.gz (19/23): adding to final database dump
+0012.310 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_links.table.gz (20/23): adding to final database dump
+0012.310 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_postmeta.table.tmpr1254.gz (21/23): adding to final database dump
+0012.313 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_postmeta.table.gz (22/23): adding to final database dump
+0012.314 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_posts.table.tmpr519.gz (23/23): adding to final database dump
+0012.317 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_posts.table.gz (24/23): adding to final database dump
+0012.317 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_term_relationships.table.tmpr100001.gz (25/23): adding to final database dump
+0012.318 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_term_relationships.table.gz (26/23): adding to final database dump
+0012.318 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_term_taxonomy.table.tmpr11.gz (27/23): adding to final database dump
+0012.319 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_term_taxonomy.table.gz (28/23): adding to final database dump
+0012.319 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_termmeta.table.tmpr9.gz (29/23): adding to final database dump
+0012.320 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_termmeta.table.gz (30/23): adding to final database dump
+0012.320 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_terms.table.tmpr11.gz (31/23): adding to final database dump
+0012.321 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_terms.table.gz (32/23): adding to final database dump
+0012.322 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_mprm_customer.table.tmpr0.gz (33/23): adding to final database dump
+0012.322 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_mprm_customer.table.gz (34/23): adding to final database dump
+0012.323 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_wpforms_tasks_meta.table.tmpr57.gz (35/23): adding to final database dump
+0012.323 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_wpforms_tasks_meta.table.gz (36/23): adding to final database dump
+0012.324 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_indexable.table.tmpr81.gz (37/23): adding to final database dump
+0012.325 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_indexable.table.gz (38/23): adding to final database dump
+0012.326 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_indexable_hierarchy.table.tmpr1001.gz (39/23): adding to final database dump
+0012.326 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_indexable_hierarchy.table.gz (40/23): adding to final database dump
+0012.327 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_migrations.table.tmpr22.gz (41/23): adding to final database dump
+0012.328 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_migrations.table.gz (42/23): adding to final database dump
+0012.328 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_primary_term.table.tmpr0.gz (43/23): adding to final database dump
+0012.329 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_primary_term.table.gz (44/23): adding to final database dump
+0012.329 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_seo_links.table.tmpr1072.gz (45/23): adding to final database dump
+0012.330 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db-table-ZNs_yoast_seo_links.table.gz (46/23): adding to final database dump
+0012.333 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db.gz: finished writing out complete database file (128 KB)
+0012.339 (0) Total database tables backed up: 23 (backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db.gz, size: 144898, sha1: efb15341e5ada94e662301154795a8bad29281df, sha256: 243562346b25203413dc666687d7885fb0458ed8d778924b3e7add4f657bcf51)
+0012.342 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0012.343 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0012.343 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0012.343 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-others.zip: others: This file has not yet been successfully uploaded: will queue
+0012.344 (0) backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db.gz: db: This file has not yet been successfully uploaded: will queue
+0012.344 (0) Saving backup history. Total backup size: 103.4 MB
+0012.346 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0012.347 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0012.348 (0) No remote despatch: user chose no remote backup service
+0012.348 (0) Recording as successfully uploaded: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-plugins.zip
+0012.349 (0) Recording as successfully uploaded: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-themes.zip
+0012.350 (0) Recording as successfully uploaded: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-uploads.zip
+0012.351 (0) Recording as successfully uploaded: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-others.zip
+0012.352 (0) Recording as successfully uploaded: backup_2021-06-14-0449_Caf_Jindo_c5d47922315f-db.gz
+0012.354 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0012.355 (0) Number of backup sets in history: 2; groups (db): 1
+0012.355 (0) Examining (for databases) backup set with group_id=0, nonce=c5d47922315f, datestamp=1623646189 (Jun 14 2021 04:49:49)
+0012.356 (0) This backup set is the backup set just made, so will not be deleted.
+0012.356 (0) Examining (for databases) backup set with group_id=0, nonce=bb270685bf36, datestamp=1612134300 (Jan 31 2021 23:05:00)
+0012.356 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.356 (0) Number of backup sets in history: 2; groups (files): 1
+0012.357 (0) Examining (for files) backup set with nonce=c5d47922315f, datestamp=1623646189 (Jun 14 2021 04:49:49)
+0012.357 (0) This backup set is the backup set just made, so will not be deleted.
+0012.357 (0) This backup set is the backup set just made, so will not be deleted.
+0012.357 (0) This backup set is the backup set just made, so will not be deleted.
+0012.357 (0) This backup set is the backup set just made, so will not be deleted.
+0012.358 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.358 (0) Examining (for files) backup set with nonce=bb270685bf36, datestamp=1612134300 (Jan 31 2021 23:05:00)
+0012.358 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0012.358 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0012.359 (0) Resume backup (c5d47922315f, 0): finish run
+0012.361 (0) Decremented the semaphore (fd) by 1
+0012.361 (0) Semaphore (fd) unlocked
+0012.362 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0012.364 (0) No email will/can be sent - the user has not configured an email address.
+0012.364 (0) The backup apparently succeeded and is now complete
