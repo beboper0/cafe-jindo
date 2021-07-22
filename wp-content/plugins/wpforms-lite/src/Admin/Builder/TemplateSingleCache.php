@@ -152,8 +152,9 @@ class TemplateSingleCache extends \WPForms\Helpers\CacheBase {
 		$cache_data['data']['settings']                = empty( $cache_data['data']['settings'] ) ? [] : $cache_data['data']['settings'];
 		$cache_data['data']['settings']['ajax_submit'] = '1';
 
-		// Strip the word "Template" from the end of the template name.
-		$cache_data['name'] = preg_replace( '/\sTemplate$/', '', $cache_data['name'] );
+		// Strip the word "Template" from the end of the template name and form title setting.
+		$cache_data['name']                           = preg_replace( '/\sTemplate$/', '', $cache_data['name'] );
+		$cache_data['data']['settings']['form_title'] = $cache_data['name'];
 
 		// Unset `From Name` field of the notification settings.
 		// By default, the builder will use the `blogname` option value.

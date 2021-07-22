@@ -711,6 +711,7 @@ class WPForms_Builder {
 
 		$form_id      = $this->form ? absint( $this->form->ID ) : '';
 		$field_id     = ! empty( $this->form_data['field_id'] ) ? $this->form_data['field_id'] : '';
+		$preview_url  = wpforms_get_form_preview_url( $form_id, true );
 		$allowed_caps = [ 'edit_posts', 'edit_other_posts', 'edit_private_posts', 'edit_published_posts', 'edit_pages', 'edit_other_pages', 'edit_published_pages', 'edit_private_pages' ];
 		?>
 
@@ -782,31 +783,42 @@ class WPForms_Builder {
 
 					<div class="wpforms-right">
 
-						<a href="#" id="wpforms-help" class="wpforms-btn wpforms-btn-toolbar wpforms-btn-light-grey" title="<?php esc_attr_e( 'Help Ctrl+H', 'wpforms-lite' ); ?>">
-							<i class="fa fa-question-circle-o"></i><span><?php esc_html_e( 'Help', 'wpforms-lite' ); ?></span>
-						</a>
+						<button id="wpforms-help"
+							class="wpforms-btn wpforms-btn-toolbar wpforms-btn-light-grey"
+							title="<?php esc_attr_e( 'Help Ctrl+H', 'wpforms-lite' ); ?>">
+								<i class="fa fa-question-circle-o"></i><span><?php esc_html_e( 'Help', 'wpforms-lite' ); ?></span>
+						</button>
 
 						<?php if ( $this->form ) : ?>
 
-							<a href="#" id="wpforms-preview-btn" class="wpforms-btn wpforms-btn-toolbar wpforms-btn-light-grey" title="<?php esc_attr_e( 'Preview Form Ctrl+P', 'wpforms-lite' ); ?>">
-								<i class="fa fa-eye"></i><span class="text"><?php esc_html_e( 'Preview', 'wpforms-lite' ); ?></span>
+							<a href="<?php echo esc_url( $preview_url ); ?>"
+								id="wpforms-preview-btn"
+								class="wpforms-btn wpforms-btn-toolbar wpforms-btn-light-grey"
+								title="<?php esc_attr_e( 'Preview Form Ctrl+P', 'wpforms-lite' ); ?>"
+								target="_blank"
+								rel="noopener noreferrer">
+									<i class="fa fa-eye"></i><span class="text"><?php esc_html_e( 'Preview', 'wpforms-lite' ); ?></span>
 							</a>
 
 							<?php if ( array_filter( (array) $allowed_caps, 'current_user_can' ) ) : ?>
-								<a href="#" id="wpforms-embed" class="wpforms-btn wpforms-btn-toolbar wpforms-btn-light-grey" title="<?php esc_attr_e( 'Embed Form Ctrl+B', 'wpforms-lite' ); ?>">
-									<i class="fa fa-code"></i><span class="text"><?php esc_html_e( 'Embed', 'wpforms-lite' ); ?></span>
-								</a>
+								<button id="wpforms-embed"
+									class="wpforms-btn wpforms-btn-toolbar wpforms-btn-light-grey"
+									title="<?php esc_attr_e( 'Embed Form Ctrl+B', 'wpforms-lite' ); ?>">
+										<i class="fa fa-code"></i><span class="text"><?php esc_html_e( 'Embed', 'wpforms-lite' ); ?></span>
+								</button>
 							<?php endif; ?>
 
-							<a href="#" id="wpforms-save" class="wpforms-btn wpforms-btn-toolbar wpforms-btn-orange" title="<?php esc_attr_e( 'Save Form Ctrl+S', 'wpforms-lite' ); ?>">
-								<i class="fa fa-check"></i><i class="wpforms-loading-spinner wpforms-loading-white wpforms-loading-inline wpforms-hidden"></i><span class="text"><?php esc_html_e( 'Save', 'wpforms-lite' ); ?></span>
-							</a>
+							<button id="wpforms-save"
+								class="wpforms-btn wpforms-btn-toolbar wpforms-btn-orange"
+								title="<?php esc_attr_e( 'Save Form Ctrl+S', 'wpforms-lite' ); ?>">
+									<i class="fa fa-check"></i><i class="wpforms-loading-spinner wpforms-loading-white wpforms-loading-inline wpforms-hidden"></i><span class="text"><?php esc_html_e( 'Save', 'wpforms-lite' ); ?></span>
+							</button>
 
 						<?php endif; ?>
 
-						<a href="#" id="wpforms-exit" title="<?php esc_attr_e( 'Exit Ctrl+Q', 'wpforms-lite' ); ?>">
+						<button id="wpforms-exit" title="<?php esc_attr_e( 'Exit Ctrl+Q', 'wpforms-lite' ); ?>">
 							<i class="fa fa-times"></i>
-						</a>
+						</button>
 
 					</div>
 

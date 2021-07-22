@@ -169,6 +169,12 @@ abstract class WPForms_Template {
 
 		if ( ! empty( $data ) && ! empty( $data['template'] ) ) {
 			if ( $data['template'] === $this->slug ) {
+
+				// Enable Notifications by default.
+				$this->data['settings']['notification_enable'] = isset( $this->data['settings']['notification_enable'] )
+					? $this->data['settings']['notification_enable']
+					: 1;
+
 				$args['post_content'] = wpforms_encode( $this->data );
 			}
 		}

@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col"><img class="alignnone size-large wp-image-127"
-                                          src="http://cafe-jindo.local/wp-content/uploads/2021/04/served-coffee.jpg">
+                                          src="https://cafe-jindo.local/wp-content/uploads/2021/04/served-coffee.jpg">
                     </div>
                     <div class="col">
                         <h2>Cafe Jindo</h2>

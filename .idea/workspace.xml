@@ -43,7 +43,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university/app/public" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -65,7 +65,8 @@
       <workItem from="1626142727462" duration="3982000" />
       <workItem from="1626690556359" duration="1745000" />
       <workItem from="1626778077720" duration="644000" />
-      <workItem from="1626820206194" duration="4742000" />
+      <workItem from="1626820206194" duration="9235000" />
+      <workItem from="1626913370199" duration="1290000" />
     </task>
     <servers />
   </component>
@@ -82,6 +83,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -89,14 +91,18 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Deployment" timestamp="1624348188798">
+    <state x="552" y="178" key="#Deployment" timestamp="1626864117408">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1624348188798" />
+    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1626864117408" />
     <state x="637" y="214" key="#Options" timestamp="1624348173734">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="637" y="214" key="#Options/0.0.1920.1040@0.0.1920.1040" timestamp="1624348173734" />
+    <state x="536" y="165" key="#SSH_Configurations" timestamp="1626859964707">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="536" y="165" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1626859964707" />
     <state x="771" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626849497517">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -113,14 +119,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="306" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1626821977843" />
-    <state x="27" y="164" key="SettingsEditor" timestamp="1626856850910">
+    <state x="27" y="164" key="SettingsEditor" timestamp="1626913980394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="27" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1626856850910" />
-    <state x="1368" y="215" key="ftp.server.browser" timestamp="1624348144564">
+    <state x="27" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1626913980394" />
+    <state x="1368" y="215" key="ftp.server.browser" timestamp="1626861055409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1368" y="215" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1624348144564" />
+    <state x="1368" y="215" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1626861055409" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public</wordpressPath>

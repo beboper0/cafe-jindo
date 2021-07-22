@@ -140,6 +140,7 @@ get_header();
 					?>
                     <h2><span id="Desserts">Desserts</span></h2>
                     <div class="menu-pic"><img class="alignnone size-medium wp-image-238" src=<?php echo site_url("/wp-content/uploads/2021/05/amato-gelato-scaled.jpg") ?> alt="" width="300" height="300"></div>
+                    <div class="menu-pic"><img class="alignnone wp-image-497 size-full" src=<?php echo site_url("/wp-content/uploads/2021/05/amato-logo-tm-e1620289234142.jpg") ?> alt="" width="100" height="43"></div>
 	                <?php
 	                    foodMenu($dessertMenu)
 	                ?>

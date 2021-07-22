@@ -340,6 +340,19 @@ class Templates {
 
 		$template['data']['meta']['template'] = $template['id'];
 
+		// Enable Notifications by default.
+		$template['data']['settings']['notification_enable'] = isset( $template['data']['settings']['notification_enable'] )
+			? $template['data']['settings']['notification_enable']
+			: 1;
+
+		// Unset settings that should be defined locally.
+		unset(
+			$template['data']['settings']['form_title'],
+			$template['data']['settings']['notifications'],
+			$template['data']['settings']['conversational_forms_title'],
+			$template['data']['settings']['form_pages_title']
+		);
+
 		// Encode template data to post content.
 		$args['post_content'] = wpforms_encode( $template['data'] );
 

@@ -1255,7 +1255,7 @@ var WPFormsBuilder = window.WPFormsBuilder || ( function( document, window, $ ) 
 			if ( styleOption === 'classic' ) {
 				$( classicPreview, $preview ).removeClass( 'wpforms-hide' );
 				$( modernPreview, $preview ).addClass( 'wpforms-hide' );
-				$maxFileNumberRow.addClass( 'wpforms-row-hide' );
+				$maxFileNumberRow.addClass( 'wpforms-hidden' );
 			} else {
 
 				// Change hint and title.
@@ -1280,7 +1280,7 @@ var WPFormsBuilder = window.WPFormsBuilder || ( function( document, window, $ ) 
 				// Display the preview.
 				$( classicPreview, $preview ).addClass( 'wpforms-hide' );
 				$( modernPreview, $preview ).removeClass( 'wpforms-hide' );
-				$maxFileNumberRow.removeClass( 'wpforms-row-hide' );
+				$maxFileNumberRow.removeClass( 'wpforms-hidden' );
 			}
 		},
 
@@ -2263,14 +2263,14 @@ var WPFormsBuilder = window.WPFormsBuilder || ( function( document, window, $ ) 
 
 			if ( action === 'click' ) {
 
-				if ( $group.hasClass( 'wpforms-hide' ) ) {
+				if ( $group.hasClass( 'wpforms-closed' ) ) {
 					wpCookies.remove( cookieName );
 				} else {
 					wpCookies.set( cookieName, 'true', 2592000 ); // 1 month
 				}
 				$icon.toggleClass( 'wpforms-angle-right' );
 				$buttons.stop().slideToggle( '', function() {
-					$group.toggleClass( 'wpforms-hide' );
+					$group.toggleClass( 'wpforms-closed' );
 				} );
 
 				return;
@@ -2286,7 +2286,7 @@ var WPFormsBuilder = window.WPFormsBuilder || ( function( document, window, $ ) 
 				if ( wpCookies.get( cookieName ) === 'true' ) {
 					$icon.toggleClass( 'wpforms-angle-right' );
 					$buttons.hide();
-					$this.toggleClass( 'wpforms-hide' );
+					$this.toggleClass( 'wpforms-closed' );
 				}
 			}
 		},
@@ -4534,7 +4534,7 @@ var WPFormsBuilder = window.WPFormsBuilder || ( function( document, window, $ ) 
 				$settingBlockContent = $settingsBlock.find( '.wpforms-builder-settings-block-content' ),
 				settingsBlockId      = parseInt( $addNewSettingButton.attr( 'data-next-id' ), 10 ),
 				settingsBlockType    = $settingsBlock.data( 'block-type' ),
-				settingsBlockName    = $settingsBlock.find( '.wpforms-builder-settings-block-name' ).text() + wpforms_builder[ settingsBlockType + '_clone' ],
+				settingsBlockName    = $settingsBlock.find( '.wpforms-builder-settings-block-name' ).text().trim() + wpforms_builder[ settingsBlockType + '_clone' ],
 				isVisibleContent     = $settingBlockContent.is( ':hidden' );
 
 			// Restore tooltips before cloning.
@@ -4729,13 +4729,6 @@ var WPFormsBuilder = window.WPFormsBuilder || ( function( document, window, $ ) 
 		 * @since 1.5.8 Added trigger on `wpformsSaved` event to remove a `newform` URL-parameter.
 		 */
 		bindUIActionsSaveExit: function() {
-
-			// Preview form.
-			$builder.on( 'click', '#wpforms-preview-btn', function( e ) {
-
-				e.preventDefault();
-				window.open( wpforms_builder.preview_url );
-			} );
 
 			// Embed form.
 			$builder.on( 'click', '#wpforms-embed', function( e ) {

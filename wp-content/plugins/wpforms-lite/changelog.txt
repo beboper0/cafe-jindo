@@ -1,5 +1,11 @@
 == Changelog ==
 
+= 1.6.8.1 =
+- Changed: Allow using right click to open a form preview in new tab or window.
+- Fixed: Notifications disabled on the previous version were enabled after the 1.6.8 update.
+- Fixed: Block preview in new WordPress 5.8 Widgets Block Editor now aligned properly.
+- Fixed: Word wrapping issues in various places for non-English languages.
+
 = 1.6.8 =
 - Added: Form Builder visual modernization and improved user experience.
 - Added: Form Builder is now more optimized, loading and performing faster.
