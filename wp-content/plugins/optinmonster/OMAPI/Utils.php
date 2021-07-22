@@ -144,9 +144,10 @@ class OMAPI_Utils {
 	 * @return bool True on success, false on failure.
 	 */
 	public static function add_inline_script( $handle, $object_name, $data, $position = 'before' ) {
-		$data    = apply_filters( 'om_add_inline_script', $data, $handle, $position, $object_name );
-		$payload = self::build_inline_data( $object_name, $data );
+		$data   = apply_filters( 'om_add_inline_script', $data, $handle, $position, $object_name );
+		$output = self::build_inline_data( $object_name, $data );
+		$output = apply_filters( 'om_add_inline_script_output', $output, $data, $handle, $position, $object_name );
 
-		wp_add_inline_script( $handle, $payload, $position );
+		return wp_add_inline_script( $handle, $output, $position );
 	}
 }

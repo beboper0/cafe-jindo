@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
+### 2.5.0 - 2021-07-22
+* Fix the Shareable MonsterLink URL for campaigns.
+* Updated integration provider logo images, and prepared for new integrations.
+* Improved workflow for Onboarding Wizard.
+* Prevent wizard keyboard navigation when in input/textarea/form-element.
+* Added filters to many of the script-tags we output.
+
 ### 2.4.1 - 2021-06-25
 * Fix "Cannot read property 'isDevelopment' of undefined" when connecting woocommerce.
 * Fix static modal positioning so page can scroll (when plugin has not been connected yet).

@@ -158,7 +158,7 @@ class OMAPI_Shortcode {
 		$this->base->output->set_slug( $optin );
 
 		// Return the HTML.
-		return $html;
+		return apply_filters( 'optin_monster_shortcode_output', $html, $optin, $atts );
 	}
 
 	/**

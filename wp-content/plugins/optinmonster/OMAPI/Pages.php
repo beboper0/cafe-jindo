@@ -392,6 +392,7 @@ class OMAPI_Pages {
 					'omAppApiUrl'     => untrailingslashit( OPTINMONSTER_API_URL ),
 					'omAppCdnURL'     => untrailingslashit( OPTINMONSTER_CDN_URL ),
 					'newCampaignUrl'  => untrailingslashit( esc_url_raw( admin_url( 'admin.php?page=optin-monster-templates' ) ) ),
+					'shareableUrl'    => untrailingslashit( OPTINMONSTER_SHAREABLE_LINK ),
 					'pluginPath'      => $url_parts['path'],
 					'omStaticDataKey' => 'omWpApi',
 					'isItWp'          => true,

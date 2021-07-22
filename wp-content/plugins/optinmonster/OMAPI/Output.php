@@ -748,12 +748,15 @@ class OMAPI_Output {
 			}
 		}
 
-		$output = array(
-			'wc_cart'     => $this->woocommerce_cart(),
-			'object_id'   => $object_id,
-			'object_key'  => $object_key,
-			'object_type' => $object_type,
-			'term_ids'    => $tax_terms,
+		$output = apply_filters(
+			'optin_monster_display_rules_data_output',
+			array(
+				'wc_cart'     => $this->woocommerce_cart(),
+				'object_id'   => $object_id,
+				'object_key'  => $object_key,
+				'object_type' => $object_type,
+				'term_ids'    => $tax_terms,
+			)
 		);
 
 		$output = function_exists( 'wp_json_encode' )
@@ -777,9 +780,11 @@ class OMAPI_Output {
 	 * @return string         The optin campaign html.
 	 */
 	public function prepare_campaign( $optin ) {
-		return ! empty( $optin->post_content )
+		$campaign_embed = ! empty( $optin->post_content )
 			? trim( html_entity_decode( stripslashes( $optin->post_content ), ENT_QUOTES, 'UTF-8' ), '\'' )
 			: '';
+
+		return apply_filters( 'optin_monster_campaign_embed_output', $campaign_embed, $optin );
 	}
 
 	/**
@@ -943,7 +948,7 @@ class OMAPI_Output {
 		$tag .= '})(document);';
 		$tag .= '</script>';
 
-		return sprintf(
+		$tag = sprintf(
 			$tag,
 			$src,
 			$script_id,
@@ -952,5 +957,7 @@ class OMAPI_Output {
 			$api_cname,
 			$env
 		);
+
+		return apply_filters( 'optin_monster_embed_script_tag', $tag, $args );
 	}
 }
