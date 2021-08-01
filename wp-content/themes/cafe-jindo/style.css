@@ -444,11 +444,8 @@ h6 {
 
 h2 {
 	margin-top: 0px;
+	font-size: 2em;
 	
-}
-
-.col h2 {
-	font-size: 2rem;
 }
 
 
@@ -757,20 +754,20 @@ main {
 #splash-container {
 	padding: 40px;
 	position: relative;
-	top: 3rem;
+	top: 2rem;
 	color: #fff;
 	text-align: center;
 }
 
 @media screen and (min-width: 740px) {
 	#splash-container {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 }
 
 @media screen and (max-width: 740px) {
 	#splash-container {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -877,6 +874,10 @@ a.custom-logo-link {
 
 .site-info {
 	width:100%;
+}
+
+.site-info h2 {
+	font-size: 1.5rem;
 }
 
 .site-info p {

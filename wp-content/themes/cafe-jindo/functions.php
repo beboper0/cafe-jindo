@@ -155,6 +155,7 @@ function foodMenu($query) {
 	<?php }
 }
 
+
 /**
  * Enqueue scripts and styles.
  */

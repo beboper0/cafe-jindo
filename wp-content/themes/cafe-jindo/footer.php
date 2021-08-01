@@ -25,8 +25,9 @@
 				<div class="col-3" id="hours">
 					<h2>HOURS</h2>
 					<ul>
-						<li>Monday to Saturday: 8am - 5:00pm</li>
-						<li>Sunday: CLOSED</li>
+                        <li>Sunday: 8am - 4:00pm</li>
+                        <li>Monday: CLOSED</li>
+						<li>Tuesday to Saturday: 8am - 6:00pm</li>
 					</ul>
 				</div>
 				<div class="col-3" id="social-media">

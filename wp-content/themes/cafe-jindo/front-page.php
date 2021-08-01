@@ -13,7 +13,40 @@
                 </div>
             </div>
         </section>
+    <!--
+        <section>
+            <?php
+            $featuredItems = new WP_Query(array(
+                'posts_per_page' => 3,
+                'post_type' => 'featured-item',
+                'meta_key' => 'ordering',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC',
+            ));
+            ?>
+            <div class="container">
+                <h2 style="text-align: center;">Featuring</h2>
+                <div class="row">
+                    <?php
+                    while($featuredItems->have_posts()) {
+                        $featuredItems->the_post() ?>
+                        <div class="col-3">
+                            <h2><?php echo the_title() ?></h2>
+                            <img class="alignnone size-large wp-image-127"
+                                 src="<?php the_field('featured_image') ?>">
+                            <p><?php echo the_content() ?></p>
+                        </div>
+                    <?php }
+                    ?>
+                </div>
+            </div>
+        </section>
 
+        <section>
+            <div class="bg-overlay"
+                 style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/05/food-splash.jpg'); ?>);"></div>
+        </section>
+    -->
         <section>
             <div class="container">
                 <div class="row">
@@ -38,7 +71,7 @@
 
         <section>
             <div class="bg-overlay"
-                 style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/05/food-splash.jpg'); ?>);"></div>
+                 style="background-image: url(<?php echo site_url('wp-content/uploads/2021/07/DSC_1588-scaled.jpg'); ?>);"></div>
         </section>
 
         <section style="display: none;">
@@ -59,6 +92,5 @@
     </main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();
 ?>

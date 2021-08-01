@@ -1,10 +1,10 @@
-=== Marketing Toolkit by OptinMonster – Popups, Email Optin Forms & Newsletter Subscribers ===
+=== WordPress Popups for Marketing and Email Marketing, Lead Generation and Conversions by OptinMonster ===
 Contributors: optinmonster, griffinjt, smub
 Tags: marketing, popups, popup builder, newsletter, conversion, optin forms, forms, subscribers, exit intent popup, email marketing, crm, popup maker, popup plugin, cart abandonment, spin a wheel popup, coupon wheel, conversion optimization, a/b testing, email opt-in, retargeting, ecommerce, cro, lightbox, promotion, shipping bar, announcement bar, advertising, mailing list, popup slide-in
 Requires at least: 4.7.0
 Tested up to: 5.8
 Requires PHP: 5.3
-Stable tag: 2.5.0
+Stable tag: 2.5.1
 License: GNU General Public License v2.0 or later
 
 Create popups, opt-in forms, & floating bars to get more email newsletter subscribers, leads, and increase sales conversion - #1 marketing popup plugin.
@@ -470,6 +470,9 @@ Syed Balkhi
 == Changelog ==
 
 **Most Recent Changes:**
+
+= 2.5.1 =
+* Fix issue with adblockers causing integration images not to be shown.
 
 = 2.5.0 =
 * Fix the Shareable MonsterLink URL for campaigns.

@@ -1,7 +1,10 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
-### 2.5.0 - 2021-07-22
+### 2.5.1 - 2021-07-22
+* Fix issue with adblockers causing integration images not to be shown.
+
+### 2.5.0 - 2021-07-21
 * Fix the Shareable MonsterLink URL for campaigns.
 * Updated integration provider logo images, and prepared for new integrations.
 * Improved workflow for Onboarding Wizard.
