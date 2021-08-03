@@ -13,17 +13,19 @@
                 </div>
             </div>
         </section>
-    <!--
+
+        <?php
+
+        $featuredItems = new WP_Query(array(
+            'posts_per_page' => 3,
+            'post_type' => 'featured-item',
+            'meta_key' => 'ordering',
+            'orderby' => 'meta_value_num',
+            'order' => 'ASC',
+        ));
+
+        if ($featuredItems->have_posts()) { ?>
         <section>
-            <?php
-            $featuredItems = new WP_Query(array(
-                'posts_per_page' => 3,
-                'post_type' => 'featured-item',
-                'meta_key' => 'ordering',
-                'orderby' => 'meta_value_num',
-                'order' => 'ASC',
-            ));
-            ?>
             <div class="container">
                 <h2 style="text-align: center;">Featuring</h2>
                 <div class="row">
@@ -46,7 +48,8 @@
             <div class="bg-overlay"
                  style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/05/food-splash.jpg'); ?>);"></div>
         </section>
-    -->
+        <?php } ?>
+
         <section>
             <div class="container">
                 <div class="row">
