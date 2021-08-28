@@ -42,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university/app/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
   </component>
   <component name="SvnConfiguration">
@@ -69,7 +69,16 @@
       <workItem from="1626913370199" duration="2884000" />
       <workItem from="1627712799787" duration="7372000" />
       <workItem from="1627808138468" duration="1607000" />
-      <workItem from="1627971349141" duration="2306000" />
+      <workItem from="1627971349141" duration="3676000" />
+      <workItem from="1628031962086" duration="604000" />
+      <workItem from="1628148675405" duration="738000" />
+      <workItem from="1628237725240" duration="1525000" />
+      <workItem from="1628322627078" duration="605000" />
+      <workItem from="1628408489996" duration="609000" />
+      <workItem from="1628494108370" duration="622000" />
+      <workItem from="1628584586844" duration="605000" />
+      <workItem from="1628753373121" duration="1911000" />
+      <workItem from="1630112506975" duration="4437000" />
     </task>
     <servers />
   </component>
@@ -118,10 +127,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="465" y="124" width="1109" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626856749514" />
-    <state x="306" y="260" key="FileChooserDialogImpl" timestamp="1627971769523">
+    <state x="306" y="260" key="FileChooserDialogImpl" timestamp="1628753384373">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="306" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1627971769523" />
+    <state x="306" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628753384373" />
     <state x="27" y="164" key="SettingsEditor" timestamp="1626913980394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

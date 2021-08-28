@@ -4,7 +4,7 @@
 		<p style="margin-bottom:0">
 			<a href="#" class="button button-primary om-review-btns" data-res="yes" rel="noopener"><?php esc_html_e( 'Yes!', 'optin-monster-api' ); ?> 🙂</a>
 			<a href="#" class="button button-secondary om-review-btns" data-res="no" target="_blank" rel="noopener"><?php esc_html_e( 'Not Really!', 'optin-monster-api' ); ?></a>
-			<?php if ( ! $this->get_api_credentials() ) : ?>
+			<?php if ( ! OMAPI_ApiKey::has_credentials() ) : ?>
 				<a href="https://optinmonster.com/?utm_source=WordPress&utm_campaign=Plugin&utm_medium=ReviewNotice" class="om-dismiss-review-notice om-dismiss-review-notice-delay button button-secondary" target="_blank" rel="noopener">
 					<?php esc_html_e( 'What is OptinMonster?', 'optin-monster-api' ); ?>
 				</a>

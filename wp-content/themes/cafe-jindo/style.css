@@ -3,7 +3,7 @@ Theme Name: Cafe Jindo
 Theme URI: http://underscores.me/
 Author: Steven Huynh
 Author URI: http://underscores.me/
-Description: Description
+Description: Custom theme to be used for Cafe Jindo specifically.
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
@@ -444,7 +444,7 @@ h6 {
 
 h2 {
 	margin-top: 0px;
-	font-size: 2em;
+	font-size: 2.5em;
 	
 }
 

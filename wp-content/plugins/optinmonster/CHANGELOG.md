@@ -1,6 +1,17 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
+### 2.6.0 - 2021-08-10
+* Fix broken integration images for a few integrations.
+* Improved rules debug output for support.
+* Fixes for errors found in WordPress 4.8.
+* Fix onboarding issue where other plugins would redirect to their welcome pages.
+* Other syle improvements to the onboarding process.
+* Fix issue with onboarding process not being able to reopen the app's registration-completion window.
+* Add redirect to welcome page for when plugin is first installed.
+* Fix issuer where the site's default integration setting would not load the available options.
+* Fix styles for setting descriptions in site settings.
+
 ### 2.5.1 - 2021-07-22
 * Fix issue with adblockers causing integration images not to be shown.
 

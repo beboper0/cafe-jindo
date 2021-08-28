@@ -153,6 +153,10 @@ class OMAPI_Output {
 
 		$rules = new OMAPI_Rules();
 
+		if ( OMAPI_Debug::can_output_debug() ) {
+			add_action( 'wp_footer', array( 'OMAPI_Debug', 'output_general' ), 99 );
+		}
+
 		// Keep these around for back-compat.
 		$this->fields = $rules->fields;
 

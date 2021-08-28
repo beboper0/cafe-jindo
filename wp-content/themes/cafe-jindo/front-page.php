@@ -33,7 +33,7 @@
                     while($featuredItems->have_posts()) {
                         $featuredItems->the_post() ?>
                         <div class="col-3">
-                            <h2><?php echo the_title() ?></h2>
+                            <h3><?php echo the_title() ?></h3>
                             <img class="alignnone size-large wp-image-127"
                                  src="<?php the_field('featured_image') ?>">
                             <p><?php echo the_content() ?></p>
@@ -54,7 +54,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col"><img class="alignnone size-large wp-image-127"
-                                          src="https://cafe-jindo.local/wp-content/uploads/2021/04/served-coffee.jpg">
+                                          src="<?php echo site_url('/wp-content/uploads/2021/04/served-coffee.jpg'); ?>">
                     </div>
                     <div class="col">
                         <h2>Cafe Jindo</h2>
