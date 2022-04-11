@@ -1,6 +1,25 @@
 Changelog
 =========
 
+#### 1.4.9 - January 3 2022
+- Add Flag Customer Orders
+- Fix phone numbers should now be synced successfully and contacts will only be subscribed if the 'acceptance' checkbox is checked
+- Fix error after Order Completed Trigger
+
+#### 1.4.8 - December 1 2021
+- Redirect to main Creativ Email templates page when user has abandoned cart template deactivated.
+- Fix sync error with contact form 7
+- Added automation trigger for customer buying products
+
+#### 1.4.7 - October 7 2021
+- Fix currency type being shown in "Abandoned Cart" emails for WooCommerce.
+
+#### 1.4.6 - September 23 2021
+- Add phone number handling for Jetpack Forms. Bug fixes.
+
+#### 1.4.5 - September 2 2021
+- This version contains a fix for Creative mail customers who also use the Bluehost Websitebuilder functionality to build their WordPress site.
+
 #### 1.4.4 - August 19 2021
 - Add support for 'return to shop' urls
 - Bug fixes

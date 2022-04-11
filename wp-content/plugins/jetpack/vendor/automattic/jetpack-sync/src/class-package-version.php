@@ -1,16 +1,2 @@
-<?php
-/**
- * The Package_Version class.
- *
- * @package automattic/jetpack-sync
- */
-
-namespace Automattic\Jetpack\Sync;
-
-/**
- * The Package_Version class.
- */
-class Package_Version {
-
-	const PACKAGE_VERSION = '1.24.2';
-}
+<?php // Stub to avoid errors during upgrades
+require_once __DIR__ . '/../../../../jetpack_vendor/automattic/jetpack-sync/src/class-package-version.php';

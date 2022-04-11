@@ -42,8 +42,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../travel-site" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public\wp-content\themes\src\modules" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -78,7 +90,25 @@
       <workItem from="1628494108370" duration="622000" />
       <workItem from="1628584586844" duration="605000" />
       <workItem from="1628753373121" duration="1911000" />
-      <workItem from="1630112506975" duration="4437000" />
+      <workItem from="1630112506975" duration="5312000" />
+      <workItem from="1641786314382" duration="3749000" />
+      <workItem from="1645744837091" duration="10187000" />
+      <workItem from="1645761129823" duration="6028000" />
+      <workItem from="1645837620628" duration="12055000" />
+      <workItem from="1646189929785" duration="5335000" />
+      <workItem from="1647845362160" duration="1734000" />
+      <workItem from="1647999383044" duration="2267000" />
+      <workItem from="1648022212304" duration="126000" />
+      <workItem from="1648030893698" duration="1388000" />
+      <workItem from="1648106038430" duration="4269000" />
+      <workItem from="1648158368889" duration="15746000" />
+      <workItem from="1648246415332" duration="1557000" />
+      <workItem from="1648880727001" duration="3971000" />
+      <workItem from="1649313733062" duration="1542000" />
+      <workItem from="1649368838663" duration="2636000" />
+      <workItem from="1649487078242" duration="2043000" />
+      <workItem from="1649570766629" duration="1587000" />
+      <workItem from="1649654023393" duration="6614000" />
     </task>
     <servers />
   </component>
@@ -103,42 +133,42 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Deployment" timestamp="1626864117408">
+    <state x="1308" y="434" key="#ESLint" timestamp="1645761412376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Deployment/0.0.1920.1040@0.0.1920.1040" timestamp="1626864117408" />
-    <state x="637" y="214" key="#Options" timestamp="1624348173734">
+    <state x="1308" y="434" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1645761412376" />
+    <state x="1262" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1645863901775">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="637" y="214" key="#Options/0.0.1920.1040@0.0.1920.1040" timestamp="1624348173734" />
-    <state x="536" y="165" key="#SSH_Configurations" timestamp="1626859964707">
+    <state x="1262" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1645863901775" />
+    <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1645853190559">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="536" y="165" key="#SSH_Configurations/0.0.1920.1040@0.0.1920.1040" timestamp="1626859964707" />
-    <state x="771" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1626849497517">
+    <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1645853190559" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1649654046194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="771" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1626849497517" />
-    <state x="189" y="61" key="#minify/Dockerfile" timestamp="1625009810788">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1649654046194" />
+    <state width="653" height="281" key="GridCell.Tab.0.bottom" timestamp="1645862314854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="189" y="61" key="#minify/Dockerfile/0.0.1920.1040@0.0.1920.1040" timestamp="1625009810788" />
-    <state x="465" y="124" width="1109" height="840" key="DiffContextDialog" timestamp="1626856749514">
+    <state width="653" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state width="653" height="281" key="GridCell.Tab.0.center" timestamp="1645862314854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="465" y="124" width="1109" height="840" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1626856749514" />
-    <state x="306" y="260" key="FileChooserDialogImpl" timestamp="1628753384373">
+    <state width="653" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state width="653" height="281" key="GridCell.Tab.0.left" timestamp="1645862314854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="306" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628753384373" />
-    <state x="27" y="164" key="SettingsEditor" timestamp="1626913980394">
+    <state width="653" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state width="653" height="281" key="GridCell.Tab.0.right" timestamp="1645862314854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="27" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1626913980394" />
-    <state x="1368" y="215" key="ftp.server.browser" timestamp="1626861055409">
+    <state width="653" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1648118965204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1368" y="215" key="ftp.server.browser/0.0.1920.1040@0.0.1920.1040" timestamp="1626861055409" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1648118965204" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public</wordpressPath>

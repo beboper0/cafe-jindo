@@ -48,18 +48,19 @@
 			</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
-				<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<div class="menu-toggle" aria-controls="menu-content" aria-expanded="false">
 					<a class="mobile-menu" href="javascript:void(0)" aria-label="Mobile Menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
 				</div>
 				<?php
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
+						'menu_class'        => 'menu-content',
+                        'container_class' => 'main-navigation__menu-container'
 					)
 				);
 				?>
-				<div class="second-topmenu-container">
+				<div class="main-navigation__second-menu-container">
 					<a class="main-buttons order-button" href="/order-online/">ORDER</a>
 				</div>
 			</nav><!-- #site-navigation -->
