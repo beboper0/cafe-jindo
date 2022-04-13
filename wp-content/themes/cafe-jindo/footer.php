@@ -13,14 +13,14 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<div class="container row">
+			<div class="container row row--gutters">
 				<div class="col-3" id="location">
 					<h2>FIND US</h2>
 					<ul>
 						<li>8330 Macleod Trail SE Unit F7, Calgary, AB T2H 2V2</li>
 						<li>(587) 353-4728</li>
 					</ul>
-					<a class="main-buttons" href="https://goo.gl/maps/nVY1brAsA7F8mfaC9" target="_blank" rel="noopener">VIEW ON GOOGLE MAPS</a>
+					<a class="btn" href="https://goo.gl/maps/nVY1brAsA7F8mfaC9" target="_blank" rel="noopener">VIEW ON GOOGLE MAPS</a>
 				</div>
 				<div class="col-3" id="hours">
 					<h2>HOURS</h2>

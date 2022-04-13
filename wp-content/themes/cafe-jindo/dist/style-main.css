@@ -765,7 +765,7 @@ a.custom-logo-link {
 /* Buttons
 --------------------------------------------- */
 
-.main-buttons {
+.btn {
 	background: #d5906d !important;
 	text-transform: uppercase;
 	display: inline-block;
@@ -782,11 +782,11 @@ a.custom-logo-link {
 	-o-transition: all 200ms ease;
 }
 
-.main-buttons:hover {
+.btn:hover {
 	opacity: 50%;
 }
 
-.second-buttons {
+.btn btn-secondary {
 	background: #fff !important;
 	text-transform: uppercase;
 	display: inline-block;
@@ -803,11 +803,11 @@ a.custom-logo-link {
 	-o-transition: all 200ms ease;
 }
 
-.second-buttons:hover {
+.btn btn-secondary:hover {
 	background: rgba(255, 255, 255, 0.8) !important;
 }
 
-.order-button {
+.btn-order {
 	font-size: 1.0rem;
 	margin: 0px;
 }

@@ -65,10 +65,10 @@
 
     &__menu-container {
         width: 100%;
-    }
 
-    &__menu-content a:hover {
-        color:#a7a8a2;
+        a:hover {
+            color:#a7a8a2;
+        }
     }
 
     &__second-menu-container {
@@ -78,26 +78,4 @@
             display: block;
         }
     }
-}
-
-.main-navigation #menu-item-160 {
-    position: relative;
-    left: 35%;
-}
-
-.main-navigation #menu-item-160 a {
-    width: 170px;
-    text-align: center;
-    background: #d5906d;
-    display: inline-block;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
 }

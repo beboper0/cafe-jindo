@@ -57,6 +57,11 @@
       <recent name="C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public\wp-content\themes\src\modules" />
     </key>
   </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1649839239994" text="main-button" recursive="true" caseInsensitive="true" type="HTML" scope_type="PROJECT" scope_descriptor="" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -108,7 +113,8 @@
       <workItem from="1649368838663" duration="2636000" />
       <workItem from="1649487078242" duration="2043000" />
       <workItem from="1649570766629" duration="1587000" />
-      <workItem from="1649654023393" duration="6614000" />
+      <workItem from="1649654023393" duration="7506000" />
+      <workItem from="1649838353375" duration="5175000" />
     </task>
     <servers />
   </component>
@@ -145,10 +151,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1645853190559" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1649654046194">
+    <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1649839239983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1649654046194" />
+    <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1649839239983" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1649838729705">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1649838729705" />
     <state width="653" height="281" key="GridCell.Tab.0.bottom" timestamp="1645862314854">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -169,6 +179,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1648118965204" />
+    <state x="667" y="229" width="631" height="582" key="find.popup" timestamp="1649839766048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="229" width="631" height="582" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1649839766048" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public</wordpressPath>

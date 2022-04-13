@@ -6,9 +6,9 @@
             <div class="bg-overlay"
                  style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg'); ?>);">
                 <div class="frontpage-container">
-                    <div id="splash-container">
+                    <div class="splash-container">
                         <h2>NOW OPEN FOR TAKEOUT!</h2>
-                        <div><a class="second-buttons order-button" href="/order-online">ORDER NOW</a></div>
+                        <div><a class="btn btn-secondary btn-order" href="/order-online">ORDER NOW</a></div>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
         <section>
             <div class="container">
                 <h2 style="text-align: center;">Featuring</h2>
-                <div class="row">
+                <div class="row row--gutters">
                     <?php
                     while($featuredItems->have_posts()) {
                         $featuredItems->the_post() ?>
@@ -53,10 +53,10 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col"><img class="alignnone size-large wp-image-127"
+                    <div class="col-2"><img class="alignnone size-large wp-image-127"
                                           src="<?php echo site_url('/wp-content/uploads/2021/04/served-coffee.jpg'); ?>">
                     </div>
-                    <div class="col">
+                    <div class="col-2">
                         <h2>Cafe Jindo</h2>
                         <hr>
                         <p>Café Jindo began with the idea that everyone deserves to have little luxuries in life;

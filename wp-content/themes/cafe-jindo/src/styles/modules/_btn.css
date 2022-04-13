@@ -1,49 +1,39 @@
 /* Buttons
 --------------------------------------------- */
 
-.main-buttons {
-    background: #d5906d !important;
+.btn {
+    background: #d5906d;
     text-transform: uppercase;
     display: inline-block;
     color: #fff !important;
     text-decoration: none;
     padding: 12px 30px;
     margin: 1rem;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
+
+    &:hover {
+        opacity: 50%;
+    }
+
+    &-secondary {
+        background: #fff;
+        text-transform: uppercase;
+        color: #000 !important;
+        margin-top: .8125rem;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.8) !important;
+        }
+    }
+
+    &-order {
+        font-size: 1.0rem;
+        margin: 0px;
+    }
+
 }
 
-.main-buttons:hover {
-    opacity: 50%;
-}
-
-.second-buttons {
-    background: #fff !important;
-    text-transform: uppercase;
-    display: inline-block;
-    color: #000 !important;
-    text-decoration: none;
-    padding: 12px 30px;
-    margin-top: .8125rem;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-}
-
-.second-buttons:hover {
-    background: rgba(255, 255, 255, 0.8) !important;
-}
-
-.order-button {
-    font-size: 1.0rem;
-    margin: 0px;
-}

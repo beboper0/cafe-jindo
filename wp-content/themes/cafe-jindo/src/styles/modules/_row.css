@@ -1,0 +1,21 @@
+.row {
+    padding-bottom: 1em;
+    display: grid;
+
+    @mixin atMedium {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    &--gutters {
+        column-gap: 1em;
+    }
+
+    .col-3 {
+        grid-column: span 2;
+    }
+
+    .col-2 {
+        grid-column: span 3;
+    }
+}
+

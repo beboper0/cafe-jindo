@@ -61,7 +61,7 @@
 				);
 				?>
 				<div class="main-navigation__second-menu-container">
-					<a class="main-buttons order-button" href="/order-online/">ORDER</a>
+					<a class="btn btn-order" href="/order-online/">ORDER</a>
 				</div>
 			</nav><!-- #site-navigation -->
 		</div>
