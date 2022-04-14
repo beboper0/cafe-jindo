@@ -5,14 +5,14 @@
     width: 100%;
     height: 450px;
     font-size: 2rem;
-    background-color: #a7a8a2;
+    background-color: $mainGrey;
     background-attachment: fixed;
     color: #fff;
-}
 
-.article-header h1 {
-    position: relative;
-    top: 15%;
+    h1 {
+        position: relative;
+        top: 15%;
+    }
 }
 
 .article-content {

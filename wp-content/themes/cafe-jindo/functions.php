@@ -139,7 +139,7 @@ add_action( 'widgets_init', 'cafe_jindo_widgets_init' );
 function foodMenu($query) {
 	while($query->have_posts()) {
     $query->the_post(); ?>
-		<div class="menu-desc">
+		<div class="food-menu-section__menu-desc">
 			<h3>
 				<?php echo get_field('menu_name')?> | <?php echo get_field('menu_price_1');
 				if (get_field('menu_price_2')) {

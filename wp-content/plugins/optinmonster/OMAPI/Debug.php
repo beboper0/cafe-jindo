@@ -28,7 +28,7 @@ class OMAPI_Debug {
 	 * @return bool
 	 */
 	public static function can_output_debug() {
-		$rules_debug = ! empty( $_GET['omwpdebug'] ) ? $_GET['omwpdebug'] : '';
+		$rules_debug = ! empty( $_GET['omwpdebug'] ) ? wp_unslash( $_GET['omwpdebug'] ) : '';
 
 		if ( $rules_debug ) {
 			$omapi         = OMAPI::get_instance();
@@ -150,7 +150,15 @@ class OMAPI_Debug {
 		sort( $results['FALSE'] );
 		sort( $results['TRUE'] );
 
-		echo '<xmp style="padding-top:15px;border-top:10px double red;" class="_om-optin">$conditionals: ' . print_r( $results, true ) . '</xmp>';
+		?>
+		<hr style="padding-top:15px;border-top:10px double red;"/>
+		<div style="padding:20px;margin:20px;">
+			<button type="button" onclick="javascript:this.parentElement.remove();document.querySelectorAll('._om-debugging').forEach(el => el.style.display = 'block')" class="button btn">
+				Show Verbose Debugging Info
+			</button>
+		</div>
+		<xmp class="_om-debugging _om-optin">$conditionals: <?php print_r( $results ); ?></xmp>
+		<?php
 	}
 
 }

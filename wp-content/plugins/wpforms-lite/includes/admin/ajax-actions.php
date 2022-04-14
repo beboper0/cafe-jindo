@@ -27,12 +27,13 @@ function wpforms_save_form() {
 		wp_send_json_error( esc_html__( 'Something went wrong while performing this action.', 'wpforms-lite' ) );
 	}
 
-	$form_post = json_decode( stripslashes( $_POST['data'] ) ); // phpcs:ignore
+	// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+	$form_post = json_decode( wp_unslash( $_POST['data'] ) );
 	$data      = [
 		'fields' => [],
 	];
 
-	if ( ! is_null( $form_post ) && $form_post ) {
+	if ( $form_post ) {
 		foreach ( $form_post as $post_input_data ) {
 			// For input names that are arrays (e.g. `menu-item-db-id[3][4][5]`),
 			// derive the array path keys via regex and set the value in $_POST.
@@ -69,18 +70,29 @@ function wpforms_save_form() {
 		wp_send_json_error( esc_html__( 'Something went wrong while saving the form.', 'wpforms-lite' ) );
 	}
 
-	wp_send_json_success(
-		apply_filters(
-			'wpforms_builder_save_form_response_data',
-			array(
-				'form_name' => esc_html( $data['settings']['form_title'] ),
-				'form_desc' => $data['settings']['form_desc'],
-				'redirect'  => admin_url( 'admin.php?page=wpforms-overview' ),
-			),
-			$form_id,
-			$data
-		)
+	$response_data = [
+		'form_name' => esc_html( $data['settings']['form_title'] ),
+		'form_desc' => $data['settings']['form_desc'],
+		'redirect'  => admin_url( 'admin.php?page=wpforms-overview' ),
+	];
+
+	/**
+	 * Allows filtering ajax response data after form was saved.
+	 *
+	 * @since 1.5.1
+	 *
+	 * @param array $response_data The data to be sent in the response.
+	 * @param int   $form_id       Form ID.
+	 * @param array $data          Form data.
+	 */
+	$response_data = apply_filters(
+		'wpforms_builder_save_form_response_data',
+		$response_data,
+		$form_id,
+		$data
 	);
+
+	wp_send_json_success( $response_data );
 }
 
 add_action( 'wp_ajax_wpforms_save_form', 'wpforms_save_form' );
@@ -100,10 +112,6 @@ function wpforms_new_form() {
 		die( esc_html__( 'No form name provided.', 'wpforms-lite' ) );
 	}
 
-	if ( ! isset( $_POST['template'] ) ) {
-		$_POST['template'] = '';
-	}
-
 	// Create form.
 	$form_title    = sanitize_text_field( wp_unslash( $_POST['title'] ) );
 	$form_template = empty( $_POST['template'] ) ? 'blank' : sanitize_text_field( wp_unslash( $_POST['template'] ) );
@@ -117,12 +125,19 @@ function wpforms_new_form() {
 	);
 
 	if ( $title_exists !== null ) {
+
+		// Skip creating a revision for this action.
+		remove_action( 'post_updated', 'wp_save_post_revision' );
+
 		wp_update_post(
 			[
 				'ID'         => $form_id,
 				'post_title' => $form_title . ' (ID #' . $form_id . ')',
 			]
 		);
+
+		// Restore the initial revisions state.
+		add_action( 'post_updated', 'wp_save_post_revision', 10, 1 );
 	}
 
 	if ( ! $form_id ) {
@@ -169,23 +184,24 @@ function wpforms_update_form_template() {
 		wp_send_json_error( esc_html__( 'No form ID provided.', 'wpforms-lite' ) );
 	}
 
-	$form_template = empty( $_POST['template'] ) ? 'blank' : sanitize_text_field( $_POST['template'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash
+	$form_id       = absint( $_POST['form_id'] );
+	$form_template = empty( $_POST['template'] ) ? 'blank' : sanitize_text_field( wp_unslash( $_POST['template'] ) );
 
 	$data    = wpforms()->form->get(
-		(int) $_POST['form_id'],
+		$form_id,
 		[
 			'content_only' => true,
 		]
 	);
-	$form_id = wpforms()->form->update(
-		(int) $_POST['form_id'],
+	$updated = (bool) wpforms()->form->update(
+		$form_id,
 		$data,
 		[
 			'template' => $form_template,
 		]
 	);
 
-	if ( $form_id ) {
+	if ( $updated ) {
 		wp_send_json_success(
 			[
 				'id'       => $form_id,
@@ -198,9 +214,9 @@ function wpforms_update_form_template() {
 				),
 			]
 		);
-	} else {
-		wp_send_json_error( esc_html__( 'Error updating form template.', 'wpforms-lite' ) );
 	}
+
+	wp_send_json_error( esc_html__( 'Error updating form template.', 'wpforms-lite' ) );
 }
 
 add_action( 'wp_ajax_wpforms_update_form_template', 'wpforms_update_form_template' );
@@ -250,11 +266,11 @@ function wpforms_builder_dynamic_choices() {
 	}
 
 	// Check for valid/required items.
-	if ( ! isset( $_POST['field_id'] ) || empty( $_POST['type'] ) || ! in_array( $_POST['type'], array( 'post_type', 'taxonomy' ), true ) ) {
+	if ( ! isset( $_POST['field_id'] ) || empty( $_POST['type'] ) || ! in_array( $_POST['type'], [ 'post_type', 'taxonomy' ], true ) ) {
 		wp_send_json_error();
 	}
 
-	$type = esc_attr( $_POST['type'] );
+	$type = sanitize_key( $_POST['type'] );
 	$id   = absint( $_POST['field_id'] );
 
 	// Fetch the option row HTML to be returned to the builder.
@@ -440,10 +456,7 @@ function wpforms_deactivate_addon() {
 		wp_send_json_error( esc_html__( 'Plugin deactivation is disabled for you on this site.', 'wpforms-lite' ) );
 	}
 
-	$type = 'addon';
-	if ( ! empty( $_POST['type'] ) ) {
-		$type = sanitize_key( $_POST['type'] );
-	}
+	$type = empty( $_POST['type'] ) ? 'addon' : sanitize_key( $_POST['type'] );
 
 	if ( isset( $_POST['plugin'] ) ) {
 		$plugin = sanitize_text_field( wp_unslash( $_POST['plugin'] ) );
@@ -452,7 +465,7 @@ function wpforms_deactivate_addon() {
 
 		do_action( 'wpforms_plugin_deactivated', $plugin );
 
-		if ( 'plugin' === $type ) {
+		if ( $type === 'plugin' ) {
 			wp_send_json_success( esc_html__( 'Plugin deactivated.', 'wpforms-lite' ) );
 		} else {
 			wp_send_json_success( esc_html__( 'Addon deactivated.', 'wpforms-lite' ) );
@@ -479,9 +492,9 @@ function wpforms_activate_addon() {
 		wp_send_json_error( esc_html__( 'Plugin activation is disabled for you on this site.', 'wpforms-lite' ) );
 	}
 
-	if ( isset( $_POST['plugin'] ) ) {
+	$type = 'addon';
 
-		$type = 'addon';
+	if ( isset( $_POST['plugin'] ) ) {
 
 		if ( ! empty( $_POST['type'] ) ) {
 			$type = sanitize_key( $_POST['type'] );
@@ -490,6 +503,13 @@ function wpforms_activate_addon() {
 		$plugin   = sanitize_text_field( wp_unslash( $_POST['plugin'] ) );
 		$activate = activate_plugins( $plugin );
 
+		/**
+		 * Fire after plugin activating via the WPForms installer.
+		 *
+		 * @since 1.6.3.1
+		 *
+		 * @param string $plugin Path to the plugin file relative to the plugins directory.
+		 */
 		do_action( 'wpforms_plugin_activated', $plugin );
 
 		if ( ! is_wp_error( $activate ) ) {
@@ -501,7 +521,11 @@ function wpforms_activate_addon() {
 		}
 	}
 
-	wp_send_json_error( esc_html__( 'Could not activate addon. Please activate from the Plugins page.', 'wpforms-lite' ) );
+	if ( $type === 'plugin' ) {
+		wp_send_json_error( esc_html__( 'Could not activate the plugin. Please activate it on the Plugins page.', 'wpforms-lite' ) );
+	}
+
+	wp_send_json_error( esc_html__( 'Could not activate the addon. Please activate it on the Plugins page.', 'wpforms-lite' ) );
 }
 add_action( 'wp_ajax_wpforms_activate_addon', 'wpforms_activate_addon' );
 
@@ -524,9 +548,26 @@ function wpforms_install_addon() {
 		wp_send_json_error( $generic_error );
 	}
 
-	$error = $type === 'plugin' ? esc_html__( 'Could not install plugin. Please download and install manually.', 'wpforms-lite' ) : esc_html__( 'Could not install addon. Please download from wpforms.com and install manually.', 'wpforms-lite' );
+	$error = $type === 'plugin'
+		? esc_html__( 'Could not install the plugin. Please download and install it manually.', 'wpforms-lite' )
+		: sprintf(
+			wp_kses( /* translators: %1$s - An addon download URL, %2$s - Link to manual installation guide. */
+				__( 'Could not install the addon. Please <a href="%1$s" target="_blank" rel="noopener noreferrer">download it from wpforms.com</a> and <a href="%2$s" target="_blank" rel="noopener noreferrer">install it manually</a>.', 'wpforms-lite' ),
+				[
+					'a' => [
+						'href'   => true,
+						'target' => true,
+						'rel'    => true,
+					],
+				]
+			),
+			'https://wpforms.com/account/licenses/',
+			'https://wpforms.com/docs/how-to-manually-install-addons-in-wpforms/'
+		);
 
-	if ( empty( $_POST['plugin'] ) ) {
+	$plugin_url = ! empty( $_POST['plugin'] ) ? esc_url_raw( wp_unslash( $_POST['plugin'] ) ) : '';
+
+	if ( empty( $plugin_url ) ) {
 		wp_send_json_error( $error );
 	}
 
@@ -571,11 +612,11 @@ function wpforms_install_addon() {
 	$installer = new WPForms\Helpers\PluginSilentUpgrader( new WPForms_Install_Skin() );
 
 	// Error check.
-	if ( ! method_exists( $installer, 'install' ) || empty( $_POST['plugin'] ) ) {
+	if ( ! method_exists( $installer, 'install' ) ) {
 		wp_send_json_error( $error );
 	}
 
-	$installer->install( $_POST['plugin'] ); // phpcs:ignore
+	$installer->install( $plugin_url );
 
 	// Flush the cache and return the newly installed plugin basename.
 	wp_cache_flush();
@@ -603,6 +644,16 @@ function wpforms_install_addon() {
 	$activated = activate_plugin( $plugin_basename );
 
 	if ( ! is_wp_error( $activated ) ) {
+
+		/**
+		 * Fire after plugin activating via the WPForms installer.
+		 *
+		 * @since 1.7.0
+		 *
+		 * @param string $plugin_basename Path to the plugin file relative to the plugins directory.
+		 */
+		do_action( 'wpforms_plugin_activated', $plugin_basename );
+
 		$result['is_activated'] = true;
 		$result['msg']          = $type === 'plugin' ? esc_html__( 'Plugin installed & activated.', 'wpforms-lite' ) : esc_html__( 'Addon installed & activated.', 'wpforms-lite' );
 

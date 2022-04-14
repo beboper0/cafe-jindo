@@ -150,8 +150,8 @@ class WPO_Page_Cache {
 	 * @return bool
 	 */
 	public function can_purge_cache() {
-		if (is_multisite()) return $this->is_enabled() && current_user_can('manage_network_options');
-		return $this->is_enabled() && current_user_can('manage_options');
+		if (is_multisite()) return $this->is_enabled() && (current_user_can('manage_network_options') || WP_Optimize()->can_purge_the_cache());
+		return $this->is_enabled() && (current_user_can('manage_options') || WP_Optimize()->can_purge_the_cache());
 	}
 
 	/**
@@ -663,7 +663,7 @@ EOF;
 	 * Show notification when advanced-cache.php could not be updated.
 	 */
 	public function notice_advanced_cache_autoupdate_error() {
-		$this->show_notice(__('The file advanced-cache.php needs to be updated, but the automatic process failed.', 'wp_optimize').
+		$this->show_notice(__('The file advanced-cache.php needs to be updated, but the automatic process failed.', 'wp-optimize').
 		' <a href="'.admin_url('admin.php?page=wpo_cache').'">'.__('Please try to disable and then re-enable the WP-Optimize cache manually.', 'wp-optimize').'</a>', 'error');
 	}
 
@@ -1083,7 +1083,7 @@ EOF;
 	 */
 	public function log($message) {
 		if (isset($this->logger)) {
-			$this->logger->log('ERROR', $message);
+			$this->logger->log($message, 'error');
 		} else {
 			error_log($message);
 		}

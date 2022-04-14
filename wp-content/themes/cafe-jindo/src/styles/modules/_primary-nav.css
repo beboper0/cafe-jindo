@@ -67,7 +67,7 @@
         width: 100%;
 
         a:hover {
-            color:#a7a8a2;
+            color:$mainGrey;
         }
     }
 

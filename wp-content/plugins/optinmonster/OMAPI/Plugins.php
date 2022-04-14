@@ -314,7 +314,7 @@ class OMAPI_Plugins {
 			throw new Exception( esc_html__( 'Missing required installer!', 'optin-monster-api' ), 500 );
 		}
 
-		$result = $installer->install( esc_url_raw( $plugin_url ) ); // phpcs:ignore
+		$result = $installer->install( esc_url_raw( $plugin_url ) );
 
 		if ( ! $installer->plugin_info() ) {
 			throw new Exception( esc_html__( 'Plugin failed to install!', 'optin-monster-api' ), 500 );

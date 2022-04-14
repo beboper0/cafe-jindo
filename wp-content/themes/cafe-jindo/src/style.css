@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 @import "normalize.css";
+@import "styles/base/_variables.css";
 @import "styles/base/_global.css";
 @import "styles/base/_mixins.css";
 @import "styles/modules/_row.css";

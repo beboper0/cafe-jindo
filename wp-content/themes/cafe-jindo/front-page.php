@@ -33,7 +33,7 @@
                     while($featuredItems->have_posts()) {
                         $featuredItems->the_post() ?>
                         <div class="col-3">
-                            <h3><?php echo the_title() ?></h3>
+                            <h3><?php echo the_title() ? the_title() : "&nbsp;" ?> </h3>
                             <img class="alignnone size-large wp-image-127"
                                  src="<?php the_field('featured_image') ?>">
                             <p><?php echo the_content() ?></p>

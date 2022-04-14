@@ -42,7 +42,7 @@ textarea {
 }
 
 main {
-    color: #060606;
+    color: $mainBlack;
 }
 
 h1,

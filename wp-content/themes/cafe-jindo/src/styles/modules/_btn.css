@@ -2,7 +2,7 @@
 --------------------------------------------- */
 
 .btn {
-    background: #d5906d;
+    background: $mainOrange;
     text-transform: uppercase;
     display: inline-block;
     color: #fff !important;

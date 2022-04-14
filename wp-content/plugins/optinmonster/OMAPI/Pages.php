@@ -171,12 +171,13 @@ class OMAPI_Pages {
 			);
 
 			// If user upgradeable, add an upgrade link to menu.
-			$level = $this->base->can_ugrade();
-			if ( $level ) {
+			$level   = $this->base->get_level();
+			$upgrade = $this->base->can_upgrade();
+			if ( $upgrade || '' === $level ) {
 				$this->pages['optin-monster-upgrade'] = array(
 					'name'     => 'vbp_pro' === $level
-						? __( 'Upgrade to Growth', 'optin-monster-api' )
-						: __( 'Upgrade to Pro', 'optin-monster-api' ),
+						? '<span class="om-menu-highlight">' . __( 'Upgrade to Growth', 'optin-monster-api' ) . '</span>'
+						: '<span class="om-menu-highlight">' . __( 'Upgrade to Pro', 'optin-monster-api' ) . '</span>',
 					'redirect' => esc_url_raw( OMAPI_Urls::upgrade( 'pluginMenu' ) ),
 					'callback' => '__return_null',
 				);
@@ -345,6 +346,7 @@ class OMAPI_Pages {
 	public function render_app_loading_page() {
 		$this->load_scripts();
 		echo '<div id="om-app">';
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo $this->base->output_view( 'archie-loading.php' );
 		echo '</div>';
 	}
@@ -389,6 +391,7 @@ class OMAPI_Pages {
 					'adminPath'       => $admin_parts['path'],
 					'apijsUrl'        => OPTINMONSTER_APIJS_URL,
 					'omAppUrl'        => untrailingslashit( OPTINMONSTER_APP_URL ),
+					'marketing'       => untrailingslashit( OPTINMONSTER_URL ),
 					'omAppApiUrl'     => untrailingslashit( OPTINMONSTER_API_URL ),
 					'omAppCdnURL'     => untrailingslashit( OPTINMONSTER_CDN_URL ),
 					'newCampaignUrl'  => untrailingslashit( esc_url_raw( admin_url( 'admin.php?page=optin-monster-templates' ) ) ),
@@ -406,8 +409,10 @@ class OMAPI_Pages {
 					'userFirstName'   => esc_attr( $current_user->user_firstname ),
 					'userLastName'    => esc_attr( $current_user->user_lastname ),
 					'betaVersion'     => $this->base->beta_version(),
+					'pluginVersion'   => $this->base->version,
 					'partnerId'       => OMAPI_Partners::get_id(),
 					'partnerUrl'      => OMAPI_Partners::has_partner_url(),
+					'showReview'      => $this->base->review->should_show_review(),
 				)
 			);
 

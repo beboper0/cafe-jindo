@@ -28,7 +28,7 @@
     display: none;
     position:absolute;
     width:100%;
-    background:#020003;
+    background:$mainBlack;
 
     ul {
         list-style: none;

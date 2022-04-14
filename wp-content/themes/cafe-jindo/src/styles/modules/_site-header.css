@@ -1,7 +1,7 @@
 .site-header {
     position: fixed;
     width: 100%;
-    background: #020003;
+    background: $mainBlack;
     z-index: 10;
 }
 
