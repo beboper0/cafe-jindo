@@ -61,14 +61,15 @@
         font-size: 1rem;
         padding: 10px 26px;
         font-weight: bold;
+        color: #ffffff;
+
+        &:hover {
+            color:$mainGrey;
+        }
     }
 
     &__menu-container {
         width: 100%;
-
-        a:hover {
-            color:$mainGrey;
-        }
     }
 
     &__second-menu-container {

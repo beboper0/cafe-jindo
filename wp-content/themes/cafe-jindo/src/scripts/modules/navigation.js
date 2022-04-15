@@ -1,3 +1,5 @@
+import RevealOnScroll from "./RevealOnScroll";
+
 /**
  * File navigation.js.
  *
@@ -6,12 +8,6 @@
  */
 var $j 		= jQuery.noConflict(),
 	$window = $j( window );
-
-$j( document ).ready( function() {
-	"use strict";
-	// Drop down mobile menu
-	dropDownMobile();
-} );
 
 function dropDownMobile() {
 	"use strict"
@@ -67,41 +63,4 @@ function dropDownMobile() {
 
 }
 
-( function() {
-
-	var owpHeader = document.getElementById('site-header'),
-		navWarap = document.querySelectorAll( '#mobile-dropdown nav' )[0];
-	if ( ! owpHeader || ! navWarap ) {
-		return;
-	}
-
-	document.addEventListener( 'keydown', function( event ) {
-
-		var selectors = 'input, a, button',
-			elements  = navWarap.querySelectorAll( selectors ),
-			closMenu  = document.querySelector( '.mobile-menu.opened' ),
-			lastEl    = elements[ elements.length - 1 ],
-			firstEl   = elements[0],
-			activeEl  = document.activeElement,
-			tabKey    = event.keyCode === 9,
-			shiftKey  = event.shiftKey;
-
-
-		if ( ! shiftKey && tabKey && lastEl ===  activeEl ) {
-			event.preventDefault();
-			closMenu.focus();
-		}
-
-		if ( shiftKey && tabKey && firstEl === activeEl ) {
-			event.preventDefault();
-			closMenu.focus();
-		}
-
-		if ( shiftKey && tabKey && closMenu === activeEl ) {
-			event.preventDefault();
-			lastEl.focus();
-		}
-
-	});
-
-}() );
+export default dropDownMobile;

@@ -1,8 +1,7 @@
-/* Small menu. */
 .menu-toggle {
     display: block;
     position: absolute;
-    right: 0px;
+    right: 0;
 
     @mixin atMedium {
         display: none;
@@ -13,7 +12,7 @@
     .toggled ul {
         display: block;
         position: absolute;
-        right: 0px;
+        right: 0;
     }
 
     ul {
@@ -45,5 +44,10 @@
     a {
         text-decoration: none;
         padding: 10px;
+        color: #ffffff;
+
+        &:hover {
+            color:$mainGrey;
+        }
     }
 }

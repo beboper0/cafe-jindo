@@ -26,7 +26,7 @@
 
         if ($featuredItems->have_posts()) { ?>
         <section>
-            <div class="container">
+            <div class="container marked-for-reveal">
                 <h2 style="text-align: center;">Featuring</h2>
                 <div class="row row--gutters">
                     <?php
@@ -34,8 +34,8 @@
                         $featuredItems->the_post() ?>
                         <div class="col-3">
                             <h3><?php echo the_title() ? the_title() : "&nbsp;" ?> </h3>
-                            <img class="alignnone size-large wp-image-127"
-                                 src="<?php the_field('featured_image') ?>">
+                            <img class="alignnone size-large wp-image-127 lazyload"
+                                 data-src="<?php the_field('featured_image') ?>">
                             <p><?php echo the_content() ?></p>
                         </div>
                     <?php }
@@ -51,10 +51,10 @@
         <?php } ?>
 
         <section>
-            <div class="container">
+            <div class="container marked-for-reveal">
                 <div class="row">
-                    <div class="col-2"><img class="alignnone size-large wp-image-127"
-                                          src="<?php echo site_url('/wp-content/uploads/2021/04/served-coffee.jpg'); ?>">
+                    <div class="col-2"><img class="alignnone size-large wp-image-127 lazyload"
+                                          data-src="<?php echo site_url('/wp-content/uploads/2021/04/served-coffee.jpg'); ?>">
                     </div>
                     <div class="col-2">
                         <h2>Cafe Jindo</h2>
