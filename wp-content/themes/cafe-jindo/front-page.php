@@ -34,8 +34,7 @@
                         $featuredItems->the_post() ?>
                         <div class="col-3">
                             <h3><?php echo the_title() ? the_title() : "&nbsp;" ?> </h3>
-                            <img class="alignnone size-large wp-image-127 lazyload"
-                                 data-src="<?php the_field('featured_image') ?>">
+                            <?php echo wp_get_attachment_image(get_field('featured_image'), 'large'); ?>
                             <p><?php echo the_content() ?></p>
                         </div>
                     <?php }
