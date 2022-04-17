@@ -2,13 +2,13 @@
 --------------------------------------------- */
 
 .btn {
-    background: $mainOrange;
+    background: $mainOrange !important;
     text-transform: uppercase;
     display: inline-block;
     color: #fff !important;
     text-decoration: none;
-    padding: 12px 30px;
-    margin: 1rem;
+    padding: 1em 2em;
+    margin: 1em;
     background-clip: padding-box;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
@@ -20,7 +20,7 @@
     }
 
     &-secondary {
-        background: #fff;
+        background: #fff !important;
         text-transform: uppercase;
         color: #000 !important;
         margin-top: .8125rem;
@@ -31,8 +31,8 @@
     }
 
     &-order {
-        font-size: 1.0rem;
-        margin: 0px;
+        font-size: 1rem;
+        margin: 0;
     }
 
 }

@@ -42,7 +42,7 @@ get_header();
                         <h2><span id="Hot">Hot Drinks</span></h2>
                         <p>All drinks come in 12oz and 16oz sizes.</p>
                         <p>Options: Oat milk alternative +$0.50, Add espresso shot +$0.75, Add vanilla/caramel +$0.50</p>
-                        <div class="food-menu-section__menu-pic"><img class="alignnone wp-image-228 size-medium" src=<?php echo site_url("/wp-content/uploads/2021/05/coffee-menu.jpg") ?> alt="" width="300" height="300"></div>
+                        <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(484, 'medium') ?></div>
                         <?php
                         foodMenu($hotDrinkMenu)
                         ?>
@@ -67,7 +67,7 @@ get_header();
                         ?>
                         <h2><span id="Hot">Cold Drinks</span></h2>
                         <p>All cold drinks come in 16oz size.</p>
-                        <div class="food-menu-section__menu-pic"><img class="alignnone wp-image-228 size-medium" src=<?php echo site_url("/wp-content/uploads/2021/05/iced-tea.jpg") ?> alt="" width="300" height="300"></div>
+                        <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(482, 'medium') ?></div>
                         <?php
                         foodMenu($coldDrinkMenu)
                         ?>
@@ -93,7 +93,7 @@ get_header();
                         ));
                         ?>
                         <h2><span id="Waffles">Waffles</span></h2>
-                        <div class="food-menu-section__menu-pic"><img class="alignnone size-medium wp-image-233" src=<?php echo site_url("/wp-content/uploads/2021/05/waffle-display.jpg") ?> alt="" width="300" height="225"></div>
+                        <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(512, 'medium') ?></div>
                         <?php
                         foodMenu($waffleMenu)
                         ?>
@@ -118,7 +118,7 @@ get_header();
                         ?>
                         <h2><span id="Sandwiches">Sandwiches</span></h2>
                         <p>Gluten free bread is available for all sandwiches.</p>
-                        <div class="food-menu-section__menu-pic"><img class="alignnone size-medium wp-image-233" src=<?php echo site_url("/wp-content/uploads/2021/05/sandwhich-menu-scaled.jpg") ?> alt="" width="300" height="225"></div>
+                        <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(483, 'medium') ?></div>
                         <?php
                         foodMenu($sandwichMenu)
                         ?>
@@ -144,8 +144,8 @@ get_header();
                         ));
                         ?>
                         <h2><span id="Desserts">Desserts</span></h2>
-                        <div class="food-menu-section__menu-pic"><img class="alignnone size-medium wp-image-238" src=<?php echo site_url("/wp-content/uploads/2021/05/amato-gelato-scaled.jpg") ?> alt="" width="300" height="300"></div>
-                        <div class="food-menu-section__menu-pic"><img class="alignnone wp-image-497 size-full" src=<?php echo site_url("/wp-content/uploads/2021/05/amato-logo-tm-e1620289234142.jpg") ?> alt="" width="100" height="43"></div>
+                        <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(495, 'medium') ?></div>
+                        <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(497, 'small') ?></div>
                         <?php
                         foodMenu($dessertMenu)
                         ?>

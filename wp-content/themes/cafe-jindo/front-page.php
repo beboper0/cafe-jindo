@@ -3,7 +3,7 @@
     <main id="primary" class="site-main">
 
         <section>
-            <div class="bg-overlay"
+            <div class="bg-overlay reveal-on-load"
                  style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg'); ?>);">
                 <div class="frontpage-container">
                     <div class="splash-container">
@@ -26,14 +26,14 @@
 
         if ($featuredItems->have_posts()) { ?>
         <section>
-            <div class="container marked-for-reveal">
+            <div class="container reveal-on-scroll">
                 <h2 style="text-align: center;">Featuring</h2>
                 <div class="row row--gutters">
                     <?php
                     while($featuredItems->have_posts()) {
                         $featuredItems->the_post() ?>
                         <div class="col-3">
-                            <h3><?php echo the_title() ? the_title() : "&nbsp;" ?> </h3>
+                            <div style="height: 7em"><h3><?php echo the_title() ?></h3></div>
                             <?php echo wp_get_attachment_image(get_field('featured_image'), 'large'); ?>
                             <p><?php echo the_content() ?></p>
                         </div>
@@ -44,17 +44,15 @@
         </section>
 
         <section>
-            <div class="bg-overlay"
+            <div class="bg-overlay parallax"
                  style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/05/food-splash.jpg'); ?>);"></div>
         </section>
         <?php } ?>
 
         <section>
-            <div class="container marked-for-reveal">
+            <div class="container reveal-on-scroll">
                 <div class="row">
-                    <div class="col-2"><img class="alignnone size-large wp-image-127 lazyload"
-                                          data-src="<?php echo site_url('/wp-content/uploads/2021/04/served-coffee.jpg'); ?>">
-                    </div>
+                    <div class="col-2"><?php echo wp_get_attachment_image(387, 'large'); ?></div>
                     <div class="col-2">
                         <h2>Cafe Jindo</h2>
                         <hr>
@@ -72,7 +70,7 @@
         </section>
 
         <section>
-            <div class="bg-overlay"
+            <div class="bg-overlay parallax"
                  style="background-image: url(<?php echo site_url('wp-content/uploads/2021/07/DSC_1588-scaled.jpg'); ?>);"></div>
         </section>
 
@@ -88,7 +86,7 @@
         </section>
 
         <section>
-            <div class="bg-overlay" style="display: none;"></div>
+            <div class="bg-overlay parallax" style="display: none;"></div>
         </section>
 
     </main><!-- #main -->

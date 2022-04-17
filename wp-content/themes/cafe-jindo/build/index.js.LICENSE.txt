@@ -28,13 +28,15 @@
 
 /*! ./now */
 
+/*! ./scripts/modules/Parallax */
+
+/*! ./scripts/modules/RevealOnLoad */
+
 /*! ./scripts/modules/RevealOnScroll */
 
 /*! ./scripts/modules/navigation */
 
 /*! ./toNumber */
-
-/*! lazysizes */
 
 /*! lodash/debounce */
 
@@ -80,6 +82,10 @@
   !*** ./node_modules/lodash/toNumber.js ***!
   \*****************************************/
 
+/*!*****************************************!*\
+  !*** ./src/scripts/modules/Parallax.js ***!
+  \*****************************************/
+
 /*!******************************************!*\
   !*** ./node_modules/lodash/_baseTrim.js ***!
   \******************************************/
@@ -101,11 +107,11 @@
   \********************************************/
 
 /*!*********************************************!*\
-  !*** ./node_modules/lazysizes/lazysizes.js ***!
+  !*** ./node_modules/lodash/isObjectLike.js ***!
   \*********************************************/
 
 /*!*********************************************!*\
-  !*** ./node_modules/lodash/isObjectLike.js ***!
+  !*** ./src/scripts/modules/RevealOnLoad.js ***!
   \*********************************************/
 
 /*!***********************************************!*\

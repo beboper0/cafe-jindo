@@ -18,6 +18,10 @@ a.custom-logo-link {
     max-width: 250px !important;
 }
 
+.article-header {
+    text-shadow: 1px 1px #000;
+}
+
 /*About page header */
 .page-id-44 .article-header {
     background-image: url(https://cafejindo.ca/wp-content/uploads/2021/01/food-window-scaled.jpg);

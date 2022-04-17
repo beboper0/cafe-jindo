@@ -15,7 +15,7 @@ function dropDownMobile() {
 	if ( $j( 'body' ).hasClass( 'dropdown-mobile' ) ) {
 		
 		// Get all the link elements within the menu.
-		var mainMenu = $j('.menu-content').clone();
+		let mainMenu = $j('.menu-content').clone();
 		$j('#mobile-dropdown nav').append($j(mainMenu));
 		
 		// Open drop down menu
@@ -27,14 +27,14 @@ function dropDownMobile() {
 		} );
 
 		// Close menu function
-		var dropDownMobileClose = function( e ) {
+		let dropDownMobileClose = function( e ) {
 			$j( '#mobile-dropdown' ).slideUp( 200 );
 			$j( '.mobile-menu' ).removeClass( 'opened' );
 			$j( '.mobile-menu > .hamburger' ).removeClass( 'is-active' );
 		}
 
-		var $owpmenu = $j( '.mobile-menu > .hamburger' );
-		var isMenuOpen = false;
+		let $owpmenu = $j( '.mobile-menu > .hamburger' );
+		let isMenuOpen = false;
 		$owpmenu.on('click', function () {
 			isMenuOpen = !isMenuOpen;
 			$owpmenu.attr('aria-expanded', isMenuOpen);

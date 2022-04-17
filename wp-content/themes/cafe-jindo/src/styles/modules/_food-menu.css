@@ -4,6 +4,7 @@
     justify-content:center;
     align-items:center;
     border-bottom: 1px solid gray;
+    margin-bottom: 2em;
 
     ul {
         list-style: none;
@@ -14,14 +15,14 @@
     li {
         position: relative;
         float: left;
-        padding: 0px 15px;
+        padding: 0 1em;
     }
 
     a {
         display: block;
         text-decoration: none;
         color: $mainBlack;
-        padding: 26px;
+        padding: 1em;
 
         &:hover {
             text-decoration: line-through;
@@ -46,16 +47,17 @@
 
     h2 {
         font-family: 'Pinyon Script', cursive;
-        font-size: 4em;
+        font-size: 4rem;
     }
 
     h3 {
+        font-size: 1.5rem;
         font-weight: bold;
     }
 
     &__food-menu-section__menu-desc {
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 3em;
         padding: 0px 0px;
     }
 
