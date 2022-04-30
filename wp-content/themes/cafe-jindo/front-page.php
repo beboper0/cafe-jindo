@@ -46,7 +46,7 @@
 
         <section class="no-parallax">
             <div class="container reveal-on-scroll">
-                <div class="row">
+                <div class="row row--gutters">
                     <div class="col-2"><?php echo wp_get_attachment_image(387, 'large'); ?></div>
                     <div class="col-2">
                         <h2>Cafe Jindo</h2>
