@@ -4,7 +4,7 @@ get_header();
 
 <main id="primary" class="site-main">
 	<header class="article-header">
-		<h1 class="article-title"><?php the_title() ?></h1>
+		<h1 class="article-title">Menu</h1>
 	</header><!-- .article-header -->
 
 	<article id="article-<?php the_ID(); ?>" <?php post_class(); ?>>

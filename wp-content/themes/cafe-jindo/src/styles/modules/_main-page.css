@@ -47,6 +47,10 @@ section {
     h2 {
         text-shadow: 1px 1px #000;
         margin-top: 0;
-        font-size: 4.5rem;
+        font-size: 3.5rem;
+
+        @mixin atMedium {
+            font-size: 4.5rem;
+        }
     }
 }
