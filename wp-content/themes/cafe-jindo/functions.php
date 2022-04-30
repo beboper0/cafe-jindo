@@ -220,7 +220,6 @@ function get_attachment_id( $url ) {
  */
 function cafe_jindo_scripts() {
 	wp_enqueue_style( 'cafe-jindo-style', get_theme_file_uri('//build/index.css'));
-	wp_enqueue_style( 'cafe-jindo-style2', get_theme_file_uri('//build/style-index.css'));
     wp_enqueue_style('roboto-font', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
     wp_enqueue_style('pinyon-font', '//fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
     wp_enqueue_style('duru-sans-font', '//fonts.googleapis.com/css2?family=Duru+Sans&display=swap');

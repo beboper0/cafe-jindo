@@ -12,7 +12,12 @@ class RevealOnScroll {
     }
 
     events() {
-        window.addEventListener("scroll", this.scrollThrottle)
+        const elements = document.querySelector(".parallax-container")
+        if (elements) {
+            elements.addEventListener("scroll", this.scrollThrottle)
+        } else {
+            window.addEventListener("scroll", this.scrollThrottle)
+        }
         window.addEventListener("resize", debounce(() => {
             this.browserHeight = window.innerHeight
         }, 333))

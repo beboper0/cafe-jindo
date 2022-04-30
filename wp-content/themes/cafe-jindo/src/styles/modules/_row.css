@@ -1,5 +1,4 @@
 .row {
-    padding-bottom: 1em;
     display: grid;
 
     @mixin atMedium {

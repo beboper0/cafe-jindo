@@ -35,11 +35,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "./styles/modules/_site-header.css";
 @import "./styles/modules/_site-footer.css";
 @import "./styles/modules/_main-page.css";
+@import "./styles/modules/_parallax.css";
 @import "./styles/modules/_article-page.css";
 @import "./styles/modules/_btn.css";
 @import "./styles/modules/_food-menu.css";
-
-
-
-
-
+@import "./styles/modules/_forms.css";

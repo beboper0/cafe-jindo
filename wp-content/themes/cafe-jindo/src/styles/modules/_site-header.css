@@ -24,26 +24,27 @@ a.custom-logo-link {
 
 /*About page header */
 .page-id-44 .article-header {
-    background-image: url(https://cafejindo.ca/wp-content/uploads/2021/01/food-window-scaled.jpg);
+    background-image: url(../../../../wp-content/uploads/2021/01/food-window-scaled.jpg);
 }
 
 /*Menu page header */
 .post-type-archive-menu .article-header {
-    background-image: url(https://cafejindo.ca/wp-content/uploads/2021/05/menu-servings.jpg);
-    background-position: 50% 122%;
+    background-image: url(../../../../wp-content/uploads/2021/05/menu-servings.jpg);
+    background-position: 50% 105%;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*Contact page header */
 .page-id-13 .article-header {
-    background-image: url(https://cafejindo.ca/wp-content/uploads/2021/04/store-counter.jpg);
+    background-image: url(../../../../wp-content/uploads/2021/04/store-counter.jpg);
     background-position: 50% 23%;
     background-size: cover;
 }
 
 /*Order online header */
 .page-id-393 .article-header {
-    background-image: url(https://cafejindo.ca/wp-content/uploads/2021/04/store-lightbulbs.jpg);
+    background-image: url(../../../../wp-content/uploads/2021/04/store-lightbulbs.jpg);
     background-position: 50% 73%;
     background-size: cover;
 }

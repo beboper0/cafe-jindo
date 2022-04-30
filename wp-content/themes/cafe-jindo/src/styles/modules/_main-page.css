@@ -1,24 +1,30 @@
 .home {
-    main h1 {
-        width:1px;
-        height:1px;
-        overflow:hidden;
-        clip: rect(0, 0, 0, 0);
+    main {
+        min-height: 650px;
+
+        h1 {
+            width:1px;
+            height:1px;
+            overflow:hidden;
+            clip: rect(0, 0, 0, 0);
+        }
     }
+
 
     .article-header {
         height: 0px;
     }
 }
 
-.bg-overlay {
+body.home {
+    overflow:hidden;
+}
+
+section {
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 500px;
 
     @mixin atMedium {
@@ -26,18 +32,9 @@
     }
 }
 
-.frontpage-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.bg-overlay {
     position: relative;
-    height: 100%;
-
-    h2 {
-        text-shadow: 1px 1px #000;
-        margin-top: 0;
-        font-size: 4.5rem;
-    }
+    overflow: hidden;
 }
 
 .splash-container {
@@ -47,5 +44,9 @@
     color: #fff;
     text-align: center;
 
-
+    h2 {
+        text-shadow: 1px 1px #000;
+        margin-top: 0;
+        font-size: 4.5rem;
+    }
 }
