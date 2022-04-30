@@ -65,7 +65,7 @@ get_header();
                             )
                         ));
                         ?>
-                        <h2><span id="Hot">Cold Drinks</span></h2>
+                        <h2><span id="Cold">Cold Drinks</span></h2>
                         <p>All cold drinks come in 16oz size.</p>
                         <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(482, 'medium') ?></div>
                         <?php
