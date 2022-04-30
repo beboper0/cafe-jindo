@@ -154,10 +154,13 @@ class OMAPI_Support {
 
 		$array = array(
 			'Plugin Version'     => esc_html( $this->base->version ),
-			'Server Info'        => esc_html( $_SERVER['SERVER_SOFTWARE'] ),
+			// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotValidated, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+			'Server Info'        => esc_html( wp_unslash( $_SERVER['SERVER_SOFTWARE'] ) ),
 			'PHP Version'        => function_exists( 'phpversion' ) ? esc_html( phpversion() ) : 'Unable to check.',
 			'Error Log Location' => function_exists( 'ini_get' ) ? ini_get( 'error_log' ) : 'Unable to locate.',
 			'Default Timezone'   => date_default_timezone_get(),
+			'Site Name'          => esc_html( get_option( 'blogname' ) ),
+			'Admin Email'        => esc_html( get_site_option( 'admin_email' ) ),
 			'WordPress Home URL' => esc_url_raw( get_home_url() ),
 			'WordPress Site URL' => esc_url_raw( get_site_url() ),
 			'WordPress REST URL' => esc_url_raw( get_rest_url() ),

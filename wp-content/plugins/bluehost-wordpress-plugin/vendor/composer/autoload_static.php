@@ -4,14 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
+class ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb
 {
     public static $files = array (
+        'b62570ec8ed5d9ce1990d98269e51fa3' => __DIR__ . '/..' . '/endurance/wp-module-data/bootstrap.php',
+        '2f504007b66898166b454912c82ea1be' => __DIR__ . '/..' . '/bluehost/bluehost-wp-customer-data/bootstrap.php',
         '637fa4e5a9fe2956d844ead1daab0f31' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-business-reviews/bootstrap.php',
         '0774e44945781cd5a8d0b0dc32f80615' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-gutenframe/bootstrap.php',
         '0a7ee76a6dd15c6349ed695bd3b2a987' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-loader/module-loader.php',
         '6e09b332987211bb2939025b3ed3c51b' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-sso/bootstrap.php',
-        'b62570ec8ed5d9ce1990d98269e51fa3' => __DIR__ . '/..' . '/endurance/wp-module-data/bootstrap.php',
+        '748560bdb9c548e074991a1f2181a2f5' => __DIR__ . '/..' . '/bluehost/wp-module-secure-passwords/bootstrap.php',
+        '89c483fff8e47bfb3a84bf56b0ff5160' => __DIR__ . '/..' . '/wp-forge/helpers/includes/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -43,6 +46,7 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
         ),
         'B' => 
         array (
+            'Bluehost\\WP\\Data\\' => 17,
             'Bluehost\\' => 9,
         ),
     );
@@ -81,6 +85,10 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
         ),
+        'Bluehost\\WP\\Data\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bluehost/bluehost-wp-customer-data/includes',
+        ),
         'Bluehost\\' => 
         array (
             0 => __DIR__ . '/../..' . '/inc',
@@ -101,6 +109,7 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
         'Bluehost\\AccessToken' => __DIR__ . '/../..' . '/inc/AccessToken.php',
         'Bluehost\\AdminBar' => __DIR__ . '/../..' . '/inc/AdminBar.php',
         'Bluehost\\BuildAssets' => __DIR__ . '/../..' . '/inc/BuildAssets.php',
+        'Bluehost\\CTB\\CTBApi' => __DIR__ . '/../..' . '/inc/CTB/CTBApi.php',
         'Bluehost\\LoginRedirect' => __DIR__ . '/../..' . '/inc/LoginRedirect.php',
         'Bluehost\\Notifications\\AdminNotices' => __DIR__ . '/../..' . '/inc/Notifications/AdminNotices.php',
         'Bluehost\\Notifications\\Notification' => __DIR__ . '/../..' . '/inc/Notifications/Notification.php',
@@ -120,6 +129,7 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
         'Bluehost\\SiteMeta' => __DIR__ . '/../..' . '/inc/SiteMeta.php',
         'Bluehost\\Staging' => __DIR__ . '/../..' . '/inc/Staging.php',
         'Bluehost\\UpgradeHandler' => __DIR__ . '/../..' . '/inc/UpgradeHandler.php',
+        'Bluehost\\WP\\Data\\Customer' => __DIR__ . '/..' . '/bluehost/bluehost-wp-customer-data/includes/Customer.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Doctrine\\Common\\Inflector\\Inflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector/Inflector.php',
         'Doctrine\\Inflector\\CachedWordInflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
@@ -167,9 +177,13 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
         'Endurance\\WP\\Module\\Data\\API\\Events' => __DIR__ . '/..' . '/endurance/wp-module-data/src/API/Events.php',
         'Endurance\\WP\\Module\\Data\\API\\Verify' => __DIR__ . '/..' . '/endurance/wp-module-data/src/API/Verify.php',
         'Endurance\\WP\\Module\\Data\\Data' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Data.php',
-        'Endurance\\WP\\Module\\Data\\Encryption' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Encryption.php',
         'Endurance\\WP\\Module\\Data\\Event' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Event.php',
         'Endurance\\WP\\Module\\Data\\EventManager' => __DIR__ . '/..' . '/endurance/wp-module-data/src/EventManager.php',
+        'Endurance\\WP\\Module\\Data\\Helpers\\Encryption' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Helpers/Encryption.php',
+        'Endurance\\WP\\Module\\Data\\Helpers\\Multibrand' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Helpers/Multibrand.php',
+        'Endurance\\WP\\Module\\Data\\Helpers\\Plugin' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Helpers/Plugin.php',
+        'Endurance\\WP\\Module\\Data\\Helpers\\SiteHealth' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Helpers/SiteHealth.php',
+        'Endurance\\WP\\Module\\Data\\Helpers\\Transient' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Helpers/Transient.php',
         'Endurance\\WP\\Module\\Data\\HubConnection' => __DIR__ . '/..' . '/endurance/wp-module-data/src/HubConnection.php',
         'Endurance\\WP\\Module\\Data\\Listeners\\Admin' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/Admin.php',
         'Endurance\\WP\\Module\\Data\\Listeners\\BHPlugin' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/BHPlugin.php',
@@ -178,10 +192,10 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
         'Endurance\\WP\\Module\\Data\\Listeners\\Jetpack' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/Jetpack.php',
         'Endurance\\WP\\Module\\Data\\Listeners\\Listener' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/Listener.php',
         'Endurance\\WP\\Module\\Data\\Listeners\\Plugin' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/Plugin.php',
+        'Endurance\\WP\\Module\\Data\\Listeners\\SiteHealth' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/SiteHealth.php',
         'Endurance\\WP\\Module\\Data\\Listeners\\Theme' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Listeners/Theme.php',
         'Endurance\\WP\\Module\\Data\\Logger' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Logger.php',
         'Endurance\\WP\\Module\\Data\\SubscriberInterface' => __DIR__ . '/..' . '/endurance/wp-module-data/src/SubscriberInterface.php',
-        'Endurance\\WP\\Module\\Data\\Transient' => __DIR__ . '/..' . '/endurance/wp-module-data/src/Transient.php',
         'Endurance_Collection' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-loader/includes/Collection.php',
         'Endurance_ModuleManager' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-loader/includes/ModuleManager.php',
         'Endurance_ModuleRegistry' => __DIR__ . '/..' . '/bluehost/endurance-wp-module-loader/includes/ModuleRegistry.php',
@@ -226,10 +240,10 @@ class ComposerStaticInite2c72d531d1150c242b5160e9eca49d5
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite2c72d531d1150c242b5160e9eca49d5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite2c72d531d1150c242b5160e9eca49d5::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInite2c72d531d1150c242b5160e9eca49d5::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInite2c72d531d1150c242b5160e9eca49d5::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit95203b17a8dc6fbcbaf114aef70138bb::$classMap;
 
         }, null, ClassLoader::class);
     }

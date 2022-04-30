@@ -1,0 +1,55 @@
+/* Footer
+--------------------------------------------- */
+.site-footer {
+    display: flex !important;
+    width: 100%;
+    height: auto;
+    background: $mainBlack;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.site-info {
+    width:100%;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        text-align:center;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    ul, ol {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.footer-bottom {
+    display: block;
+    background: $mainGrey;
+    text-align: center;
+    padding: 1px;
+}
+
+#social-media {
+    a {
+        font-size: 2rem;
+        color: white;
+        margin-right: 5px;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+}

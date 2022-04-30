@@ -114,7 +114,8 @@ class OMAPI_Welcome {
 		}
 
 		// Only do this for single site installs.
-		if ( isset( $_GET['activate-multi'] ) || is_network_admin() ) { // WPCS: CSRF ok.
+		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
+		if ( isset( $_GET['activate-multi'] ) || is_network_admin() ) {
 			return;
 		}
 
@@ -173,7 +174,11 @@ class OMAPI_Welcome {
 		<div class="optin-monster-db-widget" style="text-align:center;">
 			<p><img src="<?php echo plugins_url( '/assets/images/logo-om.png', OMAPI_FILE ); ?>" alt="<?php esc_attr_e( 'OptinMonster', 'optin-monster-api' ); ?>" width="300px" height="45px"></p>
 			<h3 style="font-weight:normal;font-size:1.3em;"><?php esc_html_e( 'Please Connect OptinMonster', 'optin-monster-api' ); ?></h3>
-			<p><?php _e( 'Instantly grow your email list, get more leads and increase sales with the <strong>#1 most powerful conversion optimization toolkit in the world.</strong>', 'optin-monster-api' ); ?></p>
+			<p>
+				<?php
+					echo wp_kses_post( __( 'Instantly grow your email list, get more leads and increase sales with the <strong>#1 most powerful conversion optimization toolkit in the world.</strong>', 'optin-monster-api' ) );
+				?>
+			</p>
 			<p><a href="<?php echo esc_url( OMAPI_Urls::onboarding() ); ?>" class="button button-primary" title="<?php esc_attr_e( 'Get Started', 'optin-monster-api' ); ?>"><?php esc_html_e( 'Get Started', 'optin-monster-api' ); ?></a><a style="margin-left:8px" href="<?php echo esc_url( OMAPI_Urls::onboarding() ); ?>" title="<?php esc_attr_e( 'Learn More', 'optin-monster-api' ); ?>"><?php esc_html_e( 'Learn More &rarr;', 'optin-monster-api' ); ?></a></p>
 		</div>
 		<?php

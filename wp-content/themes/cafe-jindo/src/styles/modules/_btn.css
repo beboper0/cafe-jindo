@@ -1,0 +1,39 @@
+/* Buttons
+--------------------------------------------- */
+
+.btn {
+    background: $mainOrange !important;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 1em 2em;
+    margin: 1em;
+    background-clip: padding-box;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+
+    &:hover {
+        opacity: 50%;
+    }
+
+    &-secondary {
+        background: #fff !important;
+        text-transform: uppercase;
+        color: #000 !important;
+        margin-top: .8125rem;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.8) !important;
+        }
+    }
+
+    &-order {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+}
+

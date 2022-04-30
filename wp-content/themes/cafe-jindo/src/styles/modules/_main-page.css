@@ -1,0 +1,52 @@
+.home {
+    main {
+        min-height: 650px;
+
+        h1 {
+            width:1px;
+            height:1px;
+            overflow:hidden;
+            clip: rect(0, 0, 0, 0);
+        }
+    }
+
+
+    .article-header {
+        height: 0px;
+    }
+}
+
+body.home {
+    overflow:hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+
+    @mixin atMedium {
+        height: 700px;
+    }
+}
+
+.bg-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.splash-container {
+    font-size: 1.5rem;
+    position: relative;
+    top: 2rem;
+    color: #fff;
+    text-align: center;
+
+    h2 {
+        text-shadow: 1px 1px #000;
+        margin-top: 0;
+        font-size: 4.5rem;
+    }
+}

@@ -42,9 +42,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../travel-site" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
+=======
+    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public\wp-content\themes\cafe-jindo\src\scripts" />
+      <recent name="C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public\wp-content\themes\src\modules" />
+    </key>
+  </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="user defined" created="1649839239994" text="main-button" recursive="true" caseInsensitive="true" type="HTML" scope_type="PROJECT" scope_descriptor="" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
+>>>>>>> Reorganization
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,7 +102,43 @@
       <workItem from="1628494108370" duration="622000" />
       <workItem from="1628584586844" duration="605000" />
       <workItem from="1628753373121" duration="1911000" />
-      <workItem from="1630112506975" duration="4437000" />
+      <workItem from="1630112506975" duration="5312000" />
+      <workItem from="1641786314382" duration="3749000" />
+      <workItem from="1645744837091" duration="10187000" />
+      <workItem from="1645761129823" duration="6028000" />
+      <workItem from="1645837620628" duration="12055000" />
+      <workItem from="1646189929785" duration="5335000" />
+      <workItem from="1647845362160" duration="1734000" />
+      <workItem from="1647999383044" duration="2267000" />
+      <workItem from="1648022212304" duration="126000" />
+      <workItem from="1648030893698" duration="1388000" />
+      <workItem from="1648106038430" duration="4269000" />
+      <workItem from="1648158368889" duration="15746000" />
+      <workItem from="1648246415332" duration="1557000" />
+      <workItem from="1648880727001" duration="3971000" />
+      <workItem from="1649313733062" duration="1542000" />
+      <workItem from="1649368838663" duration="2636000" />
+      <workItem from="1649487078242" duration="2043000" />
+      <workItem from="1649570766629" duration="1587000" />
+      <workItem from="1649654023393" duration="7506000" />
+      <workItem from="1649838353375" duration="6163000" />
+      <workItem from="1649922372754" duration="9412000" />
+      <workItem from="1649932321453" duration="2028000" />
+      <workItem from="1649978845449" duration="6874000" />
+      <workItem from="1650004731809" duration="1055000" />
+      <workItem from="1650089736716" duration="10519000" />
+      <workItem from="1650106257305" duration="57000" />
+      <workItem from="1650176560818" duration="14230000" />
+      <workItem from="1650190852105" duration="34000" />
+      <workItem from="1650239539548" duration="8291000" />
+      <workItem from="1650675732888" duration="6602000" />
+      <workItem from="1650867515520" duration="7896000" />
+      <workItem from="1650953652659" duration="1793000" />
+      <workItem from="1651039841673" duration="4585000" />
+      <workItem from="1651108599485" duration="3673000" />
+      <workItem from="1651141779713" duration="279000" />
+      <workItem from="1651182488311" duration="7049000" />
+      <workItem from="1651268090558" duration="5508000" />
     </task>
     <servers />
   </component>
@@ -104,10 +163,57 @@
     </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1651303290102">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651303290102" />
+=======
+    <state x="1308" y="434" key="#ESLint" timestamp="1645761412376">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1308" y="434" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1645761412376" />
+    <state x="1262" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649924326012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1262" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1649924326012" />
+    <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1645853190559">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1645853190559" />
+    <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1649839239983">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1649839239983" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1651301147884">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651301147884" />
+    <state width="653" height="281" key="GridCell.Tab.0.bottom" timestamp="1645862314854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="653" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state width="653" height="281" key="GridCell.Tab.0.center" timestamp="1645862314854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="653" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state width="653" height="281" key="GridCell.Tab.0.left" timestamp="1645862314854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="653" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state width="653" height="281" key="GridCell.Tab.0.right" timestamp="1645862314854">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="653" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1648118965204">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1648118965204" />
+    <state x="812" y="294" width="743" height="582" key="find.popup" timestamp="1650241310005">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="812" y="294" width="743" height="582" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1650241310005" />
+>>>>>>> Reorganization
   </component>
   <component name="WordPressConfiguration" enabled="true">
     <wordpressPath>C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public</wordpressPath>

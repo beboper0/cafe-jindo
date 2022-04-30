@@ -1,10 +1,10 @@
 === Jetpack - WP Security, Backup, Speed, & Growth ===
-Contributors: automattic, adamkheckler, aduth, akirk, allendav, alternatekev, andy, annezazu, apeatling, azaozz, batmoo, barry, beaulebens, biskobe, blobaugh, brbrr, cainm, cena, cfinke, chaselivingston, chellycat, clickysteve, csonnek, danielbachhuber, davoraltman, daniloercoli, delawski, designsimply, dllh, drawmyface, dsmart, dzver, ebinnion, egregor, eliorivero, enej, eoigal, erania-pinnera, ethitter, fgiannar, gcorne, georgestephanis, gibrown, goldsounds, hew, hugobaeta, hypertextranch, iammattthomas, iandunn, jblz, jasmussen, jeffgolenski, jeherve, jenhooks, jenia, jessefriedman, jgs, jkudish, jmdodd, joanrho, johnjamesjacoby, jshreve, kbrownkd, keoshi, koke, kraftbj, lancewillett, leogermani, lschuyler, macmanx, martinremy, matt, matveb, mattwiebe, maverick3x6, mcsf, mdawaffe, mdbitz, MichaelArestad, migueluy, mikeyarce, mkaz, nancythanki, nickmomrik, obenland, oskosk, pento, professor44, rachelsquirrel, rdcoll, ryancowles, richardmuscat, richardmtl, robertbpugh, roccotripaldi, samhotchkiss, samiff, scarstocea, scottsweb, sdixon194, sdquirk, sermitr, simison, stephdau, tmoorewp, tyxla, Viper007Bond, westi, yoavf, zinigor
+Contributors: automattic, adamkheckler, adrianmoldovanwp, aduth, akirk, allendav, alternatekev, andy, annamcphee, annezazu, apeatling, arcangelini, azaozz, batmoo, barry, beaulebens, biskobe, blobaugh, bjorsch, brbrr, cainm, cena, cfinke, chaselivingston, chellycat, clickysteve, csonnek, danielbachhuber, davoraltman, daniloercoli, delawski, designsimply, dllh, drawmyface, dsmart, dzver, ebinnion, egregor, eliorivero, enej, eoigal, erania-pinnera, ethitter, fgiannar, gcorne, georgestephanis, gibrown, goldsounds, hew, hugobaeta, hypertextranch, iammattthomas, iandunn, jblz, jasmussen, jeffgolenski, jeherve, jenhooks, jenia, jessefriedman, jgs, jkudish, jmdodd, joanrho, johnjamesjacoby, jshreve, kbrownkd, keoshi, koke, kraftbj, lancewillett, leogermani, lschuyler, macmanx, martinremy, matt, matveb, mattwiebe, maverick3x6, mcsf, mdawaffe, mdbitz, MichaelArestad, migueluy, mikeyarce, mkaz, nancythanki, nickmomrik, obenland, oskosk, pento, professor44, rachelsquirrel, rdcoll, ryancowles, richardmuscat, richardmtl, robertbpugh, roccotripaldi, samhotchkiss, samiff, scarstocea, scottsweb, sdixon194, sdquirk, sermitr, simison, stephdau, tmoorewp, tyxla, Viper007Bond, westi, yoavf, zinigor
 Tags: Security, backup, Woo, malware, scan, spam, CDN, search, social
-Stable tag: 10.0
-Requires at least: 5.7
+Stable tag: 10.8
+Requires at least: 5.8
 Requires PHP: 5.6
-Tested up to: 5.8
+Tested up to: 5.9
 
 Improve your WP security with powerful one-click tools like backup and malware scan. Get essential free tools including stats, CDN and social sharing.
 
@@ -242,29 +242,45 @@ Jetpack Backup can do a full website migration to a new host, migrate theme file
 4. Promote your newest posts, pages, and products across your social media channels.
 
 == Changelog ==
-### 10.0 - 2021-08-03
+### 10.8 - 2022-04-05
+#### Major Enhancements
+- QR Post: add new feature which automatically generates QR codes for published posts. When scanned, the QR code will link visitors to the post. If a site has a custom logo set, it will be shown in the generated QR code image.
+
 #### Enhancements
-- Carousel: add JS-based smooth scroll behavior for the footer buttons.
-- Carousel: on image zoom, fade out controls. Fade them back in when sized back to original, or the slide is advanced.
+- Blocks: make settings discoverable and toggleable, and add a card to highlight the blocks available from Jetpack on the dashboard.
+- Dashboard: show Search benefits on the Jetpack disconnection screen.
+- External Media: add Openverse as an external Media provider.
+- Form Block: offer option to install/activate the Jetpack CRM plugin from the Form block settings panel.
+- Payment Block: clicking on payment links from email or WordPress.com Notifications/Reader will correctly open the corresponding payment form. Also add a unified Payment Block selector and introduce a post-publish panel for Payment Blocks.
+- Subscribe Block: block setting updates including name change, display of current subscribers, and a new style option. Also add pre/post-publish notices.
+- Tiled Gallery: add background color block setting.
+- Various Blocks: update Contact Info, Markdown, and Tiled Gallery blocks to include margin design tools.
+- VideoPress: added support for the `muted`, `controls` and `playsinline` properties on the 'wpvideo' and VideoPress shortcodes.
 
 #### Improved compatibility
-- Carousel: add a Swiper JS param to prevent interaction on the carousel while transitioning between slides.
-- Map Block: ensure theme styles do not override map button background colors.
-- Search: remove required attribute from search inputs.
+- Sharing: avoid warnings when the feature is not active on a site that uses the AMP plugin.
+- Shortcodes: adds the Jetpack namespace to slideshow shortcode CSS class names.
+- Various Blocks: remove deprecated attributes from Button components.
 
 #### Bug fixes
-- Carousel: fix carousel title formatting to prevent issues with quote conversion.
-- Comments: fix subsequent commenting when using a social profile.
-- Contact Form Block: remove specific form colors to prevent theme style clash.
-- Instant Search: fix visual glitch on breadcrumb in Firefox.
-- Instant Search: make sure ?s= is set when using filter links.
-- Like Button: add title and aria-hidden attributes to the Like button iframe.
-- OpenTable Block: fix input width when used in block editor.
-- Publicize: avoid PHP notices in edge-cases where no info about a post can be found.
-- Search: fix notice issue with WP 5.8's widget editor.
-- Select Dropdown Component: add content-box box sizing to prevent global box-sizing conflict.
-- SEO Tools: ensure functions are loaded before API endpoint attempts to use them.
-- Tiled Gallery: fix blurry display of images much wider than they are high.
+- Calendly Block: ensure it can be displayed inline when using a block enabled theme.
+- Carousel: fix nonce check issue with Carousel comments
+- CLI Tools: ensure WP CLI is present before extending the class.
+- Form Block: do not display the CRM integration option to non-admins.
+- Google Analytics: fix showing an upgrade button with the latest Jetpack security plans.
+- Jetpack: fix missing "Connect User" button after restoring a connection.
+- Jetpack: remove the duplicated `jetpack_relatedposts_returned_results filter`.
+- Payment Blocks: fixes an issue with the upgrade banner being obscured from all payment blocks.
+- Pay with Paypal Block: fix inconsistent currency formatting.
+- Pay with PayPal widget: enable widget to work in block-based widget editor and full site editor.
+- Publicize: prevent newlines from being stripped from a custom Publicize message in the classic editor.
+- QR Post: improve the inner logo sizing.
+- SEO Tools: ensure Twitter cards get correct description when a site has a blank tagline.
+- Shortlinks: display the shortlinks interface in the block editor for all post types that support shortlinks.
+- Subscribe Block: ensure subscription panels are not shown in the page editor, or when the site is private.
+- Top Posts Widget: display a fallback list of posts to admins when there are no popular posts to display.
+- WooCommerce: fix an issue preventing upgrading to version 6.3.0.
+- WordAds: fix defaulting to "house ad" mode for new activations.
 
 --------
 

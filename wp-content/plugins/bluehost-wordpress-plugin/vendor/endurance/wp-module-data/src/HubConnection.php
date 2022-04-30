@@ -2,6 +2,11 @@
 
 namespace Endurance\WP\Module\Data;
 
+use Endurance\WP\Module\Data\Helpers\Encryption;
+use Endurance\WP\Module\Data\Helpers\Multibrand;
+use Endurance\WP\Module\Data\Helpers\Plugin as PluginHelper;
+use Endurance\WP\Module\Data\Helpers\Transient;
+
 /**
  * Manages a Hub connection instance and interactions with it
  */
@@ -125,6 +130,7 @@ class HubConnection implements SubscriberInterface {
 
 		$data                 = $this->get_core_data();
 		$data['verify_token'] = $token;
+		$data['plugins']      = PluginHelper::collect_installed();
 
 		$args = array(
 			'body'     => wp_json_encode( $data ),
@@ -139,7 +145,7 @@ class HubConnection implements SubscriberInterface {
 		$attempts = intval( get_option( 'bh_data_connection_attempts', 0 ) );
 		update_option( 'bh_data_connection_attempts', $attempts + 1 );
 
-		$response = wp_remote_post( $this->api . '/connect', $args );
+		$response = wp_remote_post( $this->api . '/sites/v1/connect', $args );
 		$status   = wp_remote_retrieve_response_code( $response );
 
 		// Created = 201; Updated = 200
@@ -236,7 +242,7 @@ class HubConnection implements SubscriberInterface {
 			'timeout'  => $is_blocking ? 10 : .5,
 		);
 
-		return wp_remote_post( $this->api . '/events', $args );
+		return wp_remote_post( $this->api . '/sites/v1/events', $args );
 	}
 
 	/**
@@ -253,6 +259,7 @@ class HubConnection implements SubscriberInterface {
 		}
 	}
 
+
 	/**
 	 * Get core site data for initial connection
 	 *
@@ -262,14 +269,19 @@ class HubConnection implements SubscriberInterface {
 		global $wpdb, $wp_version;
 
 		return array(
-			'url'         => get_site_url(),
-			'php'         => phpversion(),
-			'mysql'       => $wpdb->db_version(),
-			'wp'          => $wp_version,
-			'plugin'      => BLUEHOST_PLUGIN_VERSION,
-			'hostname'    => gethostname(),
+			'brand'       => sanitize_title( get_option( 'mm_brand', 'false' ) ),
 			'cache_level' => intval( get_option( 'endurance_cache_level', 2 ) ),
 			'cloudflare'  => get_option( 'endurance_cloudflare_enabled', false ),
+			'data'        => NFD_DATA_MODULE_VERSION,
+			'email'       => get_option( 'admin_email' ),
+			'hostname'    => gethostname(),
+			'mysql'       => $wpdb->db_version(),
+			'origin'      => Multibrand::get_origin_plugin_id(),
+			'php'         => phpversion(),
+			'plugin'      => Multibrand::get_origin_plugin_version(),
+			'url'         => get_site_url(),
+			'wp'          => $wp_version,
 		);
+
 	}
 }

@@ -125,7 +125,7 @@ class OMAPI_Utils {
 	 * @return string The formatted script string.
 	 */
 	public static function build_inline_data( $object_name, $data ) {
-		return sprintf( 'var %s = %s;', $object_name, json_encode( $data ) );
+		return sprintf( 'var %s = %s;', $object_name, self::json_encode( $data ) );
 	}
 
 	/**
@@ -150,4 +150,20 @@ class OMAPI_Utils {
 
 		return wp_add_inline_script( $handle, $output, $position );
 	}
+
+	/**
+	 * Back-compatible wp_json_encode wrapper.
+	 *
+	 * @since 2.6.1
+	 *
+	 * @param  mixed $data Data to encode.
+	 *
+	 * @return string      JSON-encoded data.
+	 */
+	public static function json_encode( $data ) {
+		return function_exists( 'wp_json_encode' )
+			? wp_json_encode( $data )
+			: json_encode( $data ); // phpcs:ignore WordPress.WP.AlternativeFunctions.json_encode_json_encode
+	}
+
 }

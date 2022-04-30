@@ -1,16 +1,11 @@
 <?php get_header(); ?>
-
-    <main id="primary" class="site-main">
-
-        <section>
-            <div class="bg-overlay"
-                 style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg'); ?>);">
-                <div class="frontpage-container">
-                    <div id="splash-container">
-                        <h2>NOW OPEN FOR TAKEOUT!</h2>
-                        <div><a class="second-buttons order-button" href="/order-online">ORDER NOW</a></div>
-                    </div>
-                </div>
+    <main id="primary" class="site-main" style="transform-style: preserve-3d">
+        <section class="">
+            <div style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg'); ?>);" class="parallax reveal-on-load">
+            </div>
+            <div class="splash-container reveal-on-load">
+                <h2>NOW OPEN FOR TAKEOUT!</h2>
+                <div><a class="btn btn-secondary btn-order" href="/order-online">ORDER NOW</a></div>
             </div>
         </section>
 
@@ -25,38 +20,35 @@
         ));
 
         if ($featuredItems->have_posts()) { ?>
-        <section>
-            <div class="container">
-                <h2 style="text-align: center;">Featuring</h2>
-                <div class="row">
-                    <?php
-                    while($featuredItems->have_posts()) {
-                        $featuredItems->the_post() ?>
-                        <div class="col-3">
-                            <h3><?php echo the_title() ?></h3>
-                            <img class="alignnone size-large wp-image-127"
-                                 src="<?php the_field('featured_image') ?>">
-                            <p><?php echo the_content() ?></p>
-                        </div>
-                    <?php }
-                    ?>
+            <section class="no-parallax">
+                <div class="container reveal-on-scroll">
+                    <h2 style="text-align: center;">Featuring</h2>
+                    <div class="row row--gutters">
+                        <?php
+                        while($featuredItems->have_posts()) {
+                            $featuredItems->the_post() ?>
+                            <div class="col-3">
+                                <div style="height: 7em"><h3><?php echo the_title() ?></h3></div>
+                                <?php echo wp_get_attachment_image(get_field('featured_image'), 'large'); ?>
+                                <p><?php echo the_content() ?></p>
+                            </div>
+                        <?php }
+                        ?>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="bg-overlay"
-                 style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/05/food-splash.jpg'); ?>);"></div>
-        </section>
         <?php } ?>
 
         <section>
-            <div class="container">
+            <div class="parallax" style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/05/food-splash.jpg'); ?>);"></div>
+        </section>
+
+        <section class="no-parallax">
+            <div class="container reveal-on-scroll">
                 <div class="row">
-                    <div class="col"><img class="alignnone size-large wp-image-127"
-                                          src="<?php echo site_url('/wp-content/uploads/2021/04/served-coffee.jpg'); ?>">
-                    </div>
-                    <div class="col">
+                    <div class="col-2"><?php echo wp_get_attachment_image(387, 'large'); ?></div>
+                    <div class="col-2">
                         <h2>Cafe Jindo</h2>
                         <hr>
                         <p>Café Jindo began with the idea that everyone deserves to have little luxuries in life;
@@ -73,8 +65,7 @@
         </section>
 
         <section>
-            <div class="bg-overlay"
-                 style="background-image: url(<?php echo site_url('wp-content/uploads/2021/07/DSC_1588-scaled.jpg'); ?>);"></div>
+            <div class="parallax" style="background-image: url(<?php echo site_url('wp-content/uploads/2021/07/DSC_1588-scaled.jpg'); ?>);"></div>
         </section>
 
         <section style="display: none;">
@@ -88,10 +79,9 @@
             </div>
         </section>
 
-        <section>
-            <div class="bg-overlay" style="display: none;"></div>
+        <section style="display: none;">
+            <div class="parallax"></div>
         </section>
-
     </main><!-- #main -->
 
 <?php

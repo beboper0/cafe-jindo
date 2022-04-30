@@ -162,13 +162,13 @@ class OMAPI_Output {
 
 		// phpcs:disable WordPress.Security.NonceVerification.Recommended
 		self::$live_preview       = ! empty( $_GET['om-live-preview'] )
-			? $_GET['om-live-preview']
+			? wp_unslash( $_GET['om-live-preview'] )
 			: false;
 		self::$live_rules_preview = ! empty( $_GET['om-live-rules-preview'] )
-			? $_GET['om-live-rules-preview']
+			? wp_unslash( $_GET['om-live-rules-preview'] )
 			: false;
 		self::$site_verification  = ! empty( $_GET['om-verify-site'] )
-			? $_GET['om-verify-site']
+			? wp_unslash( $_GET['om-verify-site'] )
 			: false;
 		// phpcs:enable
 	}
@@ -422,7 +422,8 @@ class OMAPI_Output {
 		// Load the optins.
 		foreach ( (array) $campaigns as $campaign ) {
 			if ( $campaign ) {
-				echo $campaign; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped, trusted data from post_content
+				echo $campaign;
 			}
 		}
 
@@ -449,7 +450,7 @@ class OMAPI_Output {
 	 */
 	public function load_previews( $campaigns, $post_id ) {
 		if ( self::$live_preview || self::$live_rules_preview ) {
-			$campaign_id = sanitize_text_field( self::$live_preview ? self::$live_preview : self::$live_rules_preview );
+			$campaign_id = sanitize_title_with_dashes( self::$live_preview ? self::$live_preview : self::$live_rules_preview );
 
 			$embed = self::om_script_tag(
 				array(
@@ -484,7 +485,8 @@ class OMAPI_Output {
 
 		$option['id'] = 'omapi-script-global';
 
-		echo self::om_script_tag( $option ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped, escaped function.
+		echo self::om_script_tag( $option );
 	}
 
 	/**
@@ -575,8 +577,10 @@ class OMAPI_Output {
 				}
 
 				echo '<div style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0">';
-					echo '<div class="omapi-shortcode-helper">' . html_entity_decode( $shortcode, ENT_COMPAT, 'UTF-8' ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-					echo '<div class="omapi-shortcode-parsed omapi-encoded">' . htmlentities( do_shortcode( html_entity_decode( $shortcode, ENT_COMPAT, 'UTF-8' ) ), ENT_COMPAT, 'UTF-8' ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					echo '<div class="omapi-shortcode-helper">' . html_entity_decode( $shortcode, ENT_COMPAT, 'UTF-8' ) . '</div>';
+					// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					echo '<div class="omapi-shortcode-parsed omapi-encoded">' . htmlentities( do_shortcode( html_entity_decode( $shortcode, ENT_COMPAT, 'UTF-8' ) ), ENT_COMPAT, 'UTF-8' ) . '</div>';
 				echo '</div>';
 			}
 		}
@@ -586,7 +590,7 @@ class OMAPI_Output {
 		<script type="text/javascript">
 		<?php
 		foreach ( $this->slugs as $slug => $data ) {
-			echo 'var ' . $slug . '_shortcode = true;'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo 'var ' . sanitize_title_with_dashes( $slug ) . '_shortcode = true;';
 		}
 		?>
 		</script>
@@ -649,13 +653,17 @@ class OMAPI_Output {
 		// Set flag to true.
 		$this->localized = true;
 
-		$slugs = function_exists( 'wp_json_encode' )
-			? wp_json_encode( $this->slugs )
-			: json_encode( $this->slugs ); // phpcs:ignore WordPress.WP.AlternativeFunctions.json_encode_json_encode
-
 		// Output JS variable.
 		?>
-		<script type="text/javascript">var omapi_localized = { ajax: '<?php echo esc_url_raw( add_query_arg( 'optin-monster-ajax-route', true, admin_url( 'admin-ajax.php' ) ) ); ?>', nonce: '<?php echo wp_create_nonce( 'omapi' ); ?>', slugs: <?php echo $slugs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?> };</script>
+		<script type="text/javascript">var omapi_localized = {
+			ajax: '<?php echo esc_url_raw( add_query_arg( 'optin-monster-ajax-route', true, admin_url( 'admin-ajax.php' ) ) ); ?>',
+			nonce: '<?php echo esc_js( wp_create_nonce( 'omapi' ) ); ?>',
+			slugs: 
+			<?php
+				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped, method is escaping.
+				echo OMAPI_Utils::json_encode( $this->slugs );
+			?>
+		};</script>
 		<?php
 	}
 
@@ -763,14 +771,9 @@ class OMAPI_Output {
 			)
 		);
 
-		$output = function_exists( 'wp_json_encode' )
-			? wp_json_encode( $output )
-			: json_encode( $output ); // phpcs:ignore WordPress.WP.AlternativeFunctions.json_encode_json_encode
-
 		// Output JS variable.
-		// phpcs:ignore XSS
 		?>
-		<script type="text/javascript">var omapi_data = <?php echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>;</script>
+		<script type="text/javascript">var omapi_data = <?php echo OMAPI_Utils::json_encode( $output ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>;</script>
 		<?php
 	}
 

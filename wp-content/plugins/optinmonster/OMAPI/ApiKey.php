@@ -187,5 +187,24 @@ class OMAPI_ApiKey {
 
 		return ! empty( $creds['user'] ) && ! empty( $creds['key'] );
 	}
+
+	/**
+	 * Handles regnerating api key.
+	 *
+	 * @since 2.6.5
+	 *
+	 * @param  string $apikey Api Key to replace after regeneration.
+	 *
+	 * @return mixed  $value  The response to the API call.
+	 */
+	public static function regenerate( $apikey ) {
+		return OMAPI_Api::build( 'v2', 'key/regenerate', 'POST', compact( 'apikey' ) )
+			->request(
+				array(
+					'tt' => OMAPI_ApiAuth::get_tt(),
+				)
+			);
+	}
+
 }
 

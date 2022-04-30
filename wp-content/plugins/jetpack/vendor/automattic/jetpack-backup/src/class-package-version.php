@@ -1,17 +1,2 @@
-<?php
-/**
- * The Package_Version class.
- *
- * @package automattic/jetpack-backup
- */
-
-namespace Automattic\Jetpack\Backup;
-
-/**
- * The Package_Version class.
- */
-class Package_Version {
-
-	const PACKAGE_VERSION = '1.1.1';
-
-}
+<?php // Stub to avoid errors during upgrades
+require_once __DIR__ . '/../../../../jetpack_vendor/automattic/jetpack-backup/src/class-package-version.php';

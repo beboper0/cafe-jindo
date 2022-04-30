@@ -136,10 +136,14 @@ function cafe_jindo_widgets_init() {
 }
 add_action( 'widgets_init', 'cafe_jindo_widgets_init' );
 
+/**
+ * Sets up a food menu using Custom Queries
+ * @param $query
+ */
 function foodMenu($query) {
 	while($query->have_posts()) {
     $query->the_post(); ?>
-		<div class="menu-desc">
+		<div class="food-menu-section__menu-desc">
 			<h3>
 				<?php echo get_field('menu_name')?> | <?php echo get_field('menu_price_1');
 				if (get_field('menu_price_2')) {
@@ -155,12 +159,67 @@ function foodMenu($query) {
 	<?php }
 }
 
+/**
+ * Get an attachment ID given a URL.
+ * Credit: https://wpscholar.com/blog/get-attachment-id-from-wp-image-url/
+ *
+ * @param string $url
+ *
+ * @return int Attachment ID on success, 0 on failure
+ */
+function get_attachment_id( $url ) {
+
+    $attachment_id = 0;
+
+    $dir = wp_upload_dir();
+
+    if ( false !== strpos( $url, $dir['baseurl'] . '/' ) ) { // Is URL in uploads directory?
+        $file = basename( $url );
+
+        $query_args = array(
+            'post_type'   => 'attachment',
+            'post_status' => 'inherit',
+            'fields'      => 'ids',
+            'meta_query'  => array(
+                array(
+                    'value'   => $file,
+                    'compare' => 'LIKE',
+                    'key'     => '_wp_attachment_metadata',
+                ),
+            )
+        );
+
+        $query = new WP_Query( $query_args );
+
+        if ( $query->have_posts() ) {
+
+            foreach ( $query->posts as $post_id ) {
+
+                $meta = wp_get_attachment_metadata( $post_id );
+
+                $original_file       = basename( $meta['file'] );
+                $cropped_image_files = wp_list_pluck( $meta['sizes'], 'file' );
+
+                if ( $original_file === $file || in_array( $file, $cropped_image_files ) ) {
+                    $attachment_id = $post_id;
+                    break;
+                }
+
+            }
+
+        }
+
+    }
+
+    return $attachment_id;
+}
+
 
 /**
  * Enqueue scripts and styles.
  */
 function cafe_jindo_scripts() {
-	wp_enqueue_style( 'cafe-jindo-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'cafe-jindo-style', get_theme_file_uri('//build/index.css'));
     wp_enqueue_style('roboto-font', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
     wp_enqueue_style('pinyon-font', '//fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
     wp_enqueue_style('duru-sans-font', '//fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
@@ -168,7 +227,7 @@ function cafe_jindo_scripts() {
 
     wp_style_add_data( 'cafe-jindo-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'cafe-jindo-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), _S_VERSION, true );
+	wp_enqueue_script( 'cafe-jindo-js', get_theme_file_uri('/build/index.js'), array('jquery'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
