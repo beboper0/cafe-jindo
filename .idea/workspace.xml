@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="14d3020d-5916-4a03-9981-0a2aa4a5f73f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/front-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/page-order-online.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/page-order-online.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/base/_global.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/base/_global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_article-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_article-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_main-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_main-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_primary-nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_primary-nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_site-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_site-header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,18 +26,10 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="DrupalConfiguration">
-    <drupalPath />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JoomlaConfiguration">
-    <joomlaConfigPath />
-    <joomlaPath />
-  </component>
-  <component name="ProjectId" id="1uILFINCWqNLmpqbpb6kWnR2pwy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="28VvA11PsthUhzWp5BIq08afN5f" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,182 +37,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../travel-site" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
-=======
-    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.standard" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.standard" value="" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.css.dialects" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public\wp-content\themes\cafe-jindo\src\scripts" />
-      <recent name="C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public\wp-content\themes\src\modules" />
-    </key>
-  </component>
-  <component name="StructuralSearchPlugin">
-    <searchConfiguration name="user defined" created="1649839239994" text="main-button" recursive="true" caseInsensitive="true" type="HTML" scope_type="PROJECT" scope_descriptor="" history="1">
-      <constraint name="__context__" within="" contains="" />
-    </searchConfiguration>
->>>>>>> Reorganization
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="14d3020d-5916-4a03-9981-0a2aa4a5f73f" name="Default Changelist" comment="" />
-      <created>1624348050794</created>
+      <changelist id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="" />
+      <created>1651314420746</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1624348050794</updated>
-      <workItem from="1624348051905" duration="151000" />
-      <workItem from="1624963013104" duration="461000" />
-      <workItem from="1625009778320" duration="5535000" />
-      <workItem from="1625019150107" duration="754000" />
-      <workItem from="1625904556593" duration="7091000" />
-      <workItem from="1625979166078" duration="6552000" />
-      <workItem from="1626061431669" duration="3918000" />
-      <workItem from="1626142727462" duration="3982000" />
-      <workItem from="1626690556359" duration="1745000" />
-      <workItem from="1626778077720" duration="644000" />
-      <workItem from="1626820206194" duration="9235000" />
-      <workItem from="1626913370199" duration="2884000" />
-      <workItem from="1627712799787" duration="7372000" />
-      <workItem from="1627808138468" duration="1607000" />
-      <workItem from="1627971349141" duration="3676000" />
-      <workItem from="1628031962086" duration="604000" />
-      <workItem from="1628148675405" duration="738000" />
-      <workItem from="1628237725240" duration="1525000" />
-      <workItem from="1628322627078" duration="605000" />
-      <workItem from="1628408489996" duration="609000" />
-      <workItem from="1628494108370" duration="622000" />
-      <workItem from="1628584586844" duration="605000" />
-      <workItem from="1628753373121" duration="1911000" />
-      <workItem from="1630112506975" duration="5312000" />
-      <workItem from="1641786314382" duration="3749000" />
-      <workItem from="1645744837091" duration="10187000" />
-      <workItem from="1645761129823" duration="6028000" />
-      <workItem from="1645837620628" duration="12055000" />
-      <workItem from="1646189929785" duration="5335000" />
-      <workItem from="1647845362160" duration="1734000" />
-      <workItem from="1647999383044" duration="2267000" />
-      <workItem from="1648022212304" duration="126000" />
-      <workItem from="1648030893698" duration="1388000" />
-      <workItem from="1648106038430" duration="4269000" />
-      <workItem from="1648158368889" duration="15746000" />
-      <workItem from="1648246415332" duration="1557000" />
-      <workItem from="1648880727001" duration="3971000" />
-      <workItem from="1649313733062" duration="1542000" />
-      <workItem from="1649368838663" duration="2636000" />
-      <workItem from="1649487078242" duration="2043000" />
-      <workItem from="1649570766629" duration="1587000" />
-      <workItem from="1649654023393" duration="7506000" />
-      <workItem from="1649838353375" duration="6163000" />
-      <workItem from="1649922372754" duration="9412000" />
-      <workItem from="1649932321453" duration="2028000" />
-      <workItem from="1649978845449" duration="6874000" />
-      <workItem from="1650004731809" duration="1055000" />
-      <workItem from="1650089736716" duration="10519000" />
-      <workItem from="1650106257305" duration="57000" />
-      <workItem from="1650176560818" duration="14230000" />
-      <workItem from="1650190852105" duration="34000" />
-      <workItem from="1650239539548" duration="8291000" />
-      <workItem from="1650675732888" duration="6602000" />
-      <workItem from="1650867515520" duration="7896000" />
-      <workItem from="1650953652659" duration="1793000" />
-      <workItem from="1651039841673" duration="4585000" />
-      <workItem from="1651108599485" duration="3673000" />
-      <workItem from="1651141779713" duration="279000" />
-      <workItem from="1651182488311" duration="7049000" />
-      <workItem from="1651268090558" duration="5508000" />
+      <updated>1651314420746</updated>
+      <workItem from="1651314423091" duration="28000" />
+      <workItem from="1651314457020" duration="72000" />
+      <workItem from="1651314536415" duration="5000" />
+      <workItem from="1651477582166" duration="6093000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-  </component>
   <component name="WindowStateProjectService">
-<<<<<<< HEAD
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1651303290102">
+    <state x="667" y="229" width="585" height="582" key="find.popup" timestamp="1651480580378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651303290102" />
-=======
-    <state x="1308" y="434" key="#ESLint" timestamp="1645761412376">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1308" y="434" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1645761412376" />
-    <state x="1262" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649924326012">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1262" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1649924326012" />
-    <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1645853190559">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1052" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1645853190559" />
-    <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog" timestamp="1649839239983">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1649839239983" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1651301147884">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651301147884" />
-    <state width="653" height="281" key="GridCell.Tab.0.bottom" timestamp="1645862314854">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="653" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
-    <state width="653" height="281" key="GridCell.Tab.0.center" timestamp="1645862314854">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="653" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
-    <state width="653" height="281" key="GridCell.Tab.0.left" timestamp="1645862314854">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="653" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
-    <state width="653" height="281" key="GridCell.Tab.0.right" timestamp="1645862314854">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="653" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1645862314854" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1648118965204">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1648118965204" />
-    <state x="812" y="294" width="743" height="582" key="find.popup" timestamp="1650241310005">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="812" y="294" width="743" height="582" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1650241310005" />
->>>>>>> Reorganization
-  </component>
-  <component name="WordPressConfiguration" enabled="true">
-    <wordpressPath>C:\Users\Steven\PhpstormProjects\cafe-jindo\app\public</wordpressPath>
+    <state x="667" y="229" width="585" height="582" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1651480580378" />
   </component>
 </project>

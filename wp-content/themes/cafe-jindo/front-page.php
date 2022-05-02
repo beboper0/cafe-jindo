@@ -1,10 +1,10 @@
 <?php get_header(); ?>
     <main id="primary" class="site-main" style="transform-style: preserve-3d">
-        <section class="">
+        <section>
             <div style="background-image: url(<?php echo site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg'); ?>);" class="parallax reveal-on-load">
             </div>
             <div class="splash-container reveal-on-load">
-                <h2>NOW OPEN FOR TAKEOUT!</h2>
+                <h2 id="splash-message">NOW OPEN FOR TAKEOUT!</h2>
                 <div><a class="btn btn-secondary btn-order" href="/order-online">ORDER NOW</a></div>
             </div>
         </section>

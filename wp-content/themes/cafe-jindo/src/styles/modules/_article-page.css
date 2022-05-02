@@ -8,10 +8,15 @@
     background-color: $mainGrey;
     background-attachment: fixed;
     color: #fff;
+    text-shadow: 1px 1px 2px #000;
+
 
     h1 {
         position: relative;
         top: 15%;
+        font-family: 'Heebo', sans-serif;
+        font-weight: bold;
+        font-size: 5rem;
     }
 }
 

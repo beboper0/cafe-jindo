@@ -8,6 +8,16 @@
             overflow:hidden;
             clip: rect(0, 0, 0, 0);
         }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+        }
+
+        h3 {
+            font-family: 'Heebo', sans-serif;
+            font-size: 2.2rem;
+        }
     }
 
 
@@ -44,13 +54,13 @@ section {
     color: #fff;
     text-align: center;
 
-    h2 {
-        text-shadow: 1px 1px #000;
+    #splash-message {
+        text-shadow: 1px 1px 2px #000;
         margin-top: 0;
-        font-size: 3.5rem;
+        font-size: 4.5rem;
 
         @mixin atMedium {
-            font-size: 4.5rem;
+            font-size: 5.5rem;
         }
     }
 }
