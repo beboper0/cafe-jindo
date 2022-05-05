@@ -2,11 +2,9 @@ import debounce from 'lodash/debounce'
 
 class RevealOnLoad {
     constructor(els) {
-        if (els) {
-            this.itemsToReveal = els
-            this.hideInitially()
-            this.events()
-        }
+        this.itemsToReveal = els
+        this.hideInitially()
+        this.events()
     }
 
     events() {

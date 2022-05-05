@@ -32,6 +32,8 @@
 
 /*! ./scripts/modules/RevealOnScroll */
 
+/*! ./scripts/modules/Swiper */
+
 /*! ./scripts/modules/navigation */
 
 /*! ./toNumber */
@@ -55,6 +57,10 @@
 /*!**************************************!*\
   !*** ./node_modules/lodash/_root.js ***!
   \**************************************/
+
+/*!***************************************!*\
+  !*** ./src/scripts/modules/Swiper.js ***!
+  \***************************************/
 
 /*!****************************************!*\
   !*** ./node_modules/lodash/_Symbol.js ***!

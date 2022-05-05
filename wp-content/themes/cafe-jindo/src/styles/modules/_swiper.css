@@ -1,0 +1,26 @@
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+
+    &__swiper-left {
+        transform: translate3d(-66.75em, 0px, 0px);
+        transition-duration: 200ms;
+    }
+
+    &__swiper-right {
+        transform: translate3d(66.75em, 0px, 0px);
+        transition-duration: 200ms;
+    }
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 66.75em;
+}
+
+.nav-prev, .nav-next {
+    cursor: pointer;
+}

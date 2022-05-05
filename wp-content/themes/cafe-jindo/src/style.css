@@ -39,4 +39,5 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "./styles/modules/_article-page.css";
 @import "./styles/modules/_btn.css";
 @import "./styles/modules/_food-menu.css";
+@import "./styles/modules/_swiper.css";
 @import "./styles/modules/_forms.css";
