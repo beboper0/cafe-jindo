@@ -21,20 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/all-in-one-wp-migration/storage/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/archive-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/archive-menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.LICENSE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/RevealOnLoad.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/RevealOnLoad.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +63,8 @@
       <workItem from="1651314536415" duration="5000" />
       <workItem from="1651477582166" duration="6345000" />
       <workItem from="1651486721940" duration="599000" />
-      <workItem from="1651732914365" duration="5971000" />
+      <workItem from="1651732914365" duration="6032000" />
+      <workItem from="1651739731598" duration="177000" />
     </task>
     <servers />
   </component>
