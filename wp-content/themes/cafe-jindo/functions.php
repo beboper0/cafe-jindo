@@ -224,7 +224,7 @@ function cafe_jindo_scripts() {
     wp_enqueue_style('pinyon-font', '//fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
     wp_enqueue_style('cormorant-garamond', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
     wp_enqueue_style('heebo', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Heebo:wght@300&display=swap');
-    wp_enqueue_style('font-awesome', get_theme_file_uri('//assets/fonts/fontawesome/css/all.min.css?ver=5.15.1'));
+    wp_enqueue_style('font-awesome', get_theme_file_uri('//assets/fonts/fontawesome/css/all.min.css'));
 
     wp_style_add_data( 'cafe-jindo-style', 'rtl', 'replace' );
 

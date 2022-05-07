@@ -10,11 +10,15 @@ get_header();
 	<article id="article-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="article-content">
 			<div class="container">
-				<div class="food-menu-nav" style="font-size: 2rem;">
-					<div class="nav-prev"><--</div>
-                    <div>Drinks| </div>
-                    <div>Food</div>
-                    <div class="nav-next">--></div>
+				<div class="food-menu-nav">
+					<div class="nav-prev">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <div class="nav-item">Drinks</div>
+                    <div class="nav-item inactive">Food</div>
+                    <div class="nav-next">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </div>
 				</div>
 
                 <div class="swiper-container">

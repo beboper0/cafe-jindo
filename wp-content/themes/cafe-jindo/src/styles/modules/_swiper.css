@@ -4,16 +4,6 @@
 
 .swiper-wrapper {
     display: flex;
-
-    &__swiper-left {
-        transform: translate3d(-66.75em, 0px, 0px);
-        transition-duration: 200ms;
-    }
-
-    &__swiper-right {
-        transform: translate3d(66.75em, 0px, 0px);
-        transition-duration: 200ms;
-    }
 }
 
 .swiper-slide {
@@ -21,6 +11,15 @@
     width: 66.75em;
 }
 
-.nav-prev, .nav-next {
+.nav-prev, .nav-next, .nav-item {
     cursor: pointer;
+    margin: 0 0.5em;
+
+    &:hover {
+        color: $mainGrey;
+    }
+}
+
+.inactive {
+    color: $mainGrey;
 }

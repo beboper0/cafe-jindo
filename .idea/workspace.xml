@@ -21,10 +21,54 @@
   <component name="ChangeListManager">
     <list default="true" id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/archive-menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/archive-menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/brands.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/brands.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/fontawesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/regular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/regular.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/regular.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/solid.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/solid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/solid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/svg-with-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/svg-with-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/svg-with-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/svg-with-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/v4-shims.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/v4-shims.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/v4-shims.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/css/v4-shims.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/assets/fonts/fontawesome/webfonts/fa-solid-900.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/Swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_swiper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/docs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +90,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../travel-site" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,7 +108,9 @@
       <workItem from="1651477582166" duration="6345000" />
       <workItem from="1651486721940" duration="599000" />
       <workItem from="1651732914365" duration="6032000" />
-      <workItem from="1651739731598" duration="177000" />
+      <workItem from="1651739731598" duration="202000" />
+      <workItem from="1651782889333" duration="4586000" />
+      <workItem from="1651867688822" duration="1942000" />
     </task>
     <servers />
   </component>
@@ -84,10 +130,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1651737207281">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1651784162690">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651737207281" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1651784162690" />
     <state x="667" y="229" width="585" height="582" key="find.popup" timestamp="1651480580378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
