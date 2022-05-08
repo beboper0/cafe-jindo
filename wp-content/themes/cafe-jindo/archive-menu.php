@@ -14,8 +14,8 @@ get_header();
 					<div class="nav-prev">
                         <i class="fa-solid fa-arrow-left-long"></i>
                     </div>
-                    <div class="nav-item">Drinks</div>
-                    <div class="nav-item inactive">Food</div>
+                    <div class="nav-item" id="drinks">Drinks</div>
+                    <div class="nav-item inactive" id="food">Food</div>
                     <div class="nav-next">
                         <i class="fa-solid fa-arrow-right-long"></i>
                     </div>

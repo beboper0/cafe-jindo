@@ -4,21 +4,25 @@
 
 .swiper-wrapper {
     display: flex;
+    height: 83.34em;
 }
 
 .swiper-slide {
     flex-shrink: 0;
-    width: 66.75em;
+    width: 100%;
 }
 
 .nav-prev, .nav-next, .nav-item {
     cursor: pointer;
     margin: 0 0.5em;
+}
 
+.nav-prev, .nav-next {
     &:hover {
         color: $mainGrey;
     }
 }
+
 
 .inactive {
     color: $mainGrey;
