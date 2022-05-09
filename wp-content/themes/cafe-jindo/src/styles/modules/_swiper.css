@@ -4,17 +4,22 @@
 
 .swiper-wrapper {
     display: flex;
-    height: 83.34em;
+    height: min-content;
 }
 
 .swiper-slide {
     flex-shrink: 0;
     width: 100%;
+    height: min-content;
 }
 
 .nav-prev, .nav-next, .nav-item {
     cursor: pointer;
-    margin: 0 0.5em;
+    margin: 0 0.2em;
+
+    @mixin atVerySmall {
+        margin: 0 0.5em;
+    }
 }
 
 .nav-prev, .nav-next {
@@ -23,6 +28,29 @@
     }
 }
 
+.nav-item {
+    order: 1;
+
+    @mixin atSmall {
+        order: revert;
+    }
+}
+
+.nav-prev {
+    order: 2;
+
+    @mixin atSmall {
+        order: revert;
+    }
+}
+
+.nav-next {
+    order: 3;
+
+    @mixin atSmall {
+        order: revert;
+    }
+}
 
 .inactive {
     color: $mainGrey;

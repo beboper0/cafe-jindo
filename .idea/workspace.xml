@@ -30,6 +30,8 @@
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/Swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/base/_mixins.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/base/_mixins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_food-menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_swiper.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +75,8 @@
       <workItem from="1651739731598" duration="202000" />
       <workItem from="1651782889333" duration="4586000" />
       <workItem from="1651867688822" duration="1985000" />
-      <workItem from="1651993298505" duration="2748000" />
+      <workItem from="1651993298505" duration="2837000" />
+      <workItem from="1652062948633" duration="8004000" />
     </task>
     <servers />
   </component>

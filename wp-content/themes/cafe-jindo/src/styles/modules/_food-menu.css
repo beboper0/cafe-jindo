@@ -1,5 +1,6 @@
 .food-menu-nav {
     display: flex;
+    flex-wrap: wrap;
     font-size: 3rem;
     font-family: Heebo,sans-serif;
     font-weight: bold;
@@ -8,6 +9,10 @@
     align-items:center;
     border-bottom: 1px solid gray;
     margin-bottom: 2em;
+
+    @mixin atSmall {
+        flex-wrap: nowrap;
+    }
 
     /*
     ul {
