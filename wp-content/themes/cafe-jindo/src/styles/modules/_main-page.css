@@ -1,6 +1,7 @@
 .home {
     main {
-        min-height: 650px;
+        overflow: initial;
+        background: initial;
 
         h1 {
             width:1px;
