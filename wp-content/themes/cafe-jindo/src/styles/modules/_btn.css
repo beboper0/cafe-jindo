@@ -10,10 +10,6 @@
     padding: 1em 2em;
     margin: 1em;
     background-clip: padding-box;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
 
     &:hover {
         opacity: 50%;

@@ -24,11 +24,9 @@
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.asset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.LICENSE.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_main-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_main-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_btn.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,8 @@
       <workItem from="1651782889333" duration="4586000" />
       <workItem from="1651867688822" duration="1985000" />
       <workItem from="1651993298505" duration="2837000" />
-      <workItem from="1652062948633" duration="9810000" />
+      <workItem from="1652062948633" duration="10292000" />
+      <workItem from="1652168102302" duration="238000" />
     </task>
     <servers />
   </component>
