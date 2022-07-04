@@ -1,0 +1,21 @@
+.shop-container {
+
+}
+
+.product-group {
+    padding: 0;
+
+    .product-price {
+        font-weight: 500;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0;
+        font-weight: 400;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+}

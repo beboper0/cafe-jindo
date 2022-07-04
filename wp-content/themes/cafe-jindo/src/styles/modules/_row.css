@@ -2,19 +2,23 @@
     display: grid;
 
     @mixin atMedium {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(12, 1fr);
     }
 
     &--gutters {
         column-gap: 1em;
     }
 
+    .col-4 {
+        grid-column: span 3;
+    }
+
     .col-3 {
-        grid-column: span 2;
+        grid-column: span 4;
     }
 
     .col-2 {
-        grid-column: span 3;
+        grid-column: span 6;
     }
 }
 

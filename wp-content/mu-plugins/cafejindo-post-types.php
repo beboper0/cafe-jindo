@@ -37,6 +37,24 @@ function cafe_post_types() {
         ),
         'menu_icon' => 'dashicons-id'
     ));
+
+    register_post_type('shop', array(
+        'show_in_rest' => true,
+        'capability_type' => 'shop',
+        'map_meta_cap' => true,
+        'supports' => array('title'),
+        'rewrite' => array('slug' => 'shop'),
+        'public' => true,
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Shop Items',
+            'add_new_item' => 'Add Shop Item',
+            'edit_item' => 'Edit Shop Item',
+            'all_items' => 'All Shop Items',
+            'singular_name' => 'Shop Item'
+        ),
+        'menu_icon' => 'dashicons-cart'
+    ));
 }
 
 add_action('init', 'cafe_post_types');

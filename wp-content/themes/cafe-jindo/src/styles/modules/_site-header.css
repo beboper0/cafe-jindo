@@ -31,6 +31,13 @@ a.custom-logo-link {
     background-repeat: no-repeat;
 }
 
+.post-type-archive-shop .article-header {
+    background-image: url(../../../../wp-content/uploads/2021/04/tea-displays-scaled.jpg);
+    background-position: 50% 19%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /*Contact page header */
 .page-id-13 .article-header {
     background-image: url(../../../../wp-content/uploads/2021/04/store-counter.jpg);
