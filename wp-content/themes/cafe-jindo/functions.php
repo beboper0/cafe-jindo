@@ -237,6 +237,20 @@ function cafe_jindo_scripts() {
 add_action( 'wp_enqueue_scripts', 'cafe_jindo_scripts' );
 
 /**
+function new_cpt_archive_title($title){
+
+    if ( is_post_type_archive('shop') ){
+        $title = 'Shop - Café Jindo';
+        return $title;
+    }
+
+    return $title;
+}
+
+add_filter( 'pre_get_document_title', 'new_cpt_archive_title', 9999 );
+*/
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

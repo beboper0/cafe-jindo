@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 
-	<?php wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class('dropdown-mobile'); ?>>
