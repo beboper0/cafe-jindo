@@ -11,7 +11,7 @@ get_header();
         <div class="article-content">
             <div class="container">
                 <div>
-                    <h3>Order online using Doordash or UberEats for delivery straight to your home! Or call us at (587) 353-4728 to pick up your order at our location!</h3>
+                    <h3>!Order online using Doordash or UberEats for delivery straight to your home! Or call us at (587) 353-4728 to pick up your order at our location!</h3>
                 </div>
                 <div style="display: flex; justify-content: center">
                     <div>
