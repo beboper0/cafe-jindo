@@ -3,9 +3,20 @@
     width: 100%;
     background: $mainWhite;
     z-index: 10;
+    transition: ease-in-out 0.5s;
 
     @mixin atMedium {
         background: transparent;
+    }
+
+    &__white {
+        background: $mainWhite;
+        transition: ease-in-out 0.5s;
+
+        a {
+            color: $mainBlack;
+            transition: ease-in-out 0.5s;
+        }
     }
 
 }

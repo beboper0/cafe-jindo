@@ -7,23 +7,23 @@ class navigationTransparency {
     }
 
     events() {
-        this.listenedEl.addEventListener("scroll", ()=> {
-            if (this.referenceEl.getBoundingClientRect().top == 0) {
-                this.itemsToWhite.style.backgroundColor = "transparent";
-                console.log("transparent")
-            } else {
-                this.itemsToWhite.style.backgroundColor = "#fffefd";
-                console.log("white")
-            }
-        })
+        if (document.body.classList.contains("home")) {
+            this.listenedEl.addEventListener("scroll", ()=> {
+                this.ifScrolled()
+            })
+        } else {
+            window.addEventListener("scroll", ()=> {
+                this.ifScrolled()
+            })
+        }
     }
 
-    ifScrolled(el) {
+    ifScrolled() {
         if (this.referenceEl.getBoundingClientRect().top == 0) {
-            el.style.backgroundColor = "transparent";
-            console.log("transparent")
+            this.itemsToWhite.classList.remove("site-header__white")
+            console.log("clear")
         } else {
-            el.style.backgroundColor = "#fffefd";
+            this.itemsToWhite.classList.add("site-header__white")
             console.log("white")
         }
     }
