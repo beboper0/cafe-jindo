@@ -1,13 +1,16 @@
 import "../src/style.css"
 
+
 //Modules
 import MobileMenu from "./scripts/modules/navigation"
 import RevealOnScroll from "./scripts/modules/RevealOnScroll"
 import RevealOnLoad from "./scripts/modules/RevealOnLoad"
 import Swiper from "./scripts/modules/Swiper"
+import NavigationTransparency from "./scripts/modules/navigationTransparency"
 
 //Instantiate new objects using our modules
 const mobileMenu = new MobileMenu();
+const navigationTransparency = new NavigationTransparency();
 
 if (document.querySelector(".swiper-container")) {
     const swiper = new Swiper();

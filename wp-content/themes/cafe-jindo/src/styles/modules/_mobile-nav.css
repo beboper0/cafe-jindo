@@ -27,7 +27,7 @@
     display: none;
     position:absolute;
     width:100%;
-    background:$mainBlack;
+    background:$mainWhite;
 
     ul {
         list-style: none;
@@ -44,7 +44,7 @@
     a {
         text-decoration: none;
         padding: 10px;
-        color: #ffffff;
+        color: $mainBlack;
 
         &:hover {
             color:$mainGrey;

@@ -1,4 +1,6 @@
 .home {
+    overflow-y: hidden;
+
     main {
         overflow: initial;
         background: initial;
@@ -25,10 +27,6 @@
     .article-header {
         height: 0px;
     }
-}
-
-body.home {
-    overflow:hidden;
 }
 
 section {

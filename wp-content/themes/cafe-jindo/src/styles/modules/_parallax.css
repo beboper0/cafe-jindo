@@ -10,13 +10,24 @@
     }
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.clearfix:after {clear: both;}
+
 section {
     transform-style: preserve-3d;
 }
 
 .parallax {
     position: absolute;
-    top: 0;
+    top: -45px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -32,6 +43,6 @@ section {
 
 .no-parallax {
     z-index: 1;
-    background: #ffffff;
+    background: $mainWhite;
     height: auto;
 }

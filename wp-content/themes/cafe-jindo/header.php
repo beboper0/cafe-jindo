@@ -23,7 +23,6 @@
 
 <body <?php body_class('dropdown-mobile'); ?>>
 <?php wp_body_open(); ?>
-<div class="parallax-container">
 
 <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'cafe-jindo' ); ?></a>
 
@@ -70,4 +69,6 @@
         <nav itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement"></nav>
     </div>
 </header><!-- #masthead -->
+
+<div class="parallax-container">
 

@@ -36,6 +36,8 @@
 
 /*! ./scripts/modules/navigation */
 
+/*! ./scripts/modules/navigationTransparency */
+
 /*! ./toNumber */
 
 /*! lodash/debounce */
@@ -125,3 +127,7 @@
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_trimmedEndIndex.js ***!
   \*************************************************/
+
+/*!*******************************************************!*\
+  !*** ./src/scripts/modules/navigationTransparency.js ***!
+  \*******************************************************/

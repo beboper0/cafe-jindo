@@ -1,8 +1,13 @@
 .site-header {
     position: fixed;
     width: 100%;
-    background: $mainBlack;
+    background: $mainWhite;
     z-index: 10;
+
+    @mixin atMedium {
+        background: transparent;
+    }
+
 }
 
 header {

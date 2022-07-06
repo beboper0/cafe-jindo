@@ -62,7 +62,11 @@
         font-size: 1.1rem;
         padding: 1em 2em;
         font-weight: bold;
-        color: #ffffff;
+        color: $mainBlack;
+
+        @mixin atMedium {
+            color: #fff;
+        }
 
         &:hover {
             color:$mainGrey;

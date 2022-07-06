@@ -22,7 +22,7 @@ html {
 }
 
 main {
-    background: #fff;
+    background: $mainWhite;
     min-height: 650px;
     overflow: hidden;
 }
@@ -103,7 +103,7 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-    background: #fff;
+    background: $mainWhite;
 }
 
 hr {

@@ -2,7 +2,7 @@
 --------------------------------------------- */
 
 .btn {
-    background: $mainOrange !important;
+    background: $mainBlack !important;
     text-transform: uppercase;
     display: inline-block;
     color: #fff !important;
@@ -16,9 +16,8 @@
     }
 
     &-secondary {
-        background: #fff !important;
         text-transform: uppercase;
-        color: #000 !important;
+        color: #fff !important;
         margin-top: .8125rem;
 
         &:hover {
