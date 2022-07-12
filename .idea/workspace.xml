@@ -28,7 +28,9 @@
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/build/index.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/RevealOnScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/RevealOnScroll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/navigationTransparency.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/scripts/modules/navigationTransparency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_btn.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_site-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_site-header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../travel-site" />
   </component>
   <component name="StructuralSearchPlugin">
     <searchConfiguration name="user defined" created="1656928131209" text="sdff" recursive="true" caseInsensitive="true" type="PHP" scope_type="PROJECT" scope_descriptor="" history="1">
@@ -86,6 +88,9 @@
       <workItem from="1656884069877" duration="9102000" />
       <workItem from="1656980968107" duration="12187000" />
       <workItem from="1657092362548" duration="5276000" />
+      <workItem from="1657175091238" duration="3668000" />
+      <workItem from="1657434175888" duration="5948000" />
+      <workItem from="1657606818946" duration="608000" />
     </task>
     <servers />
   </component>
@@ -109,10 +114,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="488" y="347" width="943" height="346" key="#com.intellij.structuralsearch.plugin.ui.StructuralSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656928131200" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1657104769774">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1657435138096">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1657104769774" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1657435138096" />
     <state x="1127" y="202" width="631" height="582" key="find.popup" timestamp="1657093384143">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
