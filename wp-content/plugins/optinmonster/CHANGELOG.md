@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
+### 2.8.0 - 2022-07-18
+* Introduce integration support with Easy Digital Downloads!
+* Fix issue with the OptinMonster "Disable All" setting in block editor when custom fields not supported for the post-type.
+* Fix issue where "This account does not have any campaigns to retrieve" error would show incorrectly.
+* Fix issue with output settings link having an incorrect trailing slash sometimes causing 404s.
+* Code refactor and function/method deprecations.
+
 ### 2.7.0 - 2022-05-17
 * Introduce revenue attribution support for EDD and WooCommerce, and add revenue attribution settings
 * Format dates for subscriber information according to the WordPress site timezone

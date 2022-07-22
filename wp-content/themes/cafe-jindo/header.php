@@ -29,8 +29,10 @@
 <header id="masthead" class="site-header">
     <div class="container">
         <div class="site-branding">
+            <a href="<?php site_url() ?>" class="custom-logo-link" rel="home" aria-current="page">
+                <img src="<?php echo wp_get_attachment_image_src(668 , 'medium' )[0] ?>" class="custom-logo" alt="Café Jindo" srcset="<?php echo wp_get_attachment_image_srcset(668) ?>">
+            </a>
             <?php
-            the_custom_logo();
             if ( is_front_page() && is_home() ) :
                 ?>
                 <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

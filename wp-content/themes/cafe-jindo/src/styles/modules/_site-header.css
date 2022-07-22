@@ -7,6 +7,7 @@
 
     @mixin atMedium {
         background: transparent;
+        width: calc(100vw - 18px);
     }
 
     &__white {
@@ -32,6 +33,10 @@ header {
 
 a.custom-logo-link {
     max-width: 250px !important;
+
+    &__hidden {
+        display: none;
+    }
 }
 
 /*About page header */
