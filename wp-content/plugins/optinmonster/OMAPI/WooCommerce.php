@@ -405,6 +405,12 @@ class OMAPI_WooCommerce {
 	 * @return boolean
 	 */
 	public static function is_connected() {
+
+		// If not active, then it is not connected as well.
+		if ( ! self::is_active() ) {
+			return false;
+		}
+
 		// Get current site details.
 		$site = OMAPI_Utils::parse_url( site_url() );
 		$host = isset( $site['host'] ) ? $site['host'] : '';

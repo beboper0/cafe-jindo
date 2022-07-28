@@ -101,6 +101,12 @@ class OMAPI_EasyDigitalDownloads_Rules {
 	 * @return void
 	 */
 	public function run_checks() {
+
+		// If EDD is not connected we can ignore the EDD specific settings.
+		if ( ! OMAPI_EasyDigitalDownloads::is_connected() ) {
+			return;
+		}
+
 		try {
 			$edd_checks = array(
 				'is_edd_download'                => array( $this, 'is_edd_download' ),
@@ -113,7 +119,11 @@ class OMAPI_EasyDigitalDownloads_Rules {
 			// If show_on_edd is selected, then we'll override the field_empty check for each page.
 			$show_on_all_edd_pages = ! $this->rules->field_empty( 'show_on_edd' );
 
-			$this->rules->set_advanced_settings_field( 'show_on_edd', $this->rules->get_field_value( 'show_on_edd' ) );
+			if ( $show_on_all_edd_pages ) {
+				$this->rules
+					->set_global_override( false )
+					->set_advanced_settings_field( 'show_on_edd', $this->rules->get_field_value( 'show_on_edd' ) );
+			}
 
 			foreach ( $edd_checks as $field => $callback ) {
 				// If show on all edd pages is not selected, and field is empty, then we don't need to check this.
@@ -121,9 +131,13 @@ class OMAPI_EasyDigitalDownloads_Rules {
 					continue;
 				}
 
-				$this->rules
-					->set_global_override( false )
-					->set_advanced_settings_field( $field, $this->rules->get_field_value( $field ) );
+				$rule_value = $this->rules->get_field_value( $field );
+
+				if ( $rule_value ) {
+					$this->rules
+						->set_global_override( false )
+						->set_advanced_settings_field( $field, $rule_value );
+				}
 
 				if ( call_user_func( $callback ) ) {
 

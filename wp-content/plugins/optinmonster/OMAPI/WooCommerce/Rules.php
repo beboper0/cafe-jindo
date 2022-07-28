@@ -110,27 +110,29 @@ class OMAPI_WooCommerce_Rules {
 	 * @return void
 	 */
 	public function run_checks() {
-		// If WooCommerce is enabled we can look for WooCommerce specific settings.
-		if ( OMAPI_WooCommerce::is_active() ) {
 
-			if (
-				! $this->rules->is_inline_check
-				// Separate never checks for WooCommerce pages that don't ID match
-				// No global check on purpose. Global is still true if only this setting is populated.
-				&& $this->rules->item_in_field( wc_get_page_id( 'shop' ), 'never' )
-				&& is_shop()
-			) {
-				throw new OMAPI_Rules_False( 'never on wc is_shop' );
-			}
+		// If WooCommerce is not connected we can ignore the WooCommerce specific settings.
+		if ( ! OMAPI_WooCommerce::is_connected() ) {
+			return;
+		}
 
-			try {
-				$this->check_fields();
-			} catch ( OMAPI_Rules_Exception $e ) {
-				if ( $e instanceof OMAPI_Rules_True ) {
-					throw new OMAPI_Rules_True( 'include woocommerce', 0, $e );
-				}
-				$this->rules->add_reason( $e );
+		if (
+			! $this->rules->is_inline_check
+			// Separate never checks for WooCommerce pages that don't ID match
+			// No global check on purpose. Global is still true if only this setting is populated.
+			&& $this->rules->item_in_field( wc_get_page_id( 'shop' ), 'never' )
+			&& is_shop()
+		) {
+			throw new OMAPI_Rules_False( 'never on wc is_shop' );
+		}
+
+		try {
+			$this->check_fields();
+		} catch ( OMAPI_Rules_Exception $e ) {
+			if ( $e instanceof OMAPI_Rules_True ) {
+				throw new OMAPI_Rules_True( 'include woocommerce', 0, $e );
 			}
+			$this->rules->add_reason( $e );
 		}
 	}
 

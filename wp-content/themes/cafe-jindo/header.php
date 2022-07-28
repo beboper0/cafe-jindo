@@ -29,7 +29,7 @@
 <header id="masthead" class="site-header">
     <div class="container">
         <div class="site-branding">
-            <a href="<?php site_url() ?>" class="custom-logo-link" rel="home" aria-current="page">
+            <a href="<?php echo site_url() ?>" class="custom-logo-link" rel="home" aria-current="page">
                 <img src="<?php echo wp_get_attachment_image_src(668 , 'medium' )[0] ?>" class="custom-logo" alt="Café Jindo" srcset="<?php echo wp_get_attachment_image_srcset(668) ?>">
             </a>
             <?php

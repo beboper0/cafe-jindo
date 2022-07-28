@@ -4,7 +4,7 @@ Tags: popup, popups, optin, conversion, marketing, newsletter, popup builder, po
 Requires at least: 4.7.0
 Tested up to: 6.0
 Requires PHP: 5.3
-Stable tag: 2.8.0
+Stable tag: 2.8.1
 License: GNU General Public License v2.0 or later
 
 🤩 Make popups & optin forms to get more email newsletter subscribers, leads, and sales - #1 most popular popup builder plugin! 🚀
@@ -457,6 +457,12 @@ Syed Balkhi
 == Changelog ==
 
 **Most Recent Changes:**
+
+= Popup Builder 2.8.1 =
+* Fix issue with Ecommerce Output rules being applied even when the Ecommerce was not connected anymore.
+* Fix issue with `optin-monster-inline` shortcode not working in many cases.
+* Fix issue in built JS files which caused them to be falsely-flagged in virus software.
+* Updated build script to keep file-names consistent when possible.
 
 = Popup Builder 2.8.0 =
 * Introduce integration support with Easy Digital Downloads!
