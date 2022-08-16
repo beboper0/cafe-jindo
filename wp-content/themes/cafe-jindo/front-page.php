@@ -49,7 +49,7 @@
                 <div class="row row--gutters">
                     <div class="col-2"><?php echo wp_get_attachment_image(387, 'large'); ?></div>
                     <div class="col-2">
-                        <h2>Cafe Jindo</h2>
+                        <h2>Welcome to Cafe Jindo</h2>
                         <hr>
                         <p>Café Jindo began with the idea that everyone deserves to have little luxuries in life;
                             whether it be heated seats in your car or a cup of delicious, locally roasted coffee to

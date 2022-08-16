@@ -37,6 +37,30 @@ get_header();
                                             array(
                                                 'key' => 'menu_category',
                                                 'compare' => '==',
+                                                'value' => 'teas',
+                                            )
+                                        )
+                                    ));
+                                    ?>
+                                    <h2><span id="Hot">Teas</span></h2>
+                                    <?php
+                                    foodMenu($hotDrinkMenu)
+                                    ?>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="food-menu-section col-2">
+                                    <?php
+                                    $hotDrinkMenu = new WP_Query(array(
+                                        'posts_per_page' => -1,
+                                        'post_type' => 'menu',
+                                        'meta_key' => 'menu_ordering',
+                                        'orderby' => 'meta_value_num',
+                                        'order' => 'ASC',
+                                        'meta_query' => array(
+                                            array(
+                                                'key' => 'menu_category',
+                                                'compare' => '==',
                                                 'value' => 'hot_drinks',
                                             )
                                         )
@@ -44,7 +68,7 @@ get_header();
                                     ?>
                                     <h2><span id="Hot">Hot Drinks</span></h2>
                                     <p>All drinks come in 12oz and 16oz sizes.</p>
-                                    <p>Options: Oat milk alternative +$0.50, Add espresso shot +$0.75, Add vanilla/caramel +$0.50</p>
+                                    <p>Options: Oat milk/macadamia alternative +$1.00, Add espresso shot +$1.00, Add flavored sweetener +$0.75</p>
                                     <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(484, 'medium') ?></div>
                                     <?php
                                     foodMenu($hotDrinkMenu)
@@ -151,9 +175,7 @@ get_header();
                                     <h2><span id="Desserts">Desserts</span></h2>
                                     <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(495, 'medium') ?></div>
                                     <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(497, 'small') ?></div>
-                                    <?php
-                                    foodMenu($dessertMenu)
-                                    ?>
+                                    <p>We serve an assortment of cookies, muffins, tarts and other baked goods with new additions featured seasonally. We also serve genuine gelato sourced from Amato here in Calgary.</p>
                                 </div>
 
                                 <div class="food-menu-section col-2">
