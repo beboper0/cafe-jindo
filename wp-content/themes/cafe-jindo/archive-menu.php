@@ -24,30 +24,31 @@ get_header();
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide__active">
-                            <div class="row">
-                                <div class="food-menu-section col-2">
-                                    <?php
-                                    $hotDrinkMenu = new WP_Query(array(
-                                        'posts_per_page' => -1,
-                                        'post_type' => 'menu',
-                                        'meta_key' => 'menu_ordering',
-                                        'orderby' => 'meta_value_num',
-                                        'order' => 'ASC',
-                                        'meta_query' => array(
-                                            array(
-                                                'key' => 'menu_category',
-                                                'compare' => '==',
-                                                'value' => 'teas',
-                                            )
+                            <div class="food-menu-section row">
+                                <?php
+                                $hotDrinkMenu = new WP_Query(array(
+                                    'posts_per_page' => -1,
+                                    'post_type' => 'menu',
+                                    'meta_key' => 'menu_ordering',
+                                    'orderby' => 'meta_value_num',
+                                    'order' => 'ASC',
+                                    'meta_query' => array(
+                                        array(
+                                            'key' => 'menu_category',
+                                            'compare' => '==',
+                                            'value' => 'teas',
                                         )
-                                    ));
-                                    ?>
-                                    <h2><span id="Hot">Teas</span></h2>
-                                    <?php
-                                    foodMenu($hotDrinkMenu)
-                                    ?>
+                                    )
+                                ));
+                                ?>
+                                <div class="col-1">
+                                    <h2><span id="Teas">Teas</span></h2>
                                 </div>
+                                <?php
+                                foodMenuGrid($hotDrinkMenu)
+                                ?>
                             </div>
+
                             <div class="row">
                                 <div class="food-menu-section col-2">
                                     <?php
@@ -122,7 +123,7 @@ get_header();
                                     ));
                                     ?>
                                     <h2><span id="Waffles">Waffles</span></h2>
-                                    <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(512, 'medium') ?></div>
+                                    <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(698, 'medium') ?></div>
                                     <?php
                                     foodMenu($waffleMenu)
                                     ?>
@@ -173,14 +174,14 @@ get_header();
                                     ));
                                     ?>
                                     <h2><span id="Desserts">Desserts</span></h2>
-                                    <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(495, 'medium') ?></div>
-                                    <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(497, 'small') ?></div>
                                     <p>We serve an assortment of cookies, muffins, tarts and other baked goods with new additions featured seasonally. We also serve genuine gelato sourced from Amato here in Calgary.</p>
+                                    <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(696, 'medium') ?></div>
+                                    <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(697, 'medium') ?></div>
                                 </div>
 
                                 <div class="food-menu-section col-2">
                                     <?php
-                                    $soupsSaladsMenu = new WP_Query(array(
+                                    $extraMenu = new WP_Query(array(
                                         'posts_per_page' => -1,
                                         'post_type' => 'menu',
                                         'meta_key' => 'menu_ordering',
@@ -190,14 +191,14 @@ get_header();
                                             array(
                                                 'key' => 'menu_category',
                                                 'compare' => '==',
-                                                'value' => 'soups_salads',
+                                                'value' => 'extra',
                                             )
                                         )
                                     ));
                                     ?>
-                                    <h2><span id="Salads">Soups and Salads</span></h2>
+                                    <h2><span id="Salads">Extra</span></h2>
                                     <?php
-                                    foodMenu($soupsSaladsMenu)
+                                    foodMenu($extraMenu)
                                     ?>
                                 </div>
                             </div>

@@ -159,6 +159,27 @@ function foodMenu($query) {
 	<?php }
 }
 
+function foodMenuGrid($query) {
+    while($query->have_posts()) {
+        $query->the_post(); ?>
+        <div class="col-4">
+            <div class="food-menu-section__menu-desc">
+                <h3>
+                    <?php echo get_field('menu_name')?> | <?php echo get_field('menu_price_1');
+                    if (get_field('menu_price_2')) {
+                        echo ' | ' . get_field('menu_price_2');
+                    } ?>
+                </h3>
+                <?php
+                if (get_field('menu_description')) { ?>
+                    <p><?php echo get_field('menu_description')?></p>
+                <?php }
+                ?>
+            </div>
+        </div>
+    <?php }
+}
+
 /**
  * Get an attachment ID given a URL.
  * Credit: https://wpscholar.com/blog/get-attachment-id-from-wp-image-url/
@@ -222,8 +243,8 @@ function cafe_jindo_scripts() {
 	wp_enqueue_style( 'cafe-jindo-style', get_theme_file_uri('//build/index.css'));
     wp_enqueue_style('roboto-font', '//fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
     wp_enqueue_style('pinyon-font', '//fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
-    wp_enqueue_style('cormorant-garamond', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
     wp_enqueue_style('heebo', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Heebo:wght@300&display=swap');
+    wp_enqueue_style('montserrat' , 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
     wp_enqueue_style('font-awesome', get_theme_file_uri('//assets/fonts/fontawesome/css/all.min.css'));
 
     wp_style_add_data( 'cafe-jindo-style', 'rtl', 'replace' );
