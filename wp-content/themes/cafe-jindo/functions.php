@@ -162,7 +162,7 @@ function foodMenu($query) {
 function foodMenuGrid($query) {
     while($query->have_posts()) {
         $query->the_post(); ?>
-        <div class="col-4">
+        <div class="col-3">
             <div class="food-menu-section__menu-desc">
                 <h3>
                     <?php echo get_field('menu_name')?> | <?php echo get_field('menu_price_1');
