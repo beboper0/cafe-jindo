@@ -3,8 +3,8 @@
 use Bluehost\AdminBar;
 use Bluehost\BuildAssets;
 use Bluehost\LoginRedirect;
-use Bluehost\UpgradeHandler;
-use Endurance_WP_Plugin_Updater\Updater;
+use WP_Forge\WPUpdateHandler\PluginUpdater;
+use WP_Forge\UpgradeHandler\UpgradeHandler;
 
 // Composer autoloader
 if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
@@ -18,22 +18,36 @@ if ( is_readable( __DIR__ . '/vendor/autoload.php' ) ) {
 }
 
 // Handle plugin updates
-if ( is_admin() || ( defined( 'DOING_CRON' ) && DOING_CRON ) || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
-	new Updater( 'bluehost', 'bluehost-wordpress-plugin', 'bluehost-wordpress-plugin/bluehost-wordpress-plugin.php' );
-}
+$pluginUpdater = new PluginUpdater(
+	BLUEHOST_PLUGIN_FILE,
+	'https://hiive.cloud/workers/release-api/plugins/bluehost/bluehost-wordpress-plugin'
+);
+$pluginUpdater->setDataMap(
+	array(
+		'version'       => 'version.latest',
+		'download_link' => 'download',
+		'last_updated'  => 'updated',
+		'requires'      => 'requires.wp',
+		'requires_php'  => 'requires.php',
+		'tested'        => 'tested.wp',
+	)
+);
 
-// Handle any upgrade routines
+// Handle any upgrade routines (only in the admin)
 if ( is_admin() ) {
 
 	// Handle plugin upgrades
 	$upgrade_handler = new UpgradeHandler(
-		BLUEHOST_PLUGIN_DIR . '/inc/upgrades',
-		get_option( 'bluehost_plugin_version', '1.0' ),
-		BLUEHOST_PLUGIN_VERSION
+		BLUEHOST_PLUGIN_DIR . '/inc/upgrades',  // Directory where upgrade routines live
+		get_option( 'bluehost_plugin_version', '1.0' ),   // Old plugin version (from database)
+		BLUEHOST_PLUGIN_VERSION               // New plugin version (from code)
 	);
 
+	// Returns true if the old version doesn't match the new version
 	$did_upgrade = $upgrade_handler->maybe_upgrade();
+
 	if ( $did_upgrade ) {
+		// If an upgrade occurred, update the new version in the database to prevent running the routine(s) again.
 		update_option( 'bluehost_plugin_version', BLUEHOST_PLUGIN_VERSION, true );
 	}
 }
@@ -41,6 +55,17 @@ if ( is_admin() ) {
 AdminBar::init();
 BuildAssets::init();
 LoginRedirect::init();
+
+// Disable Yoast SEO onboarding redirect
+add_action(
+	'admin_init',
+	function () {
+		if ( class_exists( 'WPSEO_Options' ) ) {
+			WPSEO_Options::set( 'should_redirect_after_install_free', false );
+		}
+	},
+	2
+);
 
 // Require files
 require __DIR__ . '/inc/admin.php';

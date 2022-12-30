@@ -3,9 +3,9 @@ Contributors: chriscct7, smub
 Donate link: http://www.wpbeginner.com/wpbeginner-needs-your-help/
 Tags: WordPress analytics, google analytics, google analytics dashboard, google analytics widget, WooCommerce stats, analytics dashboard, universal google analytics, statistics, tracking, stats, google, google analytics by yoast, ga, monster insights, monsterinsights, universal analytics, web stats, ecommerce, ecommerce tracking
 Requires at least: 4.8.0
-Tested up to: 6.0
-Stable tag: 8.7.0
-Requires PHP: 5.5
+Tested up to: 6.1
+Stable tag: 8.11.0
+Requires PHP: 5.6
 License: GPL v3
 
 The best free Google Analytics plugin for WordPress. See how visitors find and use your website, so you can grow your business.
@@ -33,7 +33,7 @@ That's why millions of small businesses and top companies like Microsoft, Bloomb
 
 We took the pain out of installing Google Analytics in WordPress and made it easy. Here's why over 3 million smart business owners, designers, and developers love MonsterInsights, and you will too!
 
-https://www.youtube.com/watch?v=IbdKpSygp2U
+https://www.youtube.com/watch?v=4Y8TGGkdcGY
 
 = Quick & Easy Google Analytics Setup =
 
@@ -208,7 +208,7 @@ We understand Google Analytics better than any other analytics plugin for WordPr
 * Google Analytics 4 Support -  Easily set up and send proper website tracking data to Google Analytics 4 (GA4)
 * eCommerce Tracking - Add Google Analytics Ecommerce tracking to WordPress.
 * WooCommerce Google Analytics - Add Enhanced Ecommerce Tracking to your WooCommerce store.
-* WooCommerce User Journey - See exactly which pages a customer visited before before purchasing from your WooCommerce store.
+* User Journeys - See exactly which pages a customer visited before before purchasing from your WooCommerce, Easy Digital Downloads, MemberPress, LifterLMS, Restrict Content Pro, or GiveWP website.
 * Easy Digital Downloads Google Analytics - Add Enhanced Ecommerce Tracking to your EDD store.
 * Affiliate Link Tracking - Track your affiliate links and get stats that matter.
 * Google Ads Conversion Tracking - Automatically track Google Ads conversions for WooCommerce, Easy Digital Downloads, and MemberPress.
@@ -298,6 +298,54 @@ You can also learn about other <a href="http://www.wpbeginner.com/category/plugi
 4. Want more features? <a href="https://www.monsterinsights.com/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion">Purchase MonsterInsights Pro</a>!
 
 == Changelog ==
+= 8.11.0: Dec 12, 2022 =
+- New: With our limited-time-only Year in Review report you’ll be able to see how your site performed in 2022 and how to improve in 2023. This report will be automatically available from January 1 to January 14, 2023, inside the Reports section of MonsterInsights.
+- Enhancement: We optimized our media addon events.
+
+= 8.10.1: Nov 09, 2022 =
+- Fix: We fixed a bug in our auto-update logic when it encounters double digit version numbers. 
+
+= 8.10.0: Nov 07, 2022 =
+- New: We created a new Media report available right inside WordPress Admin dashboard to view video plays and engagement
+- New: We added file download support for Pretty Links
+- Enhancement: We enhanced some UI elements within the plugin
+- Fix: We updated User Journey to work with older versions of Easy Digital Downloads
+
+= 8.9.1: Oct 11, 2022 =
+- Enhancement: Our UserJourney addon works with sequential orders
+- Enhancement: We updated some language inside the WordPress Admin area for GA4 reporting
+- Fix: Headline analyzer now understands queries better
+- Fix: We updated our Ads addon to work with Easy Digital Downloads 3.0 
+
+= 8.9.0: Sep 20, 2022 =
+- New: You can now show an MonsterInsights badge on your website!
+- Enhancement: We updated and tweaked many UI elements to better help with onboarding and plugin usage.
+- Enhancement: We now include our dashboard fonts locally.
+- Fix: We updated support for PHP 8 with our headline analyzer tool.
+
+= 8.8.2: Aug 26, 2022 =
+- Fix: We fixed the headline analyzer issues reported by our lite users.
+- Fix: We fixed the PHP errors reported by WordPress 4.8 users.
+
+= 8.8.1: Aug 24, 2022 =
+- Fix: We fixed the Javascript error reported by lite users.
+
+= 8.8.0: Aug 24, 2022 =
+- New: We added UserJourney for Easy Digital Downloads, MemberPress, LifterLMS, Restrict Content Pro, and GiveWP.
+- Enhancement: We enhanced the PageInsights addon to better support query strings
+- Enhancement: We optimized the reports cache.
+- Enhancement: We optimized the LearnDash integration.
+- Enhancement: We optimized reports data for eCommerce integrations.
+- Enhancement: We optimized report queries for certain timezones.
+- Enhancement: We updated some of our error messages to provide better direction.
+- Enhancement: We optimized the code for PHP 8.1.
+- Enhancement: We optimized our onboarding wizard to include all GA properties.
+- Enhancement: License validation now checks to ensure active license exists.
+- Fix: We fixed non zero data in eCommerce reports.
+- Fix: We fixed the purchase events for LifterLMS.
+- Fix: We updated the report URL for all downloads button inside the WordPress dashboard.
+- Fix: Updated eCommerce session tracking for GA4 properties.
+
 = 8.7.0: Jul 11, 2022 =
 - Fix: We fixed the logged-in sessions data in our dimensions report.
 - Fix: We fixed the test mode detection PayPal Express Payment method when Smart Button is used.

@@ -192,17 +192,47 @@ class OMAPI_Urls {
 	 *
 	 * @param  string $utm_medium The utm_medium query param.
 	 * @param  string $return_url Url to return. Will default to wp_get_referer().
+	 * @param  array  $args       Additional query args.
 	 *
 	 * @return string        The upgrade url.
 	 */
-	public static function upgrade( $utm_medium, $feature = 'none', $return_url = '' ) {
-		$path = sprintf(
-			'account/upgrade/?utm_source=WordPress&utm_medium=%1$s&utm_campaign=Plugin&feature=%2$s',
-			$utm_medium,
-			$feature
+	public static function upgrade( $utm_medium, $feature = 'none', $return_url = '', $args = array() ) {
+		$args = wp_parse_args(
+			$args,
+			array(
+				'utm_source'   => 'WordPress',
+				'utm_medium'   => $utm_medium,
+				'utm_campaign' => 'Plugin',
+				'feature'      => $feature,
+			)
 		);
 
+		$path = add_query_arg( $args, 'account/wp-upgrade/' );
+
 		return self::om_app( $path, $return_url );
+	}
+
+	/**
+	 * Get marketing url, with utm_medium params.
+	 *
+	 * @since 2.11.0
+	 *
+	 * @param  string $path The path on the app.
+	 * @param  array  $args Additional query args.
+	 *
+	 * @return string        The marketing url.
+	 */
+	public static function marketing( $path = '', $args = array() ) {
+		$args = wp_parse_args(
+			$args,
+			array(
+				'utm_source'   => 'WordPress',
+				'utm_medium'   => '',
+				'utm_campaign' => 'Plugin',
+			)
+		);
+
+		return add_query_arg( $args, sprintf( OPTINMONSTER_URL . '/%1$s', $path ) );
 	}
 
 	/**

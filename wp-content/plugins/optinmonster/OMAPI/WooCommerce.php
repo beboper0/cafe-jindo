@@ -209,6 +209,7 @@ class OMAPI_WooCommerce {
 		$data['woocommerce'] = self::version();
 		$data['restUrl']     = esc_url_raw( get_rest_url() );
 		$data['homeUrl']     = esc_url_raw( home_url() );
+		$data['adminUrl']    = esc_url_raw( get_admin_url() );
 
 		// Get the OptinMonster API credentials.
 		$creds = $this->get_request_api_credentials();
@@ -421,7 +422,9 @@ class OMAPI_WooCommerce {
 		$key_id = isset( $option['key_id'] ) ? $option['key_id'] : '';
 		$key    = $key_id ? self::get_key_details_by_id( $key_id ) : array();
 
-		return ! empty( $key['key_id'] ) && $host === $shop;
+		$is_connected = ! empty( $key['key_id'] ) && $host === $shop;
+
+		return apply_filters( 'optinmonster_woocommerce_is_connected', $is_connected );
 	}
 
 	/**

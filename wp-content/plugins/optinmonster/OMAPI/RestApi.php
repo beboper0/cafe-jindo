@@ -317,6 +317,10 @@ class OMAPI_RestApi extends OMAPI_BaseRestApi {
 			$this->woocommerce = new OMAPI_WooCommerce_RestApi();
 		}
 
+		if ( OMAPI_WPForms::is_active() ) {
+			new OMAPI_WPForms_RestApi();
+		}
+
 		if ( OMAPI_EasyDigitalDownloads::is_active() ) {
 			$this->edd = new OMAPI_EasyDigitalDownloads_RestApi();
 		}
@@ -736,15 +740,16 @@ class OMAPI_RestApi extends OMAPI_BaseRestApi {
 
 		// Get "Config" data.
 		$config = array(
-			'hasMailPoet'    => $mailpoet,
-			'isWooActive'    => OMAPI_WooCommerce::is_active(),
-			'isWooConnected' => OMAPI_WooCommerce::is_connected(),
-			'isEddActive'    => OMAPI_EasyDigitalDownloads::is_active(),
-			'isEddConnected' => OMAPI_EasyDigitalDownloads::is_connected(),
-			'mailPoetLists'  => $mailpoet && ! in_array( 'mailPoetLists', $excluded, true )
+			'hasMailPoet'     => $mailpoet,
+			'isWooActive'     => OMAPI_WooCommerce::is_active(),
+			'isWooConnected'  => OMAPI_WooCommerce::is_connected(),
+			'isWPFormsActive' => OMAPI_WPForms::is_active(),
+			'isEddActive'     => OMAPI_EasyDigitalDownloads::is_active(),
+			'isEddConnected'  => OMAPI_EasyDigitalDownloads::is_connected(),
+			'mailPoetLists'   => $mailpoet && ! in_array( 'mailPoetLists', $excluded, true )
 				? $this->base->mailpoet->get_lists()
 				: array(),
-			'mailPoetFields' => $mailpoet && ! in_array( 'mailPoetFields', $excluded, true )
+			'mailPoetFields'  => $mailpoet && ! in_array( 'mailPoetFields', $excluded, true )
 				? $this->base->mailpoet->get_custom_fields()
 				: array(),
 		);
@@ -902,14 +907,11 @@ class OMAPI_RestApi extends OMAPI_BaseRestApi {
 	 */
 	public function get_am_plugins_list( $request ) {
 		$plugins = new OMAPI_Plugins();
-		$data    = $plugins->get_list( true );
+		$data    = $plugins->get_list_with_status();
 
-		$install_nonce  = wp_create_nonce( 'install_plugin' );
-		$activate_nonce = wp_create_nonce( 'activate_plugin' );
-
+		$action_nonce = wp_create_nonce( 'om_plugin_action_nonce' );
 		foreach ( $data as $plugin_id => $plugin ) {
-			$data[ $plugin_id ]['install_nonce']  = $install_nonce;
-			$data[ $plugin_id ]['activate_nonce'] = $activate_nonce;
+			$data[ $plugin_id ]['actionNonce'] = $action_nonce;
 		}
 
 		return new WP_REST_Response( array_values( $data ), 200 );
@@ -930,29 +932,11 @@ class OMAPI_RestApi extends OMAPI_BaseRestApi {
 	public function handle_plugin_action( $request ) {
 		try {
 
-			$nonce = $request->get_param( 'nonce' );
-			if ( empty( $nonce ) ) {
-				throw new Exception( esc_html__( 'Missing security token!', 'optin-monster-api' ), rest_authorization_required_code() );
-			}
-
-			$action       = $request->get_param( 'installAction' );
-			$nonce_action = 'install' === $action ? 'install' : 'activate';
+			$nonce = $request->get_param( 'actionNonce' );
 
 			// Check the nonce.
-			$result = wp_verify_nonce( $nonce, $nonce_action . '_plugin' );
-			if ( ! $result ) {
+			if ( empty( $nonce ) || ! wp_verify_nonce( $nonce, 'om_plugin_action_nonce' ) ) {
 				throw new Exception( esc_html__( 'Security token invalid!', 'optin-monster-api' ), rest_authorization_required_code() );
-			}
-
-			$plugins = new OMAPI_Plugins();
-			$url     = $request->get_param( 'url' );
-
-			if ( 'install' === $nonce_action ) {
-				if ( empty( $url ) ) {
-					throw new Exception( esc_html__( 'Plugin install URL required.', 'optin-monster-api' ), 400 );
-				}
-
-				return new WP_REST_Response( $plugins->install_plugin( $url ), 200 );
 			}
 
 			$id = $request->get_param( 'id' );
@@ -960,7 +944,20 @@ class OMAPI_RestApi extends OMAPI_BaseRestApi {
 				throw new Exception( esc_html__( 'Plugin Id required.', 'optin-monster-api' ), 400 );
 			}
 
-			return new WP_REST_Response( $plugins->activate_plugin( $id ), 200 );
+			$plugins = new OMAPI_Plugins();
+			$plugin  = $plugins->get( $id );
+
+			if ( empty( $plugin['installed'] ) ) {
+				if ( empty( $plugin['url'] ) ) {
+					throw new Exception( esc_html__( 'Plugin install URL required.', 'optin-monster-api' ), 400 );
+				}
+
+				return new WP_REST_Response( $plugins->install_plugin( $plugin ), 200 );
+			}
+
+			$which = 'default' === $plugin['which'] ? $id : $plugin['which'];
+
+			return new WP_REST_Response( $plugins->activate_plugin( $which ), 200 );
 
 		} catch ( Exception $e ) {
 			return $this->exception_to_response( $e );

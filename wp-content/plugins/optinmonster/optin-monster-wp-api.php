@@ -5,7 +5,7 @@
  * Description: OptinMonster is the best WordPress popup builder plugin that helps you grow your email newsletter list and sales with email popups, exit intent popups, floating bars and more!
  * Author:      OptinMonster Popup Builder Team
  * Author URI:  https://optinmonster.com
- * Version:     2.8.1
+ * Version:     2.11.1
  * Text Domain: optin-monster-api
  * Domain Path: languages
  *
@@ -13,7 +13,7 @@
  * WC tested up to:      6.2.0
  * Requires at least:    4.7.0
  * Requires PHP:         5.3
- * Tested up to:         6.0
+ * Tested up to:         6.1
  *
  * OptinMonster is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -66,7 +66,7 @@ class OMAPI {
 	 *
 	 * @var string
 	 */
-	public $version = '2.8.1';
+	public $version = '2.11.1';
 
 	/**
 	 * The name of the plugin.
@@ -138,6 +138,15 @@ class OMAPI {
 	public $woocommerce;
 
 	/**
+	 * OMAPI_WPForms object.
+	 *
+	 * @since 2.9.0
+	 *
+	 * @var OMAPI_WPForms
+	 */
+	public $wpforms;
+
+	/**
 	 * OMAPI_EasyDigitalDownloads object.
 	 *
 	 * @var OMAPI_EasyDigitalDownloads
@@ -157,6 +166,15 @@ class OMAPI {
 	 * @var OMAPI_ClassicEditor
 	 */
 	public $classicEditor;
+
+	/**
+	 * OMAPI_Wordfence object.
+	 *
+	 * @since 2.10.0
+	 *
+	 * @var OMAPI_Wordfence
+	 */
+	public $wordfence;
 
 	/**
 	 * OMAPI_MailPoet object.
@@ -215,11 +233,11 @@ class OMAPI {
 	public $welcome;
 
 	/**
-	 * OMAPI_TrustPulse object (loaded only in the admin)
+	 * OMAPI_Promos object (loaded only in the admin)
 	 *
-	 * @var OMAPI_TrustPulse
+	 * @var OMAPI_Promos
 	 */
-	public $trustpulse;
+	public $promos;
 
 	/**
 	 * OMAPI_Review object (loaded only in the admin)
@@ -425,6 +443,7 @@ class OMAPI {
 		$this->shortcode   = new OMAPI_Shortcode();
 		$this->revenue     = new OMAPI_RevenueAttribution();
 		$this->woocommerce = new OMAPI_WooCommerce();
+		$this->wpforms     = new OMAPI_WPForms();
 		$this->elementor   = new OMAPI_Elementor();
 		$this->mailpoet    = new OMAPI_MailPoet();
 		$this->edd         = new OMAPI_EasyDigitalDownloads();
@@ -473,15 +492,12 @@ class OMAPI {
 		$this->refresh       = new OMAPI_Refresh();
 		$this->validate      = new OMAPI_Validate();
 		$this->welcome       = new OMAPI_Welcome();
-		$this->trustpulse    = new OMAPI_TrustPulse();
+		$this->promos        = new OMAPI_Promos();
 		$this->review        = new OMAPI_Review();
 		$this->sites         = new OMAPI_Sites();
 		$this->notifications = new OMAPI_Notifications();
 		$this->classicEditor = new OMAPI_ClassicEditor();
-
-		if ( OMAPI_Partners::has_partner_url() ) {
-			$this->cc = new OMAPI_ConstantContact();
-		}
+		$this->wordfence     = new OMAPI_Wordfence();
 
 		// Fire a hook to say that the admin classes are loaded.
 		do_action( 'optin_monster_api_admin_loaded' );
@@ -898,6 +914,28 @@ class OMAPI {
 	}
 
 	/**
+	 * Check if the user can see upgrade prompts.
+	 *
+	 * @since 2.11.0
+	 *
+	 * @return boolean Whether upgrades can be shown.
+	 */
+	public function can_show_upgrade() {
+		return $this->can_upgrade() || ! $this->get_level();
+	}
+
+	/**
+	 * Whether user is a lite user.
+	 *
+	 * @since 2.11.0
+	 *
+	 * @return boolean Whether user is a lite user.
+	 */
+	public function is_lite_user() {
+		return 'vbp_free' === $this->get_level();
+	}
+
+	/**
 	 * Check if the OM user is allowed MonsterLinks.
 	 *
 	 * @since  2.6.6
@@ -1000,6 +1038,23 @@ class OMAPI {
 	}
 
 	/**
+	 * Checks if given (or current) page is an optinmonster admin page.
+	 *
+	 * @since 2.10.0
+	 *
+	 * @param  strgin $page Page to check. Falls back to $_REQUEST['page'].
+	 *
+	 * @return boolean Whether given (or current) page is an optinmonster admin page.
+	 */
+	public function is_om_page( $page = null ) {
+		if ( empty( $page ) && ! empty( $_REQUEST['page'] ) ) {
+			$page = $_REQUEST['page'];
+		}
+
+		return ! empty( $page ) && preg_match( '/optin-monster-/', sanitize_key( $page ) );
+	}
+
+	/**
 	 * Hides unrelated admin notices.
 	 *
 	 * @since 1.9.7
@@ -1007,7 +1062,7 @@ class OMAPI {
 	public function hide_unrelated_admin_notices() {
 		// Bail if we're not on a OptinMonster screen.
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		if ( empty( $_REQUEST['page'] ) || ! preg_match( '/optin-monster-/', sanitize_key( $_REQUEST['page'] ) ) ) {
+		if ( ! $this->is_om_page() ) {
 			return;
 		}
 
@@ -1113,9 +1168,9 @@ class OMAPI {
 			return time();
 		}
 
-		return $this->beta_enabled() && $this->beta_version( 'U' )
-			? $this->beta_version( 'U' )
-			: $this->version;
+		$beta_version = $this->beta_version( 'U' );
+
+		return $beta_version ? $beta_version : $this->version;
 	}
 
 	/**
@@ -1141,18 +1196,24 @@ class OMAPI {
 	 * @return bool
 	 */
 	public function beta_version( $format = 'd M Y H:i:s' ) {
+		static $timestamp = null;
+
 		$version = false;
-		if ( false !== strpos( $this->version, 'beta' ) ) {
+		if ( ! $this->beta_enabled() ) {
+			return $version;
+		}
+
+		if ( null === $timestamp ) {
 			$file = plugin_dir_path( __FILE__ ) . '.betaversion';
 			if ( file_exists( $file ) ) {
 				ob_start();
 				include plugin_dir_path( __FILE__ ) . '.betaversion';
 				$timestamp = ob_get_clean();
-
-				if ( ! empty( $timestamp ) ) {
-					$version = date( $format, (int) $timestamp );
-				}
 			}
+		}
+
+		if ( ! empty( $timestamp ) ) {
+			$version = date( $format, (int) $timestamp );
 		}
 
 		return $version;

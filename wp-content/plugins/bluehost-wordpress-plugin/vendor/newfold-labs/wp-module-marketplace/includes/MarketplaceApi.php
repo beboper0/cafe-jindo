@@ -34,7 +34,7 @@ class MarketplaceApi {
 
 					if ( false === $marketplace ) {
 						$args = array(
-							'per_page' => 36,
+							'per_page' => 60,
 							// if marketplace brand is set on container, 
 							//  use it as brand override, 
 							//  otherwise use plugin id (default)
@@ -66,7 +66,8 @@ class MarketplaceApi {
 							$data = json_decode( $body, true );
 							if ( $data && is_array( $data ) ) {
 								$marketplace = $data;
-								self::setTransient( $marketplace );
+								$expiration = array_key_exists( 'ttl', $marketplace ) ? $marketplace['ttl'] : DAY_IN_SECONDS;
+								self::setTransient( $marketplace, $expiration );
 							}
 						}
 					}

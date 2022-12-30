@@ -219,12 +219,13 @@ class OMAPI_EasyDigitalDownloads {
 
 		// Setup the request payload.
 		$payload = array(
-			'key'     => $data['public_key'],
-			'token'   => $data['token'],
-			'shop'    => $data['url'],
-			'name'    => esc_html( get_bloginfo( 'name' ) ),
-			'restUrl' => esc_url_raw( get_rest_url() ),
-			'homeUrl' => esc_url_raw( home_url() ),
+			'key'      => $data['public_key'],
+			'token'    => $data['token'],
+			'shop'     => $data['url'],
+			'name'     => esc_html( get_bloginfo( 'name' ) ),
+			'restUrl'  => esc_url_raw( get_rest_url() ),
+			'homeUrl'  => esc_url_raw( home_url() ),
+			'adminUrl' => esc_url_raw( get_admin_url() ),
 		);
 
 		// Get the OptinMonster API credentials.

@@ -1,6 +1,34 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
+### 2.11.1 - 2022-11-29
+* Fix occasional undefined variable warning in logs
+* Maintenance updates to some JS packages
+* Removed some unused development files
+* Improve date-oriented rules
+* Improved performance on notifications
+* Improved some of the Output Settings labels to be more accurate.
+
+### 2.11.0 - 2022-11-04
+* Added new `optinmonster_prevent_all_campaigns` filter to allow preventing campaigns in custom conditions.
+* Updated the schedule link to actually display the campaign schedule feature.
+* Fix issue with WP Forms event listener when our api script loaded later.
+* Fix issue where a conversion was registered despite WP Forms recaptcha error.
+* Fix issue where plugin admin page requests may fail for accounts with large numbers of campaigns.
+* Various npm package updates.
+* Added new menu item.
+
+### 2.10.0 - 2022-09-13
+* Update/improve the campaign auto-insertion (after X words/paragraphs) feature.
+* Fix issue where WP Forms datepicker could sometimes be hidden behind the campaign.
+* Fix display of the Quick Links widget for RTL viewers.
+* Added filter for defining the post types that will work with the auto-insertion feature.
+* Introduced some tools to improve compatibility with WordFence.
+
+### 2.9.0 - 2022-08-11
+* Introduce integration support with WPForms! Now WPForms forms will be able to be embedded within campaigns, and conversions/success tracked.
+* Minification to our frontend JS helper file.
+
 ### 2.8.1 - 2022-07-21
 * Fix issue with Ecommerce Output rules being applied even when the Ecommerce was not connected anymore.
 * Fix issue with `optin-monster-inline` shortcode not working in many cases.

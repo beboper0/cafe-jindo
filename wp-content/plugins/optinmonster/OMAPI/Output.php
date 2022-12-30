@@ -387,8 +387,10 @@ class OMAPI_Output {
 	 * @since 1.0.0
 	 */
 	public function load_optinmonster() {
-		$post_id   = self::current_id();
+		$post_id = self::current_id();
+
 		$prevented = is_singular() && $post_id && get_post_meta( $post_id, 'om_disable_all_campaigns', true );
+		$prevented = apply_filters( 'optinmonster_prevent_all_campaigns', $prevented, $post_id );
 		if ( $prevented ) {
 			add_action( 'wp_footer', array( $this, 'prevent_all_campaigns' ), 11 );
 		}
@@ -706,7 +708,7 @@ class OMAPI_Output {
 	public function wp_helper() {
 		wp_enqueue_script(
 			$this->base->plugin_slug . '-wp-helper',
-			$this->base->url . 'assets/js/helper.js',
+			$this->base->url . 'assets/dist/js/helper.min.js',
 			array(),
 			$this->base->asset_version(),
 			true

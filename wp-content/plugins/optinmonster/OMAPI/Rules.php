@@ -109,14 +109,14 @@ class OMAPI_Rules {
 	 *
 	 * @var OMAPI_WooCommerce_Rules
 	 */
-	protected $woocommerce_rules = null;
+	protected $woocommerce = null;
 
 	/**
 	 * The OMAPI_EasyDigitalDownloads_Rules instance.
 	 *
 	 * @var OMAPI_EasyDigitalDownloads_Rules
 	 */
-	protected $edd_rules = null;
+	protected $edd = null;
 
 	/**
 	 * The last instance called of this class.
@@ -158,13 +158,13 @@ class OMAPI_Rules {
 	 * @since 2.8.0
 	 */
 	public function set() {
-		$this->woocommerce_rules = new OMAPI_WooCommerce_Rules( $this );
-		$this->edd_rules         = new OMAPI_EasyDigitalDownloads_Rules( $this );
+		$this->woocommerce = new OMAPI_WooCommerce_Rules( $this );
+		$this->edd         = new OMAPI_EasyDigitalDownloads_Rules( $this );
 
 		$fields = array_merge(
 			$this->fields,
-			$this->woocommerce_rules->get_fields(),
-			$this->edd_rules->get_fields()
+			$this->woocommerce->get_fields(),
+			$this->edd->get_fields()
 		);
 
 		$this->fields = apply_filters( 'optin_monster_api_output_fields', $fields );
@@ -251,7 +251,11 @@ class OMAPI_Rules {
 	 * @return bool
 	 */
 	public function is_inline_post_type() {
-		return $this->is_inline_check && 'shortcode' !== $this->is_inline_check && is_singular( 'post' );
+		return $this->is_inline_check
+			&& 'shortcode' !== $this->is_inline_check
+			&& is_singular(
+				apply_filters( 'optinmonster_automatic_inline_post_types', 'post', $this )
+			);
 	}
 
 	/**
@@ -501,8 +505,8 @@ class OMAPI_Rules {
 	 * @return void
 	 */
 	public function plugin_checks() {
-		$this->woocommerce_rules->run_checks();
-		$this->edd_rules->run_checks();
+		$this->woocommerce->run_checks();
+		$this->edd->run_checks();
 	}
 
 	/**
@@ -755,6 +759,8 @@ class OMAPI_Rules {
 			case 'caught':
 			case 'global_override':
 			case 'advanced_settings':
+			case 'woocommerce':
+			case 'edd':
 				return $this->$property;
 			default:
 				break;

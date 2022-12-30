@@ -118,31 +118,25 @@
 
 	const renderCTAs = (item) => {
 		let primaryCTA, secondaryCTA;
-		if ( constants.supportsCTB && item.clickToBuyId && item.primaryCallToAction ) {
-			// create CTB button
-			primaryCTA = (
-				<Components.Button
-					variant="primary"
-					className="primary-cta ctb-cta"
-					data-action="load-nfd-ctb"
-					data-ctb-id={ item.clickToBuyId }
-				>
-					{ item.primaryCallToAction }
-				</Components.Button>
-			);
-		} else if ( item.primaryUrl && item.primaryCallToAction ) {
-			// primary cta link
+		if ( item.primaryUrl && item.primaryCallToAction ) {
 			primaryCTA = (
 				<Components.Button
 					variant="primary"
 					className="primary-cta"
 					target="_blank"
 					href={ item.primaryUrl }
+					// create CTB button attributes
+					{... constants.supportsCTB && item.clickToBuyId ? { 
+							'data-action': "load-nfd-ctb",
+							'data-ctb-id': item.clickToBuyId
+						} : {}
+					}
 				>
 					{ item.primaryCallToAction }
 				</Components.Button>
 			);
 		}
+
 		if ( item.secondaryCallToAction && item.secondaryUrl ) {
 			secondaryCTA = (
 				<Components.Button 
@@ -171,8 +165,8 @@
 				</Components.CardMedia>
 			) }
 			<Components.CardHeader>
-				<h3>{ item.name }</h3>
-				{ item.price > 0 && item.price_formatted && <em className="price">{ item.price_formatted }</em> }
+				<h2>{ item.name }</h2>
+				{ item.price > 0 && item.price_formatted && <div className="price">{ item.price_formatted }</div> }
 			</Components.CardHeader>
 			{ item.description && 
 				<Components.CardBody 

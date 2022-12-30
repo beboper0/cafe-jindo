@@ -171,11 +171,9 @@ class OMAPI_Pages {
 			);
 
 			// If user upgradeable, add an upgrade link to menu.
-			$level   = $this->base->get_level();
-			$upgrade = $this->base->can_upgrade();
-			if ( $upgrade || '' === $level ) {
+			if ( $this->base->can_show_upgrade() ) {
 				$this->pages['optin-monster-upgrade'] = array(
-					'name'     => 'vbp_pro' === $level
+					'name'     => 'vbp_pro' === $this->base->get_level()
 						? '<span class="om-menu-highlight">' . __( 'Upgrade to Growth', 'optin-monster-api' ) . '</span>'
 						: '<span class="om-menu-highlight">' . __( 'Upgrade to Pro', 'optin-monster-api' ) . '</span>',
 					'redirect' => esc_url_raw( OMAPI_Urls::upgrade( 'pluginMenu' ) ),
@@ -184,12 +182,103 @@ class OMAPI_Pages {
 				add_filter( 'om_add_inline_script', array( $this, 'addUpgradeUrlToJs' ), 10, 2 );
 			}
 
+			$item = $this->should_show_bfcf_menu_item();
+			if ( $item ) {
+				$this->pages['optin-monster-bfcm'] = $item;
+			}
+
 			foreach ( $this->pages as $slug => $page ) {
 				$this->pages[ $slug ]['slug'] = $slug;
 			}
 		}
 
 		return $this->pages;
+	}
+
+	/**
+	 * Should we show the Black Friday menu item.
+	 *
+	 * @since 2.11.0
+	 *
+	 * @return bool
+	 */
+	public function should_show_bfcf_menu_item() {
+		$now          = new DateTime( 'now', new DateTimeZone( 'America/New_York' ) );
+		$is_bf_window = OMAPI_Utils::date_within( $now, '2022-11-07 00:00:00', '2022-12-06 23:59:59' );
+		if ( $is_bf_window ) {
+
+			$url = OMAPI_Urls::marketing(
+				'black-friday/',
+				array(
+					'utm_medium'   => 'pluginMenu',
+					'utm_campaign' => 'BF2022',
+				)
+			);
+
+			$is_pre_sale = OMAPI_Utils::date_before( $now, '2022-11-07 00:00:00' );
+
+			if ( ! $is_pre_sale && OMAPI_ApiKey::has_credentials() ) {
+				$url = $this->base->is_lite_user()
+					? OMAPI_Urls::marketing(
+						'pricing-wp/',
+						array(
+							'utm_medium'   => 'pluginMenu',
+							'utm_campaign' => 'BF2022',
+						)
+					)
+					: OMAPI_Urls::upgrade(
+						'pluginMenu',
+						'',
+						'',
+						array(
+							'utm_campaign' => 'BF2022',
+							'feature'      => false,
+						)
+					);
+			}
+
+			$is_cm_window = ! OMAPI_Utils::date_before( $now, '2022-11-28 00:00:00' );
+
+			return array(
+				'name'     => $is_cm_window
+					? esc_html__( 'Cyber Monday!', 'optin-monster-api' )
+					: esc_html__( 'Black Friday!', 'optin-monster-api' ),
+				'redirect' => esc_url_raw( $url ),
+				'callback' => '__return_null',
+			);
+		}
+
+		$is_gm_window = OMAPI_Utils::date_within( $now, '2022-12-12 00:00:00', '2022-12-12 23:59:59' );
+		if ( $is_gm_window ) {
+
+			$url = OMAPI_Urls::marketing(
+				'pricing-wp/',
+				array(
+					'utm_medium'   => 'pluginMenu',
+					'utm_campaign' => 'BF2022',
+				)
+			);
+
+			if ( OMAPI_ApiKey::has_credentials() && ! $this->base->is_lite_user() ) {
+				$url = OMAPI_Urls::upgrade(
+					'pluginMenu',
+					'',
+					'',
+					array(
+						'utm_campaign' => 'BF2022',
+						'feature'      => false,
+					)
+				);
+			}
+
+			return array(
+				'name'     => esc_html__( 'Green Monday!', 'optin-monster-api' ),
+				'redirect' => esc_url_raw( $url ),
+				'callback' => '__return_null',
+			);
+		}
+
+		return false;
 	}
 
 	/**
@@ -414,6 +503,7 @@ class OMAPI_Pages {
 					'pluginVersion'   => $this->base->version,
 					'partnerId'       => OMAPI_Partners::get_id(),
 					'partnerUrl'      => OMAPI_Partners::has_partner_url(),
+					'referredBy'      => OMAPI_Partners::referred_by(),
 					'showReview'      => $this->base->review->should_show_review(),
 					'timezone'        => wp_timezone_string(),
 				)

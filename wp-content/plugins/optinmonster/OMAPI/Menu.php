@@ -183,9 +183,7 @@ class OMAPI_Menu {
 		}
 
 		// Maybe add custom CSS for our menu upgrade link.
-		$level   = $this->base->get_level();
-		$upgrade = $this->base->can_upgrade();
-		if ( $upgrade || '' === $level ) {
+		if ( $this->base->can_show_upgrade() ) {
 			add_action( 'admin_footer', array( $this, 'add_upgrade_link_css' ) );
 		}
 	}
@@ -246,7 +244,7 @@ class OMAPI_Menu {
 		// Make sure the about page is still the last page.
 		if ( isset( $submenu[ self::SLUG ] ) ) {
 			$after  = array();
-			$at_end = array( 'optin-monster-about', 'optin-monster-upgrade' );
+			$at_end = array( 'optin-monster-about', 'optin-monster-upgrade', 'optin-monster-bfcm' );
 			foreach ( $submenu[ self::SLUG ] as $key => $menu ) {
 				if ( isset( $menu[2] ) && in_array( $menu[2], $at_end ) ) { // phpcs:ignore WordPress.PHP.StrictInArray.MissingTrueStrict
 					$after[] = $menu;
@@ -280,10 +278,8 @@ class OMAPI_Menu {
 
 		// Maybe add an upgrade link to the plugin links.
 		$upgrade_links = array();
-		$upgrade       = $this->base->can_upgrade();
-		$level         = $this->base->get_level();
-		if ( $upgrade || '' === $level ) {
-			$upgrade_links[] = sprintf( '<a class="om-plugin-upgrade-link" href="%s">%s</a>', OMAPI_Urls::upgrade( 'plugin_action_link' ), 'vbp_pro' === $level ? __( 'Upgrade to Growth', 'optin-monster-api' ) : __( 'Upgrade to Pro', 'optin-monster-api' ) );
+		if ( $this->base->can_show_upgrade() ) {
+			$upgrade_links[] = sprintf( '<a class="om-plugin-upgrade-link" href="%s">%s</a>', OMAPI_Urls::upgrade( 'plugin_action_link' ), 'vbp_pro' === $this->base->get_level() ? __( 'Upgrade to Growth', 'optin-monster-api' ) : __( 'Upgrade to Pro', 'optin-monster-api' ) );
 		}
 
 		$new_links = $this->base->get_api_credentials()
@@ -314,10 +310,8 @@ class OMAPI_Menu {
 		if ( $file === plugin_basename( OMAPI_FILE ) ) {
 
 			// If user upgradeable or not registered yet, let's put an upgrade link.
-			$upgrade = $this->base->can_upgrade();
-			$level   = $this->base->get_level();
-			if ( $upgrade || '' === $level ) {
-				$label = 'vbp_pro' === $level
+			if ( $this->base->can_show_upgrade() ) {
+				$label = 'vbp_pro' === $this->base->get_level()
 					? __( 'Upgrade to Growth', 'optin-monster-api' )
 					: __( 'Upgrade to Pro', 'optin-monster-api' );
 

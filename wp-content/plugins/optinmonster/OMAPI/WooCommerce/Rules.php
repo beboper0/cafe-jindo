@@ -166,18 +166,33 @@ class OMAPI_WooCommerce_Rules {
 		);
 
 		foreach ( $wc_checks as $field => $callback ) {
-			if ( $this->rules->field_empty( $field ) ) {
-				continue;
-			}
+			$this->check_field( $field, $callback );
+		}
+	}
 
-			$this->rules
-				->set_global_override( false )
-				->set_advanced_settings_field( $field, $this->rules->get_field_value( $field ) );
+	/**
+	 * Check for woocommerce rule field.
+	 *
+	 * @since 2.10.0
+	 *
+	 * @param  string $field    The field to check.
+	 * @param  array  $callback The callback to check.
+	 *
+	 * @return void
+	 * @throws OMAPI_Rules_True
+	 */
+	protected function check_field( $field, $callback ) {
+		if ( $this->rules->field_empty( $field ) ) {
+			return;
+		}
 
-			if ( call_user_func_array( array_shift( $callback ), $callback ) ) {
-				// If it passes, send it back.
-				throw new OMAPI_Rules_True( $field );
-			}
+		$this->rules
+			->set_global_override( false )
+			->set_advanced_settings_field( $field, $this->rules->get_field_value( $field ) );
+
+		if ( call_user_func_array( array_shift( $callback ), $callback ) ) {
+			// If it passes, send it back.
+			throw new OMAPI_Rules_True( $field );
 		}
 	}
 }

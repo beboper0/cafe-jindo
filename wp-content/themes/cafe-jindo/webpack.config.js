@@ -58,7 +58,7 @@ module.exports = {
         ...defaultConfig.plugins,
         new IgnoreEmitWebPackPlugin( [ 'editor.js', 'style.js' ] ),
         new MiniCssExtractPlugin( {
-            filename: '../[name].css',
+            filename: '../style.css',
         } ),
     ],
 };

@@ -252,6 +252,7 @@ class OMAPI_Api {
 			'OMAPI-Sender'  => 'WordPress',
 			'OMAPI-Site'    => esc_attr( get_option( 'blogname' ) ),
 			'OMAPI-Version' => esc_attr( OMAPI::get_instance()->version ),
+			'OMAPI-Plugins' => ( new OMAPI_Plugins() )->get_active_plugins_header_value(),
 		);
 
 		if ( $this->apikey ) {
