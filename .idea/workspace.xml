@@ -21,123 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/bluehost-wordpress-plugin.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/bluehost-wordpress-plugin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/0-0c56e62cefb121c51aac.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/1-7836d7935dce611bed73.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/10-24a6ef9950321c168244.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/10-24a6ef9950321c168244.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/11-f2134232daf427a00956.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/11-f2134232daf427a00956.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/12-4002f20d089d0187b6c9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/12-4002f20d089d0187b6c9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/13-b951a718e626da090209.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/13-b951a718e626da090209.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/14-cd2904a1e29a0175df71.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/14-cd2904a1e29a0175df71.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/15-4c7a7e1b419940b6bd85.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/15-4c7a7e1b419940b6bd85.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/16-9eb2317cbd575326ceba.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/16-9eb2317cbd575326ceba.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/17-c57f6349db6391fec625.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/17-c57f6349db6391fec625.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/18-e77bccc95eb0b7963da8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/18-e77bccc95eb0b7963da8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/19-5bff8fdf476850c1b7c7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/19-5bff8fdf476850c1b7c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/20-ae751f46ba4dbbc44997.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/20-ae751f46ba4dbbc44997.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/21-0bc377cc57e31830ca89.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/22-fcff7d873b8b1a620508.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/23-1e4201fe74b10bd33a5c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/24-b35ac87b993366ce16ef.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/9-5eac8754db87fe7adbe1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/app-338dbdf1fc32613626b9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/app-338dbdf1fc32613626b9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/dashboard-a457d5702198fdcdb6c7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/dashboard-a457d5702198fdcdb6c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/editortours-e1b82ca76d1be867e4e2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/editortours-e1b82ca76d1be867e4e2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/manifest~app-f68759a60971f6e1b71f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/manifest~dashboard-941c22b79fdae7162ed5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/manifest~editortours-a25230aaf10c171412a3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/vendors~app-01ca83f396f119b2a53e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/wp-dependency-registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/wp-dependency-registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/wp-dependency.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/build/wp-dependency.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/CTB/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/CTB/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/CTB/js/ctb.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/CTB/js/ctb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/AdminNotices.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/Notification.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/NotificationsApi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/NotificationsRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/bootstrap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/js/dismiss-notices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/js/prime-notices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/Notifications/js/realtime-notices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/RestApi/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/RestApi/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/admin/class-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/admin/class-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/coming-soon.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/pages/coming-soon.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/user-experience-tracking.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/inc/user-experience-tracking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/index.nvm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/lib/.staging" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/lib/.staging" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/bluehost/bluehost-wp-customer-data/includes/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/bluehost/bluehost-wp-customer-data/includes/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/composer/installed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/src/EventManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-data/src/EventManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/build/index.asset.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/includes/ECommerce.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/includes/ECommerce.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/includes/Partials/CaptiveFlow.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/includes/Partials/CaptiveFlow.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/includes/Partials/WooCommerceBacklink.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-ecommerce/includes/Partials/WooCommerceBacklink.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplace/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplace/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplaceIsLoading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplaceIsLoading/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplaceItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplaceItem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplaceList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/components/marketplaceList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/includes/Marketplace.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/includes/Marketplace.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/includes/MarketplaceApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-marketplace/includes/MarketplaceApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/16.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/187.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/220.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/225.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/253.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/257.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/282.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/331.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/376.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/437.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/441.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/527.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/552.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/567.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/577.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/58.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/669.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/69.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/800.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/858.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/867.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/880.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/888.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/978.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/993.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/images/content.1a21aab0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/images/design.08e4d9fe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/images/features.84032f3d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/onboarding.asset.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/onboarding.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/build/0.2.4/onboarding.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/Data/Options.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/Data/Options.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/RestApi/SettingsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/RestApi/SettingsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/RestApi/Themes/ApprovedThemesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-onboarding/includes/RestApi/Themes/ApprovedThemesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_main-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/src/styles/modules/_main-page.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +94,8 @@
       <workItem from="1665470009110" duration="645000" />
       <workItem from="1666514450049" duration="850000" />
       <workItem from="1672438062453" duration="5556000" />
-      <workItem from="1672649583422" duration="650000" />
+      <workItem from="1672649583422" duration="742000" />
+      <workItem from="1672656063939" duration="614000" />
     </task>
     <servers />
   </component>
