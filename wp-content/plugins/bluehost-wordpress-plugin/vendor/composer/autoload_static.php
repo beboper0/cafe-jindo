@@ -4,18 +4,21 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
+class ComposerStaticInitedb939b9e468fbd626c6dc2460b04ed0
 {
     public static $files = array (
         '305f44d06b4b9b934b549f0b525c4bea' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/bootstrap.php',
-        'ac949ce40a981819ba132473518a9a31' => __DIR__ . '/..' . '/wp-cli/wp-config-transformer/src/WPConfigTransformer.php',
         '89c483fff8e47bfb3a84bf56b0ff5160' => __DIR__ . '/..' . '/wp-forge/helpers/includes/functions.php',
+        'ac949ce40a981819ba132473518a9a31' => __DIR__ . '/..' . '/wp-cli/wp-config-transformer/src/WPConfigTransformer.php',
         '2f504007b66898166b454912c82ea1be' => __DIR__ . '/..' . '/bluehost/bluehost-wp-customer-data/bootstrap.php',
         'f451a47b5b691954214859a2f4ec4451' => __DIR__ . '/..' . '/newfold-labs/wp-module-business-reviews/bootstrap.php',
+        'e44df89631b0c72f7ea6a6eeb13c0410' => __DIR__ . '/..' . '/newfold-labs/wp-module-coming-soon/bootstrap.php',
+        '4b39e1fa03970134407de860a52cecf7' => __DIR__ . '/..' . '/newfold-labs/wp-module-coming-soon/includes/coming-soon.php',
         '438e814f7ad74cb167165cdd71008bd1' => __DIR__ . '/..' . '/newfold-labs/wp-module-ecommerce/bootstrap.php',
         '95c011b0ec52c15dbf68dec5081b93ec' => __DIR__ . '/..' . '/newfold-labs/wp-module-loader/bootstrap.php',
         'd74aae4e35e57e9789b924ac610c283e' => __DIR__ . '/..' . '/newfold-labs/wp-module-loader/includes/functions.php',
         '7c5dbbc48ace6d036fb7435638b4473b' => __DIR__ . '/..' . '/newfold-labs/wp-module-marketplace/bootstrap.php',
+        '26840a0cd4e9420cf8b4732c7ad196b5' => __DIR__ . '/..' . '/newfold-labs/wp-module-notifications/bootstrap.php',
         '7428ba02ca10bbb00ca25d8b12288235' => __DIR__ . '/..' . '/newfold-labs/wp-module-onboarding/bootstrap.php',
         '0af4867b69840fe0473305a547d8e23c' => __DIR__ . '/..' . '/newfold-labs/wp-module-secure-passwords/bootstrap.php',
         '44acd1d537592db522c7f66302b330e4' => __DIR__ . '/..' . '/newfold-labs/wp-module-sso/bootstrap.php',
@@ -42,9 +45,11 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
             'NewfoldLabs\\WP\\Module\\Marketplace\\' => 34,
             'NewfoldLabs\\WP\\Module\\ECommerce\\' => 32,
             'NewfoldLabs\\WP\\Module\\Data\\' => 27,
+            'NewfoldLabs\\WP\\Module\\ComingSoon\\' => 33,
             'NewfoldLabs\\WP\\ModuleLoader\\' => 28,
             'NewfoldLabs\\Container\\' => 22,
             'NewFoldLabs\\WP\\Module\\SSO\\' => 26,
+            'NewFoldLabs\\WP\\Module\\Notifications\\' => 36,
         ),
         'D' => 
         array (
@@ -106,6 +111,10 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
         array (
             0 => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src',
         ),
+        'NewfoldLabs\\WP\\Module\\ComingSoon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/newfold-labs/wp-module-coming-soon/includes',
+        ),
         'NewfoldLabs\\WP\\ModuleLoader\\' => 
         array (
             0 => __DIR__ . '/..' . '/newfold-labs/wp-module-loader/includes',
@@ -117,6 +126,10 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
         'NewFoldLabs\\WP\\Module\\SSO\\' => 
         array (
             0 => __DIR__ . '/..' . '/newfold-labs/wp-module-sso/includes',
+        ),
+        'NewFoldLabs\\WP\\Module\\Notifications\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/newfold-labs/wp-module-notifications/includes',
         ),
         'Doctrine\\Common\\Inflector\\' => 
         array (
@@ -148,10 +161,6 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
         'Bluehost\\BuildAssets' => __DIR__ . '/../..' . '/inc/BuildAssets.php',
         'Bluehost\\CTB\\CTBApi' => __DIR__ . '/../..' . '/inc/CTB/CTBApi.php',
         'Bluehost\\LoginRedirect' => __DIR__ . '/../..' . '/inc/LoginRedirect.php',
-        'Bluehost\\Notifications\\AdminNotices' => __DIR__ . '/../..' . '/inc/Notifications/AdminNotices.php',
-        'Bluehost\\Notifications\\Notification' => __DIR__ . '/../..' . '/inc/Notifications/Notification.php',
-        'Bluehost\\Notifications\\NotificationsApi' => __DIR__ . '/../..' . '/inc/Notifications/NotificationsApi.php',
-        'Bluehost\\Notifications\\NotificationsRepository' => __DIR__ . '/../..' . '/inc/Notifications/NotificationsRepository.php',
         'Bluehost\\ResponseUtilities' => __DIR__ . '/../..' . '/inc/ResponseUtilities.php',
         'Bluehost\\RestApi\\AdminErrorController' => __DIR__ . '/../..' . '/inc/RestApi/AdminErrorController.php',
         'Bluehost\\RestApi\\BluehostBlogController' => __DIR__ . '/../..' . '/inc/RestApi/BluehostBlogController.php',
@@ -197,6 +206,10 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
         'Mustache_Source_FilesystemSource' => __DIR__ . '/..' . '/mustache/mustache/src/Mustache/Source/FilesystemSource.php',
         'Mustache_Template' => __DIR__ . '/..' . '/mustache/mustache/src/Mustache/Template.php',
         'Mustache_Tokenizer' => __DIR__ . '/..' . '/mustache/mustache/src/Mustache/Tokenizer.php',
+        'NewFoldLabs\\WP\\Module\\Notifications\\AdminNotices' => __DIR__ . '/..' . '/newfold-labs/wp-module-notifications/includes/AdminNotices.php',
+        'NewFoldLabs\\WP\\Module\\Notifications\\Notification' => __DIR__ . '/..' . '/newfold-labs/wp-module-notifications/includes/Notification.php',
+        'NewFoldLabs\\WP\\Module\\Notifications\\NotificationsApi' => __DIR__ . '/..' . '/newfold-labs/wp-module-notifications/includes/NotificationsApi.php',
+        'NewFoldLabs\\WP\\Module\\Notifications\\NotificationsRepository' => __DIR__ . '/..' . '/newfold-labs/wp-module-notifications/includes/NotificationsRepository.php',
         'NewFoldLabs\\WP\\Module\\SSO\\SSO_AJAX_Handler' => __DIR__ . '/..' . '/newfold-labs/wp-module-sso/includes/SSO_AJAX_Handler.php',
         'NewFoldLabs\\WP\\Module\\SSO\\SSO_Helpers' => __DIR__ . '/..' . '/newfold-labs/wp-module-sso/includes/SSO_Helpers.php',
         'NewFoldLabs\\WP\\Module\\SSO\\SSO_Helpers_Legacy' => __DIR__ . '/..' . '/newfold-labs/wp-module-sso/includes/SSO_Helpers_Legacy.php',
@@ -230,6 +243,7 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
         'NewfoldLabs\\WP\\Module\\Data\\Listeners\\Plugin' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src/Listeners/Plugin.php',
         'NewfoldLabs\\WP\\Module\\Data\\Listeners\\SiteHealth' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src/Listeners/SiteHealth.php',
         'NewfoldLabs\\WP\\Module\\Data\\Listeners\\Theme' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src/Listeners/Theme.php',
+        'NewfoldLabs\\WP\\Module\\Data\\Listeners\\Yith' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src/Listeners/Yith.php',
         'NewfoldLabs\\WP\\Module\\Data\\Logger' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src/Logger.php',
         'NewfoldLabs\\WP\\Module\\Data\\SubscriberInterface' => __DIR__ . '/..' . '/newfold-labs/wp-module-data/src/SubscriberInterface.php',
         'NewfoldLabs\\WP\\Module\\ECommerce\\Data\\Plugins' => __DIR__ . '/..' . '/newfold-labs/wp-module-ecommerce/includes/Data/Plugins.php',
@@ -302,10 +316,10 @@ class ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitd33834bc447e1798d6bc9ba1ee6ed29b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitedb939b9e468fbd626c6dc2460b04ed0::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitedb939b9e468fbd626c6dc2460b04ed0::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitedb939b9e468fbd626c6dc2460b04ed0::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitedb939b9e468fbd626c6dc2460b04ed0::$classMap;
 
         }, null, ClassLoader::class);
     }
