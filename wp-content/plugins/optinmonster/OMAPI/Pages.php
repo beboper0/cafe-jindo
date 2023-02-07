@@ -124,6 +124,16 @@ class OMAPI_Pages {
 				'callback' => array( $this, 'render_app_loading_page' ),
 			);
 
+			$this->pages['optin-monster-playbooks'] = array(
+				'name'             => __( 'Playbooks', 'optin-monster-api' ),
+				'app'              => true,
+				'callback'         => array( $this, 'render_app_loading_page' ),
+				'new_badge_period' => array(
+					'start' => '2023-02-02 00:00:00',
+					'end'   => '2023-03-03 59:59:59',
+				),
+			);
+
 			$this->pages['optin-monster-monsterleads'] = array(
 				'name'     => __( 'Subscribers', 'optin-monster-api' ),
 				'app'      => true,
@@ -342,10 +352,15 @@ class OMAPI_Pages {
 					$parent_slug .= '-hidden';
 				}
 
+				$menu_title = ! empty( $page['menu'] ) ? $page['menu'] : $page['name'];
+				if ( $this->maybe_add_new_badge( $page ) ) {
+					$menu_title .= ' <span class="omapi-menu-new">New!<span>';
+				}
+
 				$hooks[] = $hook = add_submenu_page(
 					$parent_slug, // $parent_slug
 					$page['name'], // $page_title
-					! empty( $page['menu'] ) ? $page['menu'] : $page['name'], // $menu_title
+					$menu_title,
 					$this->base->access_capability( $page['slug'] ),
 					$page['slug'],
 					$page['callback']
@@ -513,42 +528,12 @@ class OMAPI_Pages {
 
 			$loader->localize( $js_args );
 
-			wp_enqueue_script( $this->base->plugin_slug . '-api-script', OPTINMONSTER_APIJS_URL, $loader->handles['js'], null, true );
-			add_filter( 'script_loader_tag', array( $this, 'filter_api_script' ), 10, 2 );
-
 			return $loader;
 
 		} catch ( \Exception $e ) {
 		}
 
 		return false;
-	}
-
-	/**
-	 * Filters the API script tag to add the preview user/account data attributes.
-	 *
-	 * @since 2.0.0
-	 *
-	 * @param string $tag    The HTML script output.
-	 * @param string $handle The script handle to target.
-	 * @return string $tag   Amended HTML script with our ID attribute appended.
-	 */
-	public function filter_api_script( $tag, $handle ) {
-
-		// If the handle is not ours, do nothing.
-		if ( $this->base->plugin_slug . '-api-script' !== $handle ) {
-			return $tag;
-		}
-
-		// Adjust the output to add our custom script ID.
-		return str_replace(
-			' src',
-			sprintf(
-				' data-account="56690" data-user="50374" async %s src',
-				defined( 'OPTINMONSTER_ENV' ) ? 'data-env="' . OPTINMONSTER_ENV . '"' : ''
-			),
-			$tag
-		);
 	}
 
 	/**
@@ -576,6 +561,27 @@ class OMAPI_Pages {
 		}
 
 		return false;
+	}
+
+	/**
+	 * Determine if a page should have a "new" badge.
+	 *
+	 * @param array $page The page data.
+	 *
+	 * @return boolean True if the given page should have a new badge
+	 */
+	public function maybe_add_new_badge( $page ) {
+		if ( empty( $page['new_badge_period']['start'] ) ) {
+			return false;
+		}
+
+		$now = new DateTime( 'now', new DateTimeZone( 'America/New_York' ) );
+
+		return OMAPI_Utils::date_within(
+			$now,
+			$page['new_badge_period']['start'],
+			$page['new_badge_period']['end']
+		);
 	}
 
 }

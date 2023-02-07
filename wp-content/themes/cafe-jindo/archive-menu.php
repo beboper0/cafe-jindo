@@ -24,30 +24,34 @@ get_header();
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-slide__active">
-                            <div class="food-menu-section row">
-                                <?php
-                                $hotDrinkMenu = new WP_Query(array(
-                                    'posts_per_page' => -1,
-                                    'post_type' => 'menu',
-                                    'meta_key' => 'menu_ordering',
-                                    'orderby' => 'meta_value_num',
-                                    'order' => 'ASC',
-                                    'meta_query' => array(
-                                        array(
-                                            'key' => 'menu_category',
-                                            'compare' => '==',
-                                            'value' => 'teas',
-                                        )
+                            <?php
+
+                            $teaMenu = new WP_Query(array(
+                                'posts_per_page' => -1,
+                                'post_type' => 'menu',
+                                'meta_key' => 'menu_ordering',
+                                'orderby' => 'meta_value_num',
+                                'order' => 'ASC',
+                                'meta_query' => array(
+                                    array(
+                                        'key' => 'menu_category',
+                                        'compare' => '==',
+                                        'value' => 'teas',
                                     )
-                                ));
-                                ?>
-                                <div class="col-1">
-                                    <h2><span id="Teas">Teas</span></h2>
+                                )
+                            ));
+
+                            if ($teaMenu->have_posts()) { ?>
+                                <div class="food-menu-section row">
+                                    <div class="col-1">
+                                        <h2><span id="Teas">Teas</span></h2>
+                                    </div>
+                                    <?php
+                                    foodMenuGrid($teaMenu)
+                                    ?>
                                 </div>
-                                <?php
-                                foodMenuGrid($hotDrinkMenu)
-                                ?>
-                            </div>
+                            <?php }
+                            ?>
 
                             <div class="row">
                                 <div class="food-menu-section col-2">
@@ -177,11 +181,14 @@ get_header();
                                     <p>We serve an assortment of cookies, muffins, tarts and other baked goods with new additions featured seasonally. We also serve genuine gelato sourced from Amato here in Calgary.</p>
                                     <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(696, 'medium') ?></div>
                                     <div class="food-menu-section__menu-pic"><?php echo wp_get_attachment_image(697, 'medium') ?></div>
+                                    <?php
+                                    foodMenu($dessertMenu)
+                                    ?>
                                 </div>
 
-                                <div class="food-menu-section col-2">
-                                    <?php
-                                    $extraMenu = new WP_Query(array(
+                                <?php
+
+                                $extraMenu = new WP_Query(array(
                                         'posts_per_page' => -1,
                                         'post_type' => 'menu',
                                         'meta_key' => 'menu_ordering',
@@ -195,12 +202,16 @@ get_header();
                                             )
                                         )
                                     ));
-                                    ?>
-                                    <h2><span id="Salads">Extra</span></h2>
-                                    <?php
-                                    foodMenu($extraMenu)
-                                    ?>
-                                </div>
+
+                                if ($extraMenu->have_posts()) { ?>
+                                    <div class="food-menu-section col-2">
+                                        <h2><span id="Salads">Extra</span></h2>
+                                        <?php
+                                        foodMenu($extraMenu)
+                                        ?>
+                                    </div>
+                                <?php }
+                                ?>
                             </div>
                         </div>
                     </div>

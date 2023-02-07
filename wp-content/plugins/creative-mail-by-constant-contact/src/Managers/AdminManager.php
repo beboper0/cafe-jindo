@@ -77,7 +77,6 @@ final class AdminManager {
 	const ADMIN_NONCE      = 'nonce';
 
 	const ADMIN_WOOCOMMERCE    = 'woocommerce';
-	const DOMAIN_CE4WP         = 'creative-mail-by-constant-contact';
 	const ADMIN_CE4WP_DATA_VAR = 'ce4wp_data';
 
 	/**
@@ -342,17 +341,17 @@ final class AdminManager {
             </div>
           </div>
         </div>',
-			esc_html__('Sadness... why leave so soon?', self::DOMAIN_CE4WP),
-			esc_html__('I’m not sending email campaigns right now', self::DOMAIN_CE4WP),
-			esc_html__('It didn’t have the features I want', self::DOMAIN_CE4WP),
-			esc_html__('I didn’t like the email editor', self::DOMAIN_CE4WP),
-			esc_html__('It was too confusing', self::DOMAIN_CE4WP),
-			esc_html__('There were technical issues', self::DOMAIN_CE4WP),
-			esc_html__('I don’t have enough email contacts', self::DOMAIN_CE4WP),
-			esc_html__('It’s a temporary deactivation', self::DOMAIN_CE4WP),
-			esc_html__('Other', self::DOMAIN_CE4WP),
-			esc_html__('Thank you', self::DOMAIN_CE4WP),
-			esc_html__('Close this window and deactivate Creative Mail', self::DOMAIN_CE4WP)
+			esc_html__('Sadness... why leave so soon?', 'creative-mail-by-constant-contact'),
+			esc_html__('I’m not sending email campaigns right now', 'creative-mail-by-constant-contact'),
+			esc_html__('It didn’t have the features I want', 'creative-mail-by-constant-contact'),
+			esc_html__('I didn’t like the email editor', 'creative-mail-by-constant-contact'),
+			esc_html__('It was too confusing', 'creative-mail-by-constant-contact'),
+			esc_html__('There were technical issues', 'creative-mail-by-constant-contact'),
+			esc_html__('I don’t have enough email contacts', 'creative-mail-by-constant-contact'),
+			esc_html__('It’s a temporary deactivation', 'creative-mail-by-constant-contact'),
+			esc_html__('Other', 'creative-mail-by-constant-contact'),
+			esc_html__('Thank you', 'creative-mail-by-constant-contact'),
+			esc_html__('Close this window and deactivate Creative Mail', 'creative-mail-by-constant-contact')
 		);
 	}
 
@@ -414,9 +413,9 @@ final class AdminManager {
 		if ( $this->is_cm_screen_and_show_footer() ) {
 			$footer_text = sprintf(
 				// translators: text.
-				esc_html__('If you like %1$s please leave us a %2$s rating. A huge thanks in advance!', self::DOMAIN_CE4WP),
-				sprintf('<strong>%s</strong>', esc_html__('Creative Mail', self::DOMAIN_CE4WP)),
-				'<a href="https://wordpress.org/plugins/creative-mail-by-constant-contact/#reviews?rate=5#new-post" target="_blank" class="ce4wp-rating-link" data-rated="' . esc_attr__('Thank You', self::DOMAIN_CE4WP) . '">&#9733;&#9733;&#9733;&#9733;&#9733;</a>'
+				esc_html__('If you like %1$s please leave us a %2$s rating. A huge thanks in advance!', 'creative-mail-by-constant-contact'),
+				sprintf('<strong>%s</strong>', esc_html__('Creative Mail', 'creative-mail-by-constant-contact')),
+				'<a href="https://wordpress.org/plugins/creative-mail-by-constant-contact/#reviews?rate=5#new-post" target="_blank" class="ce4wp-rating-link" data-rated="' . esc_attr__('Thank You', 'creative-mail-by-constant-contact') . '">&#9733;&#9733;&#9733;&#9733;&#9733;</a>'
 			);
 		}
 
@@ -511,7 +510,7 @@ final class AdminManager {
 		// @phpstan-ignore-next-line
 		add_menu_page(
 			'Creative Mail',
-			esc_html__('Creative Mail', self::DOMAIN_CE4WP),
+			esc_html__('Creative Mail', 'creative-mail-by-constant-contact'),
 			'manage_options',
 			'creativemail',
 			$main_action,
@@ -523,33 +522,69 @@ final class AdminManager {
 
 		if ( $hasConnectedAccount ) {
 			$sub_actions[] = array(
-				'title'    => esc_html__('Campaigns', self::DOMAIN_CE4WP),
-				'text'     => '<span id="ce4wp-menu-campaigns" data-link_reference="5166faec-1dbb-4434-bad0-bb2f75898f92">' . __('Campaigns', self::DOMAIN_CE4WP) . '</span>',
+				'title'    => esc_html__('Dashboard', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-dashboard" data-link_reference="d25f690a-217a-4d68-9c58-8693965d4673">' . __('Dashboard', 'creative-mail-by-constant-contact') . '</span>',
+				'slug'     => 'creativemail_dashboard',
+				'callback' => null,
+			);
+			$sub_actions[] = array(
+				'title'    => esc_html__('Campaigns', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-campaigns" data-link_reference="5166faec-1dbb-4434-bad0-bb2f75898f92">' . __('Campaigns', 'creative-mail-by-constant-contact') . '</span>',
 				'slug'     => 'creativemail_campaigns',
 				'callback' => null,
 			);
 			$sub_actions[] = array(
-				'title'    => esc_html__('Contacts', self::DOMAIN_CE4WP),
-				'text'     => '<span id="ce4wp-menu-contacts" data-link_reference="836b20fc-9ff1-41b2-912b-a8646caf05a4">' . __('Contacts', self::DOMAIN_CE4WP) . '</span>',
+				'title'    => esc_html__('Campaign Ideas', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-campaigns-ideas" data-link_reference="3ca653e6-0348-4271-824e-fdf7ed346cfc">' . __('Campaigns Ideas', 'creative-mail-by-constant-contact') . '</span>',
+				'slug'     => 'creativemail_campaign_ideas',
+				'callback' => null,
+			);
+			$sub_actions[] = array(
+				'title'    => esc_html__('Contacts', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-contacts" data-link_reference="836b20fc-9ff1-41b2-912b-a8646caf05a4">' . __('Contacts', 'creative-mail-by-constant-contact') . '</span>',
 				'slug'     => 'creativemail_contacts',
 				'callback' => null,
 			);
 			$sub_actions[] = array(
-				'title'    => esc_html__('WooCommerce', self::DOMAIN_CE4WP),
-				'text'     => '<span id="ce4wp-menu-woocommerce" data-link_reference="1fabdbe2-95ed-4e1e-a2f3-ba0278f5096f">' . __('WooCommerce', self::DOMAIN_CE4WP) . '</span>',
+				'title'    => esc_html__('Marketing Calendar', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-marketing-calendar" data-link_reference="c401d371-2402-4ec0-9357-929d3f251f3b">' . __('Marketing Calendar', 'creative-mail-by-constant-contact') . '</span>',
+				'slug'     => 'creativemail_marketing_calendar',
+				'callback' => null,
+			);
+			$sub_actions[] = array(
+				'title'    => esc_html__('WooCommerce', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-woocommerce" data-link_reference="1fabdbe2-95ed-4e1e-a2f3-ba0278f5096f">' . __('WooCommerce', 'creative-mail-by-constant-contact') . '</span>',
 				'slug'     => 'creativemail_woocommerce',
 				'callback' => null,
 			);
 			$sub_actions[] = array(
-				'title'    => esc_html__('Automation', self::DOMAIN_CE4WP),
-				'text'     => '<span id="ce4wp-menu-automation" data-link_reference="d5baea05-c603-4cca-852e-f8e82414f6b0">' . __('Automation', self::DOMAIN_CE4WP) . '</span>',
+				'title'    => esc_html__('Automation', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-automation" data-link_reference="d5baea05-c603-4cca-852e-f8e82414f6b0">' . __('Automation', 'creative-mail-by-constant-contact') . '</span>',
 				'slug'     => 'creativemail_automation',
+				'callback' => null,
+			);
+			$sub_actions[] = array(
+				'title'    => esc_html__('Logo Builder', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-logo-builder" data-link_reference="5759e686-d20e-4954-bc91-128ceb628ba7">' . __('Logo Builder', 'creative-mail-by-constant-contact') . '</span>',
+				'slug'     => 'creativemail_logo_builder',
+				'callback' => null,
+			);
+			$sub_actions[] = array(
+				'title'    => esc_html__('Social Booster', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-social-booster" data-link_reference="ac52c90f-0a70-4c0c-b010-1c30fdd2c5df">' . __('Social Booster', 'creative-mail-by-constant-contact') . '</span>',
+				'slug'     => 'creativemail_social_booster',
+				'callback' => null,
+			);
+			$sub_actions[] = array(
+				'title'    => esc_html__('Email Settings', 'creative-mail-by-constant-contact'),
+				'text'     => '<span id="ce4wp-menu-email-settings" data-link_reference="48b226aa-4c51-48b1-9191-d77ae3677d90">' . __('Email Settings', 'creative-mail-by-constant-contact') . '</span>',
+				'slug'     => 'creativemail_email_settings',
 				'callback' => null,
 			);
 		}
 		$sub_actions[] = array(
-			'title'    => esc_html__('Settings', self::DOMAIN_CE4WP),
-			'text'     => __('Settings', self::DOMAIN_CE4WP),
+			'title'    => esc_html__('Settings', 'creative-mail-by-constant-contact'),
+			'text'     => __('Settings', 'creative-mail-by-constant-contact'),
 			'slug'     => 'creativemail_settings',
 			'callback' => array( $this, 'show_settings_page' ),
 		);
@@ -569,8 +604,8 @@ final class AdminManager {
 		// Add woocommerce sub-menu page.
 		add_submenu_page(
 			self::ADMIN_WOOCOMMERCE,
-			esc_html__('Creative Mail', self::DOMAIN_CE4WP),
-			esc_html__('Creative Mail', self::DOMAIN_CE4WP),
+			esc_html__('Creative Mail', 'creative-mail-by-constant-contact'),
+			esc_html__('Creative Mail', 'creative-mail-by-constant-contact'),
 			'manage_woocommerce',
 			'ce4wp-woo-settings',
 			// @phpstan-ignore-next-line
@@ -586,17 +621,27 @@ final class AdminManager {
 	public function add_admin_notice_permalink(): void {
 		if ( CreativeMail::get_instance()->get_integration_manager()->is_plugin_active(self::ADMIN_WOOCOMMERCE) ) {
 			if ( ! CreativeMail::get_instance()->get_integration_manager()->get_permalinks_enabled() ) {
-				print( '<div class="notice notice-error is-dismissible"><p>' . esc_html__('Ohoh, pretty permalinks are disabled. To enable the CreativeMail WooCommerce integration', self::DOMAIN_CE4WP) . ' <a href="/wp-admin/options-permalink.php">' . esc_html__('please update your permalink settings', self::DOMAIN_CE4WP) . '</a>.</p></div>' );
+				print( '<div class="notice notice-error is-dismissible"><p>' . esc_html__('Ohoh, pretty permalinks are disabled. To enable the CreativeMail WooCommerce integration', 'creative-mail-by-constant-contact') . ' <a href="/wp-admin/options-permalink.php">' . esc_html__('please update your permalink settings', 'creative-mail-by-constant-contact') . '</a>.</p></div>' );
 				return;
 			}
 		}
 	}
 
+	/**
+	 * Adds the Admin Notice Password on Creative Mail.
+	 *
+	 * @return void
+	 */
 	public function add_admin_notice_password_protected(): void {
-		print( '<div class="notice notice-error is-dismissible"><p>' . esc_html__('We see that you have the Password Protected plugin installed and activated on your WordPress site. While this plugin is active, CreativeMail wont be able to complete the setup since the Password Protected plugin is prohibiting us from interacting with your WordPress site.', self::DOMAIN_CE4WP) . ' ' . esc_html__('Please disable this plugin to start using CreativeMail.', self::DOMAIN_CE4WP) . '</p></div>' );
+		print( '<div class="notice notice-error is-dismissible"><p>' . esc_html__('We see that you have the Password Protected plugin installed and activated on your WordPress site. While this plugin is active, CreativeMail wont be able to complete the setup since the Password Protected plugin is prohibiting us from interacting with your WordPress site.', 'creative-mail-by-constant-contact') . ' ' . esc_html__('Please disable this plugin to start using CreativeMail.', 'creative-mail-by-constant-contact') . '</p></div>' );
 		return;
 	}
 
+	/**
+	 * Adds the Admin Notice get started banner on Creative Mail.
+	 *
+	 * @return void
+	 */
 	public function add_admin_get_started_banner(): void {
 		$ce_has_account = OptionsHelper::get_instance_id() != null;
 		$ce_hide_banner = OptionsHelper::get_hide_banner('get_started');
@@ -609,6 +654,11 @@ final class AdminManager {
 		}
 	}
 
+	/**
+	 * Adds the Admin Feedback Notice banner on Creative Mail.
+	 *
+	 * @return void
+	 */
 	public function add_admin_feedback_notice(): void {
 		global $pagenow;
 		global $post_type;
@@ -619,10 +669,15 @@ final class AdminManager {
 		}
 	}
 
+	/**
+	 * Adds the Admin Dashboard Widget on Creative Mail.
+	 *
+	 * @return void
+	 */
 	public function add_admin_dashboard_widget(): void {
 		$widget_title = wp_kses(
 		/* translators: Placeholder is a CreativeMail logo. */
-			__( 'Email Marketing <span class="floater">By<div class="ce4wp_dashboard_icon"></div></span>', self::DOMAIN_CE4WP),
+			__( 'Email Marketing <span class="floater">By<div class="ce4wp_dashboard_icon"></div></span>', 'creative-mail-by-constant-contact'),
 			array(
 				'span' => array( 'class' => array() ),
 				'div'  => array( 'class' => array() ),
@@ -639,6 +694,11 @@ final class AdminManager {
 		);
 	}
 
+	/**
+	 * Shows the Admin Dashboard Widget on Creative Mail.
+	 *
+	 * @return void
+	 */
 	public function show_ce4wp_admin_dashboard_widget(): void {
 		$dashboard_widget_module = new DashboardWidgetModule();
 		$dashboard_widget_module->show();
@@ -662,6 +722,11 @@ final class AdminManager {
 		include CE4WP_PLUGIN_DIR . 'src/views/dashboard.php';
 	}
 
+	/**
+	 * Enqueue the Dashboard JS files assets on Creative Mail.
+	 *
+	 * @return void
+	 */
 	private function enqueue_dashboard_js(): void {
 		wp_enqueue_script('ce4wp_dashboard', CE4WP_PLUGIN_URL . 'assets/js/dashboard.js', array( 'jquery' ), CE4WP_PLUGIN_VERSION, true);
 		wp_localize_script('ce4wp_dashboard', self::ADMIN_CE4WP_DATA_VAR, array(

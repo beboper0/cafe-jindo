@@ -23,8 +23,10 @@
 }
 
 .nav-prev, .nav-next {
-    &:hover {
-        color: $mainGrey;
+    @media (hover: hover) {
+        &:hover {
+            color: $mainGrey;
+        }
     }
 }
 

@@ -1,6 +1,24 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
+### 2.12.1 - 2023-02-03
+* Fixed Template preview button text stuck on "Loading Preview".
+
+### 2.12.0 - 2023-02-02
+* Fixed wp_enqueue_script error on widgets page.
+* Addresses issues with page caching by fetching rules data for Easy Digital Downloads and WooCommerce via ajax.
+* Small improvements to onbaording
+* Updated bundled version of Vue and related dependencies to address some security scanners.
+* Introduced Playbooks to the plugin
+
+### 2.11.2 - 2023-01-18
+* Fixed issue where plain-text shortcode output could be parsed by search engines.
+* Set minimum Elementor support to 3.1.0, and fix deprecated function warnings.
+* Update code initialization logic to allow just-in-time loading and preventing some errors.
+* Various npm packages updates used for generating our JavaScript code.
+* Remove references to Bronto, as Bronto shutdown as a service.
+* Fix issue where inline campaigns would be could show excerpts.
+
 ### 2.11.1 - 2022-11-29
 * Fix occasional undefined variable warning in logs
 * Maintenance updates to some JS packages

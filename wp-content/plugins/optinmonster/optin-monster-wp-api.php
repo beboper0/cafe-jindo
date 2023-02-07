@@ -5,13 +5,13 @@
  * Description: OptinMonster is the best WordPress popup builder plugin that helps you grow your email newsletter list and sales with email popups, exit intent popups, floating bars and more!
  * Author:      OptinMonster Popup Builder Team
  * Author URI:  https://optinmonster.com
- * Version:     2.11.1
+ * Version:     2.12.1
  * Text Domain: optin-monster-api
  * Domain Path: languages
  *
- * WC requires at least: 3.2.0
- * WC tested up to:      6.2.0
- * Requires at least:    4.7.0
+ * WC requires at least: 3.2
+ * WC tested up to:      7.3
+ * Requires at least:    4.7
  * Requires PHP:         5.3
  * Tested up to:         6.1
  *
@@ -66,7 +66,7 @@ class OMAPI {
 	 *
 	 * @var string
 	 */
-	public $version = '2.11.1';
+	public $version = '2.12.1';
 
 	/**
 	 * The name of the plugin.
@@ -103,162 +103,41 @@ class OMAPI {
 	public $url;
 
 	/**
-	 * OMAPI_Ajax object
+	 * Defines the properties that can be autoloaded from classes.
 	 *
-	 * @var OMAPI_Ajax
+	 * @since 2.11.2
+	 *
+	 * @var array
 	 */
-	public $ajax;
-
-	/**
-	 * OMAPI_Type object
-	 *
-	 * @var OMAPI_Type
-	 */
-	public $type;
-
-	/**
-	 * OMAPI_Output object
-	 *
-	 * @var OMAPI_Output
-	 */
-	public $output;
-
-	/**
-	 * OMAPI_Shortcode object
-	 *
-	 * @var OMAPI_Shortcode
-	 */
-	public $shortcode;
-
-	/**
-	 * OMAPI_WooCommerce object.
-	 *
-	 * @var OMAPI_WooCommerce
-	 */
-	public $woocommerce;
-
-	/**
-	 * OMAPI_WPForms object.
-	 *
-	 * @since 2.9.0
-	 *
-	 * @var OMAPI_WPForms
-	 */
-	public $wpforms;
-
-	/**
-	 * OMAPI_EasyDigitalDownloads object.
-	 *
-	 * @var OMAPI_EasyDigitalDownloads
-	 */
-	public $edd;
-
-	/**
-	 * OMAPI_Elementor object.
-	 *
-	 * @var OMAPI_Elementor
-	 */
-	public $elementor;
-
-	/**
-	 * OMAPI_ClassicEditor object.
-	 *
-	 * @var OMAPI_ClassicEditor
-	 */
-	public $classicEditor;
-
-	/**
-	 * OMAPI_Wordfence object.
-	 *
-	 * @since 2.10.0
-	 *
-	 * @var OMAPI_Wordfence
-	 */
-	public $wordfence;
-
-	/**
-	 * OMAPI_MailPoet object.
-	 *
-	 * @var OMAPI_MailPoet;
-	 */
-	public $mailpoet;
-
-	/**
-	 * OMAPI_Actions object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Actions
-	 */
-	public $actions;
-
-	/**
-	 * OMAPI_Menu object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Menu
-	 */
-	public $menu;
-
-	/**
-	 * OMAPI_Save object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Save
-	 */
-	public $save;
-
-	/**
-	 * OMAPI_Refresh object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Refresh
-	 */
-	public $refresh;
-
-	/**
-	 * OMAPI_Sites object (loaded only in the REST API and admin)
-	 *
-	 * @var OMAPI_Sites
-	 */
-	public $sites;
-
-	/**
-	 * OMAPI_Validate object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Validate
-	 */
-	public $validate;
-
-	/**
-	 * OMAPI_Welcome object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Welcome
-	 */
-	public $welcome;
-
-	/**
-	 * OMAPI_Promos object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Promos
-	 */
-	public $promos;
-
-	/**
-	 * OMAPI_Review object (loaded only in the admin)
-	 *
-	 * @var OMAPI_Review
-	 */
-	public $review;
-
-	/**
-	 * OMAPI_RestApi object (loaded only in the REST API)
-	 *
-	 * @var OMAPI_RestApi
-	 */
-	public $rest_api;
-
-	/**
-	 * OMAPI_Notifications object (loaded only in the admin/REST API)
-	 *
-	 * @var OMAPI_Notifications
-	 */
-	public $notifications;
+	protected static $class_map = array(
+		'ajax'          => 'OMAPI_Ajax',
+		'blocks'        => 'OMAPI_Blocks',
+		'type'          => 'OMAPI_Type',
+		'output'        => 'OMAPI_Output',
+		'shortcode'     => 'OMAPI_Shortcode',
+		'revenue'       => 'OMAPI_RevenueAttribution',
+		'woocommerce'   => 'OMAPI_WooCommerce',
+		// @since 2.9.0
+		'wpforms'       => 'OMAPI_WPForms',
+		'elementor'     => 'OMAPI_Elementor',
+		'mailpoet'      => 'OMAPI_MailPoet',
+		'edd'           => 'OMAPI_EasyDigitalDownloads',
+		'rest_api'      => 'OMAPI_RestApi',
+		'actions'       => 'OMAPI_Actions',
+		'menu'          => 'OMAPI_Menu',
+		'save'          => 'OMAPI_Save',
+		'refresh'       => 'OMAPI_Refresh',
+		'validate'      => 'OMAPI_Validate',
+		'welcome'       => 'OMAPI_Welcome',
+		'promos'        => 'OMAPI_Promos',
+		'review'        => 'OMAPI_Review',
+		'sites'         => 'OMAPI_Sites',
+		'notifications' => 'OMAPI_Notifications',
+		'classicEditor' => 'OMAPI_ClassicEditor',
+		// @since 2.10.0
+		'wordfence'     => 'OMAPI_Wordfence',
+		'urls'          => 'OMAPI_Urls',
+	);
 
 	/**
 	 * Primary class constructor.
@@ -441,15 +320,12 @@ class OMAPI {
 		$this->type        = new OMAPI_Type();
 		$this->output      = new OMAPI_Output();
 		$this->shortcode   = new OMAPI_Shortcode();
-		$this->revenue     = new OMAPI_RevenueAttribution();
 		$this->woocommerce = new OMAPI_WooCommerce();
 		$this->wpforms     = new OMAPI_WPForms();
 		$this->elementor   = new OMAPI_Elementor();
-		$this->mailpoet    = new OMAPI_MailPoet();
 		$this->edd         = new OMAPI_EasyDigitalDownloads();
 
 		if ( defined( 'DOING_CRON' ) && DOING_CRON && ! $this->actions ) {
-			$this->save    = new OMAPI_Save();
 			$this->actions = new OMAPI_Actions();
 		}
 
@@ -467,12 +343,8 @@ class OMAPI {
 
 		// Register global components.
 		$this->actions       = new OMAPI_Actions();
-		$this->sites         = new OMAPI_Sites();
 		$this->rest_api      = new OMAPI_RestApi();
-		$this->refresh       = new OMAPI_Refresh();
-		$this->save          = new OMAPI_Save();
 		$this->notifications = new OMAPI_Notifications();
-		$this->review        = new OMAPI_Review();
 
 		// Fire a hook to say that the global classes are loaded.
 		do_action( 'optin_monster_api_rest_loaded' );
@@ -488,13 +360,9 @@ class OMAPI {
 		// Register admin components.
 		$this->actions       = new OMAPI_Actions();
 		$this->menu          = new OMAPI_Menu();
-		$this->save          = new OMAPI_Save();
-		$this->refresh       = new OMAPI_Refresh();
 		$this->validate      = new OMAPI_Validate();
 		$this->welcome       = new OMAPI_Welcome();
 		$this->promos        = new OMAPI_Promos();
-		$this->review        = new OMAPI_Review();
-		$this->sites         = new OMAPI_Sites();
 		$this->notifications = new OMAPI_Notifications();
 		$this->classicEditor = new OMAPI_ClassicEditor();
 		$this->wordfence     = new OMAPI_Wordfence();
@@ -1274,6 +1142,24 @@ class OMAPI {
 
 		return self::$instance;
 	}
+
+	/**
+	 * Magic getter for our object.
+	 *
+	 * @since 2.11.2
+	 *
+	 * @param  string $property
+	 *
+	 * @return mixed
+	 */
+	public function __get( $property ) {
+		if ( ! empty( self::$class_map[ $property ] ) ) {
+			$this->$property = new self::$class_map[ $property ]();
+		}
+
+		return $this->$property;
+	}
+
 }
 
 register_activation_hook( __FILE__, 'optin_monster_api_activation_hook' );

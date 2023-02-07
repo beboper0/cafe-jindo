@@ -1,5 +1,8 @@
 Changelog
 =========
+#### 1.6.7 - November 25th, 2023
+- Add additional Links to Navigation Dashboard
+
 #### 1.6.6 - December 14th, 2022
 - Better security fixes
 
