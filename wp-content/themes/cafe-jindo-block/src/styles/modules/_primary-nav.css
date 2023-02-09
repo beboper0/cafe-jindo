@@ -1,0 +1,87 @@
+.site-branding {
+    height: 100px;
+    flex: 0 0 113px;
+
+    @mixin atMedium {
+        height: 126px;
+        flex: 0 0 140px;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items:center;
+    margin-left: 4em;
+
+    ul {
+        display: none;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    ul ul {
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+        float: left;
+        position: absolute;
+        top: 100%;
+        left: -999em;
+        z-index: 99999;
+    }
+
+    ul ul ul {
+        left: -999em;
+        top: 0;
+    }
+
+    ul ul li:hover > ul,
+    ul ul li.focus > ul {
+        display: block;
+        left: auto;
+    }
+
+    ul ul a {
+        width: 200px;
+    }
+
+    ul li:hover > ul,
+    ul li.focus > ul {
+        left: auto;
+    }
+
+    li {
+        position: relative;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.1rem;
+        padding: 1em 2em;
+        font-weight: bold;
+        color: $mainBlack;
+
+        @mixin atMedium {
+            color: #fff;
+        }
+
+        &:hover {
+            color:$mainGrey;
+        }
+    }
+
+    &__menu-container {
+        width: 100%;
+    }
+
+    &__second-menu-container {
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
+    }
+}

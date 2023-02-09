@@ -1,0 +1,41 @@
+/*!
+Theme Name: Cafe Jindo Block
+Theme URI: http://underscores.me/
+Author: Steven Huynh
+Author URI: http://underscores.me/
+Description: Custom theme to be used for Cafe Jindo specifically.
+Version: 1.0.0
+Tested up to: 8.1.9
+Requires PHP: 7.3.5
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cafe-jindo
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+Cafe Jindo is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import "normalize.css";
+@import "styles/base/_variables.css";
+@import "styles/base/_global.css";
+@import "styles/base/_mixins.css";
+@import "styles/modules/_reveal-item.css";
+@import "styles/modules/_row.css";
+@import "./styles/modules/_utilties.css";
+@import "./styles/modules/_plugins.css";
+@import "./styles/modules/_primary-nav.css";
+@import "./styles/modules/_mobile-nav.css";
+@import "./styles/modules/_site-header.css";
+@import "./styles/modules/_site-footer.css";
+@import "./styles/modules/_main-page.css";
+@import "./styles/modules/_parallax.css";
+@import "./styles/modules/_article-page.css";
+@import "./styles/modules/_btn.css";
+@import "./styles/modules/_food-menu.css";
+@import "./styles/modules/_shop-page.css";
+@import "./styles/modules/_swiper.css";
+@import "./styles/modules/_forms.css";

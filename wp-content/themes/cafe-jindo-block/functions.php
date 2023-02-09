@@ -297,36 +297,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
-class JSXBlock {
-    function __construct($name, $renderCallback = null, $data = null) {
-        $this->name = $name;
-        $this->data = $data;
-        $this->renderCallback = $renderCallback;
-        add_action('init', [$this, 'onInit']);
-    }
-
-    function ourRenderCallback($attributes, $content) {
-        ob_start();
-        require get_theme_file_path("/site-blocks/{$this->name}.php");
-        return ob_get_clean();
-    }
-
-    function onInit() {
-        wp_register_script($this->name, get_stylesheet_directory_uri() . "/build/{$this->name}.js", array('wp-blocks', 'wp-editor'));
-
-        if ($this->data) {
-            wp_localize_script($this->name, $this->name, $this->data);
-        }
-
-        $ourArgs = array(
-            'editor_script' => $this->name
-        );
-
-        if ($this->renderCallback) {
-            $ourArgs['render_callback'] = [$this, 'ourRenderCallback'];
-        }
-
-        register_block_type("cafejindoblock/{$this->name}", $ourArgs);
-    }
-}
