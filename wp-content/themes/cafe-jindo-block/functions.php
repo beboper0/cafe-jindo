@@ -247,6 +247,7 @@ function cafe_jindo_scripts() {
     wp_enqueue_style('montserrat' , 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
     wp_enqueue_style('font-awesome', get_theme_file_uri('//assets/fonts/fontawesome/css/all.min.css'));
 
+
     wp_style_add_data( 'cafe-jindo-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'cafe-jindo-js', get_theme_file_uri('/build/index.js'), array('jquery'), _S_VERSION, true );
@@ -256,6 +257,19 @@ function cafe_jindo_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'cafe_jindo_scripts' );
+
+function cafe_jindo_features() {
+    add_theme_support('editor-styles');
+    add_editor_style(array('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i',
+        'https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap',
+        'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Heebo:wght@300&display=swap',
+        'https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap',
+        'build/index.css'
+    ));
+
+}
+
+add_action('after_setup_theme', 'cafe_jindo_features');
 
 /**
 function new_cpt_archive_title($title){
@@ -297,3 +311,91 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+class PlaceholderBlock {
+    function __construct($name) {
+        $this->name = $name;
+        add_action('init', [$this, 'onInit']);
+    }
+
+    function ourRenderCallback($attributes, $content) {
+        ob_start();
+        require get_theme_file_path("/site-blocks/{$this->name}.php");
+        return ob_get_clean();
+    }
+
+    function onInit() {
+        wp_register_script($this->name, get_stylesheet_directory_uri() . "/site-blocks/{$this->name}.js", array('wp-blocks', 'wp-editor'));
+
+        register_block_type("cafeblocktheme/{$this->name}", array(
+            'editor_script' => $this->name,
+            'render_callback' => [$this, 'ourRenderCallback']
+        ));
+    }
+}
+
+new PlaceholderBlock("header");
+
+class JSXBlock {
+    function __construct($name, $renderCallback = null, $data = null) {
+        $this->name = $name;
+        $this->data = $data;
+        $this->renderCallback = $renderCallback;
+        add_action('init', [$this, 'onInit']);
+    }
+
+    function ourRenderCallback($attributes, $content) {
+        ob_start();
+        require get_theme_file_path("/site-blocks/{$this->name}.php");
+        return ob_get_clean();
+    }
+
+    function onInit() {
+        wp_register_script($this->name, get_stylesheet_directory_uri() . "/build/{$this->name}.js", array('wp-blocks', 'wp-editor'));
+
+        if ($this->data) {
+            wp_localize_script($this->name, $this->name, $this->data);
+        }
+
+        $ourArgs = array(
+            'editor_script' => $this->name
+        );
+
+        if ($this->renderCallback) {
+            $ourArgs['render_callback'] = [$this, 'ourRenderCallback'];
+        }
+
+        register_block_type("cafeblocktheme/{$this->name}", $ourArgs);
+    }
+}
+
+new JSXBlock('footer', true);
+new JSXBlock('splashbanner', true, ['fallbackimage' => site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg')]);
+new JSXBlock('mainbutton');
+
+function myallowedblocks($allowed_block_types, $editor_context) {
+    return array(
+        'core/image',
+        'core/paragraph',
+        'core/heading',
+        'core/list',
+        'core/list-item',
+        'core/column',
+        'core/group',
+        'core/row',
+        'core/more',
+        'core/nextpage',
+        'core/separator',
+        'core/spacer',
+        'core/stack',
+        'core/social-link',
+        'cafeblocktheme/mainbutton',
+        'cafeblocktheme/header',
+        'cafeblocktheme/footer',
+        'cafeblocktheme/splashbanner'
+
+    );
+
+}
+
+add_filter('allowed_block_types_all', 'myallowedblocks', 10, 2);

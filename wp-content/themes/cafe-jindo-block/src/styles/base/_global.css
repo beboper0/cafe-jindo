@@ -191,4 +191,19 @@ a:active {
     display: inline-block;
 }
 
+/* Placeholder block styling
+--------------------------------------------- */
+.cafe-placeholder-block {
+    text-align: center;
+    padding: 1.5em;
+    font-size: 1.5rem;
+    border: 2px dotted black;
+    background: #e6e1e1;
+}
+
+/* WP Block Column
+------------------------------------------------*/
+wp-block-column {
+
+}
 
