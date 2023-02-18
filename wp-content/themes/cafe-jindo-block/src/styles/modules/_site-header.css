@@ -47,14 +47,6 @@ a.custom-logo-link {
     background-repeat: no-repeat;
 }
 
-/*Menu page header */
-.post-type-archive-menu .article-header {
-    background-image: url(../../../../wp-content/uploads/2021/05/menu-servings.jpg);
-    background-position: 50% 105%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /*Shop page header*/
 .post-type-archive-shop .article-header {
     background-image: url(../../../../wp-content/uploads/2021/04/tea-displays-scaled.jpg);

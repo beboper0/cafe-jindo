@@ -27,7 +27,7 @@ function EditComponent(props) {
                     path: `/wp/v2/media/${props.attributes.imgID}`,
                     method: "GET"
                 })
-                props.setAttributes({imgURL: response.media_details.source_url})
+                props.setAttributes({imgURL: response.media_details.sizes.full.source_url})
             }
             go()
         }
@@ -37,15 +37,18 @@ function EditComponent(props) {
         props.setAttributes({imgID: x.id})
     }
 
+
     return (
         <>
             <InspectorControls>
                 <PanelBody title="Background" initialOpen={true}>
-                    <MediaUploadCheck>
-                        <MediaUpload onSelect={onFileSelect} value={props.attributes.imgID} render={({ open }) => {
-                            return <Button onClick={open}>Choose Image</Button>
-                        }} />
-                    </MediaUploadCheck>
+                    <PanelRow>
+                        <MediaUploadCheck>
+                            <MediaUpload onSelect={onFileSelect} value={props.attributes.imgID} render={({ open }) => {
+                                return <Button onClick={open}>Choose Image</Button>
+                            }} />
+                        </MediaUploadCheck>
+                    </PanelRow>
                 </PanelBody>
             </InspectorControls>
             <section>

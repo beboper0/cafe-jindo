@@ -4,23 +4,7 @@
     main {
         overflow: initial;
         background: initial;
-
-        h1 {
-            width:1px;
-            height:1px;
-            overflow:hidden;
-            clip: rect(0, 0, 0, 0);
-        }
-
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 3.5rem;
-        }
-
-        h3 {
-            font-family: 'Heebo', sans-serif;
-            font-size: 2.2rem;
-        }
+        transform-style: preserve-3d;
     }
 
 
@@ -36,8 +20,42 @@ section {
     justify-content: center;
     height: 500px;
 
+    h1 {
+        width:1px;
+        height:1px;
+        overflow:hidden;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-family: 'Heebo', sans-serif;
+        font-size: 2.2rem;
+    }
+
     @mixin atMedium {
         height: 700px;
+    }
+
+    #splash-message.splash-container {
+        position: relative;
+        top: 2rem;
+        color: #fff;
+        text-align: center;
+
+        h2 {
+            text-shadow: 1px 1px 2px #000;
+            margin-top: 0;
+            font-size: 4rem;
+
+            @mixin atMedium {
+                font-size: 5.5rem;
+            }
+        }
     }
 }
 
@@ -46,20 +64,8 @@ section {
     overflow: hidden;
 }
 
-.splash-container {
-    position: relative;
-    top: 2rem;
-    color: #fff;
-    text-align: center;
+.site-title,
+.site-description {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
 }
-
-#splash-message {
-    text-shadow: 1px 1px 2px #000;
-    margin-top: 0;
-    font-size: 2.5rem;
-
-    @mixin atMedium {
-        font-size: 4rem;
-    }
-}
-

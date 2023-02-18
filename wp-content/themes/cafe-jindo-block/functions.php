@@ -372,6 +372,13 @@ class JSXBlock {
 new JSXBlock('footer', true);
 new JSXBlock('splashbanner', true, ['fallbackimage' => site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg')]);
 new JSXBlock('mainbutton');
+new JSXBlock('parallax', true);
+new JSXBlock('mainsection', true);
+new JSXBlock('articlecontainer', true);
+new JSXBlock('bgsection', true, ['fallbackimage' => site_url('wp-content/uploads/2021/05/food-splash.jpg')]);
+new JSXBlock('articleheader', true, ['fallbackimage' => site_url('wp-content/uploads/2021/05/menu-servings.jpg')]);
+new JSXBlock('swiper', true);
+new JSXBlock('slide', true);
 
 function myallowedblocks($allowed_block_types, $editor_context) {
     return array(
@@ -380,7 +387,7 @@ function myallowedblocks($allowed_block_types, $editor_context) {
         'core/heading',
         'core/list',
         'core/list-item',
-        'core/column',
+        'core/columns',
         'core/group',
         'core/row',
         'core/more',
@@ -389,10 +396,18 @@ function myallowedblocks($allowed_block_types, $editor_context) {
         'core/spacer',
         'core/stack',
         'core/social-link',
+        'core/block',
         'cafeblocktheme/mainbutton',
         'cafeblocktheme/header',
         'cafeblocktheme/footer',
-        'cafeblocktheme/splashbanner'
+        'cafeblocktheme/splashbanner',
+        'cafeblocktheme/parallax',
+        'cafeblocktheme/mainsection',
+        'cafeblocktheme/bgsection',
+        'cafeblocktheme/articleheader',
+        'cafeblocktheme/articlecontainer',
+        'cafeblocktheme/swiper',
+        'cafeblocktheme/slide'
 
     );
 

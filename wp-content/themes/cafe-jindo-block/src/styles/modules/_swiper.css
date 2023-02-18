@@ -4,13 +4,13 @@
 
 .swiper-wrapper {
     display: flex;
-    height: min-content;
+    min-height: 200px;
 }
 
 .swiper-slide {
     flex-shrink: 0;
     width: 100%;
-    height: min-content;
+    min-height: 200px;
 }
 
 .nav-prev, .nav-next, .nav-item {
@@ -56,4 +56,26 @@
 
 .inactive {
     color: $mainGrey;
+}
+
+.swiper-nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+    font-family: Heebo, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-bottom: 2em;
+
+    .swiper-nav-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @mixin atSmall {
+        flex-wrap: nowrap;
+    }
 }

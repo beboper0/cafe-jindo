@@ -20,117 +20,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/mainbutton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/splashbanner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/splashbanner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articlecontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articlecontainer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articleheader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articleheader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/bgsection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/bgsection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/mainsection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/mainsection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/parallax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/parallax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/slide.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swiper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/archive-menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/front-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/block-editor/classic-paragraph.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/block-editor/classic-paragraph.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/block-editor/richtext-buttons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/block-editor/richtext-buttons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/block-editor/tma-block-editor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/advlist/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/advlist/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/anchor/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/anchor/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/code/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/code/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/contextmenu/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/contextmenu/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_arrow.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_biggrin.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_confused.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_cool.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_cry.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_eek.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_evil.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_idea.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_lol.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_mad.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_mrgreen.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_neutral.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_razz.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_redface.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_rolleyes.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_sad.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_surprised.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_twisted.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/img/icon_wink.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/emoticons/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/importcss/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/importcss/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/insertdatetime/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/insertdatetime/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/link/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/link/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/nonbreaking/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/nonbreaking/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/print/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/print/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/searchreplace/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/searchreplace/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/table/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/table/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/css/visualblocks.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/address.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/article.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/aside.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/blockquote.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/div.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/dl.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/figure.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/h1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/h2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/h3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/h4.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/h5.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/h6.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/hgroup.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/ol.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/p.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/pre.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/section.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/img/ul.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualblocks/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualchars/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/visualchars/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/wptadv/plugin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/mce/wptadv/plugin.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/plugin-assets/images/colors-rtl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/plugin-assets/images/colors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/plugin-assets/images/toolbar-actions-rtl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/plugin-assets/images/toolbar-actions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/plugin-assets/tadv.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/plugin-assets/tadv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/tadv_admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/tinymce-advanced.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/tinymce-advanced/uninstall.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.asset.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/splashbanner.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/splashbanner.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/splashbanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/splashbanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/splashbanner.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/splashbanner.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/splashbanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/splashbanner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/scripts/modules/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/scripts/modules/Swiper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/base/_global.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/base/_global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_article-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_article-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_food-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_food-menu.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_main-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_main-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_utilties.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_utilties.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_site-footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_site-footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_site-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_site-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_swiper.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/addons.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/addons.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/docs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +81,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="StructuralSearchPlugin">
@@ -224,7 +153,12 @@
       <workItem from="1675842600984" duration="1901000" />
       <workItem from="1675925724044" duration="13679000" />
       <workItem from="1676071437106" duration="14133000" />
-      <workItem from="1676154621434" duration="59000" />
+      <workItem from="1676154621434" duration="18602000" />
+      <workItem from="1676254699010" duration="13487000" />
+      <workItem from="1676353390873" duration="7739000" />
+      <workItem from="1676447632744" duration="7492000" />
+      <workItem from="1676534011876" duration="2663000" />
+      <workItem from="1676686301597" duration="4732000" />
     </task>
     <servers />
   </component>
@@ -248,10 +182,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1675757008915" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1676109002261">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1676354328825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1676109002261" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1676354328825" />
+    <state x="667" y="255" width="631" height="530" key="find.popup" timestamp="1676189441830">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="255" width="631" height="530" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1676189441830" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1675587844023">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
