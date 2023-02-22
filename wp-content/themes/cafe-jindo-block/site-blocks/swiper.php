@@ -12,7 +12,6 @@
 </div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide__active">sdfdsf</div>
         <?php echo $content; ?>
     </div>
 </div>

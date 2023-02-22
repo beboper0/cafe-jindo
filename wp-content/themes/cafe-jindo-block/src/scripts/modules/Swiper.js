@@ -7,13 +7,13 @@ class Swiper {
         this.swiperSlide = document.getElementsByClassName('swiper-slide')
         this.slideCount = this.swiperSlide.length
         this.slideIndex = 1
-        this.activeSlide = document.getElementsByClassName('swiper-slide__active')
-        this.itemsToSwipe.style.height = this.activeSlide[0].offsetHeight + 'px'
+        this.activeSlide = this.swiperSlide[this.slideIndex - 1]
+        this.itemsToSwipe.style.height = this.activeSlide.offsetHeight + 'px'
 
         //Initialize nav properties
         this.swipeLeft = document.querySelector('.nav-prev')
         this.swipeRight = document.querySelector('.nav-next')
-        this.navItem = document.querySelectorAll('.nav-item')
+        this.navItem = document.getElementsByClassName('nav-item')
         this.navContainer = document.querySelector('.swiper-nav-container')
 
         this.events()
@@ -25,7 +25,7 @@ class Swiper {
         this.navContainer.addEventListener("click", (item) => this.swipeElementPosition(item))
 
         window.addEventListener("resize", debounce(() => {
-            this.itemsToSwipe.style.height = this.activeSlide[0].offsetHeight + 'px'
+            this.itemsToSwipe.style.height = this.activeSlide.offsetHeight + 'px'
         }, 100))
     }
 
@@ -36,7 +36,7 @@ class Swiper {
             this.itemsToSwipe.style['transition-duration'] = '1000ms'
         }
         this.elementFocus()
-        this.itemsToSwipe.style.height = this.activeSlide[0].offsetHeight + 'px'
+        this.itemsToSwipe.style.height = this.activeSlide.offsetHeight + 'px'
     }
 
     swipeElementRight() {
@@ -46,7 +46,7 @@ class Swiper {
             this.slideIndex = this.slideIndex + 1
         }
         this.elementFocus()
-        this.itemsToSwipe.style.height = this.activeSlide[0].offsetHeight + 'px'
+        this.itemsToSwipe.style.height = this.activeSlide.offsetHeight + 'px'
     }
 
     swipeElementPosition(e) {
@@ -61,23 +61,10 @@ class Swiper {
     }
 
     elementFocus() {
-        this.navItem.forEach(
-            (nav) => nav.onclick = (e) => {
-                this.navItem.forEach(
-                    (nav) => nav.classList[e.target==nav?'toggle':'remove']('inactive')
-                )
-                nav.onclick = ""
-            }
-        )
+        let navIndex = this.navItem[this.slideIndex - 1]
 
-        this.swiperSlide.forEach(el => {
-            if (this.isClicked == i) {
-                if (el.classList.contains('swiper-slide__active')) {
-                    el.classList.remove('swiper-slide__active')
-                } else {
-                    el.classList.add('swiper-slide__active')
-                }
-            }
+        this.navItem.forEach((e) => {
+            e.classList[navIndex==e?'remove':'add']('inactive')
         })
     }
 }
