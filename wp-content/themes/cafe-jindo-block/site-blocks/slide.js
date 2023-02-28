@@ -3,6 +3,7 @@ import { InnerBlocks } from "@wordpress/block-editor"
 wp.blocks.registerBlockType("cafeblocktheme/slide", {
     title: "Slide",
     category: "design",
+    parent: [ "cafeblocktheme/swiper" ],
     supports: {
         align: ["full"]
     },
@@ -13,11 +14,17 @@ wp.blocks.registerBlockType("cafeblocktheme/slide", {
     save: SaveComponent
 })
 
+const BLOCKS_TEMPLATE = [
+    [ 'core/paragraph', { placeholder: 'Insert text or images here' } ],
+];
+
 function EditComponent() {
     return (
         <>
             <div className="swiper-slide">
-                <InnerBlocks />
+                <InnerBlocks
+                    renderAppender={ InnerBlocks.ButtonBlockAppender }
+                />
             </div>
         </>
     )

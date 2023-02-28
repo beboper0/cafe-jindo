@@ -68,7 +68,7 @@
   },
   "scripts": {
     "build": "wp-scripts build",
-    "start": "wp-scripts start site-blocks/footer.js site-blocks/mainbutton.js site-blocks/splashbanner.js site-blocks/parallax.js site-blocks/mainsection.js site-blocks/bgsection.js site-blocks/articleheader.js site-blocks/articlecontainer.js site-blocks/swiper.js site-blocks/slide.js src/index.js",
+    "start": "wp-scripts start site-blocks/footer.js site-blocks/mainbutton.js site-blocks/splashbanner.js site-blocks/parallax.js site-blocks/mainsection.js site-blocks/bgsection.js site-blocks/articleheader.js site-blocks/articlecontainer.js site-blocks/swiper.js site-blocks/slide.js src/index.js site-blocks/swipernav.js site-blocks/swipernavbutton.js",
     "watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
     "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
     "compile:rtl": "rtlcss style.css style-rtl.css",

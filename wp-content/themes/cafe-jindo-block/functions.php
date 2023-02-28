@@ -264,7 +264,8 @@ function cafe_jindo_features() {
         'https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap',
         'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Heebo:wght@300&display=swap',
         'https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap',
-        'build/index.css'
+        'build/index.css',
+        'assets/fonts/fontawesome/css/all.min.css'
     ));
 
 }
@@ -379,6 +380,11 @@ new JSXBlock('bgsection', true, ['fallbackimage' => site_url('wp-content/uploads
 new JSXBlock('articleheader', true, ['fallbackimage' => site_url('wp-content/uploads/2021/05/menu-servings.jpg')]);
 new JSXBlock('swiper', true);
 new JSXBlock('slide', true);
+new JSXBlock('swipernav', true);
+new JSXBlock('swipernavbutton');
+new JSXBlock('foodmenucontainer', true);
+
+
 
 function myallowedblocks($allowed_block_types, $editor_context) {
     return array(
@@ -407,7 +413,11 @@ function myallowedblocks($allowed_block_types, $editor_context) {
         'cafeblocktheme/articleheader',
         'cafeblocktheme/articlecontainer',
         'cafeblocktheme/swiper',
-        'cafeblocktheme/slide'
+        'cafeblocktheme/slide',
+        'cafeblocktheme/swipernav',
+        'cafeblocktheme/swipernavbutton',
+        'cafeblocktheme/foodmenucontainer',
+        'wpforms/form-selector'
 
     );
 

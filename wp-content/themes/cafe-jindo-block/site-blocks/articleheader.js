@@ -19,6 +19,10 @@ wp.blocks.registerBlockType("cafeblocktheme/articleheader", {
     save: SaveComponent
 })
 
+const BLOCKS_TEMPLATE = [
+    [ 'core/heading', { level: '1' } ],
+];
+
 function EditComponent(props) {
     useEffect(function() {
         if (props.attributes.imgID) {
@@ -63,7 +67,7 @@ function EditComponent(props) {
                 </PanelBody>
             </InspectorControls>
             <header className="article-header" style={{ backgroundImage: `url('${props.attributes.imgURL}')`, backgroundPosition: `${ props.attributes.imgFocalPoint.x * 100 }% ${ props.attributes.imgFocalPoint.y * 100 }%` }}>
-                <InnerBlocks allowedBlocks={['core/heading']}/>
+                <InnerBlocks template={ BLOCKS_TEMPLATE } allowedBlocks={['core/heading']}/>
             </header>
         </>
     )

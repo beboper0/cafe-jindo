@@ -201,5 +201,17 @@ a:active {
     background: #e6e1e1;
 }
 
+/* Inner block styling for editor
+--------------------------------------------- */
+.block-editor-inner-blocks {
+    width: 100%;
+}
+.wp-block {
+    border: 1px dotted black;
+}
 
-
+.article-header {
+    .block-editor-inner-blocks {
+        width: auto;
+    }
+}

@@ -23,6 +23,9 @@ class Swiper {
         this.swipeLeft.addEventListener("click", () => this.swipeElementLeft())
         this.swipeRight.addEventListener("click", () => this.swipeElementRight())
         this.navContainer.addEventListener("click", (item) => this.swipeElementPosition(item))
+        window.addEventListener('load', debounce(() => {
+            this.elementFocus()
+        }, 333));
 
         window.addEventListener("resize", debounce(() => {
             this.itemsToSwipe.style.height = this.activeSlide.offsetHeight + 'px'

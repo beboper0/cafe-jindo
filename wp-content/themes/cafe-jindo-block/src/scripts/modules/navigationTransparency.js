@@ -4,7 +4,11 @@ class navigationTransparency {
     constructor() {
         this.itemsToWhite = document.querySelector(".site-header")
         this.listenedEl = document.querySelector(".parallax-container")
-        this.referenceEl = document.querySelector(".site-main")
+        if (document.querySelector(".site-main")) {
+            this.referenceEl = document.querySelector(".site-main")
+        } else {
+            this.referenceEl = document.querySelector(".article-header")
+        }
         this.orderBtn = document.querySelector(".btn-order")
         this.logo = document.querySelectorAll(".custom-logo-link")
         this.scrollThrottle = throttle(this.ifScrolled, 200).bind(this)

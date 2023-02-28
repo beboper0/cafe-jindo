@@ -20,13 +20,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb23a81b-53cc-4ecc-a129-a330269793ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/foodmenucontainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/foodmenucontainer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swipernav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swipernav.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swipernavbutton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/page-about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/page-contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/page-order-online.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/articleheader.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/articleheader.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/articleheader.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/articleheader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/articleheader.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/articleheader.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/slide.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/slide.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/slide.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/slide.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/swiper.asset.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/swiper.asset.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/swiper.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/build/swiper.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articleheader.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articleheader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articleheader.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/articleheader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/slide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swiper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swiper.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/site-blocks/swiper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/scripts/modules/Swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/scripts/modules/Swiper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/addons.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/addons.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/scripts/modules/navigationTransparency.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/scripts/modules/navigationTransparency.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/base/_global.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/base/_global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_btn.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/src/styles/modules/_btn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/archive-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/templates/archive-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/theme.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/cafe-jindo-block/theme.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/templates.json" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/wpforms/cache/templates.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Local Sites/fictional-university" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="StructuralSearchPlugin">
@@ -131,6 +162,13 @@
       <workItem from="1676799528246" duration="88000" />
       <workItem from="1676887844744" duration="2139000" />
       <workItem from="1676967866197" duration="4072000" />
+      <workItem from="1677050533207" duration="1109000" />
+      <workItem from="1677051668290" duration="8578000" />
+      <workItem from="1677140892726" duration="5285000" />
+      <workItem from="1677292656207" duration="6120000" />
+      <workItem from="1677401327184" duration="5654000" />
+      <workItem from="1677486976397" duration="3579000" />
+      <workItem from="1677567242092" duration="945000" />
     </task>
     <servers />
   </component>
@@ -154,10 +192,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="716" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1675757008915" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1676354328825">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1677141092495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1676354328825" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1677141092495" />
     <state x="667" y="255" width="631" height="530" key="find.popup" timestamp="1676189441830">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

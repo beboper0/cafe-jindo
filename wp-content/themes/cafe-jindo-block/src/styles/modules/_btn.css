@@ -4,12 +4,13 @@
 .btn {
     background: $mainBlack !important;
     text-transform: uppercase;
-    display: inline-block;
+    display: block;
     color: #fff !important;
     text-decoration: none;
     padding: 1em 2em;
     margin: 1em;
     background-clip: padding-box;
+    width: fit-content;
 
     &:hover {
         opacity: 50%;
