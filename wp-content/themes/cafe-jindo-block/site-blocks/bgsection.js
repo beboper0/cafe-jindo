@@ -9,6 +9,7 @@ wp.blocks.registerBlockType("cafeblocktheme/bgsection", {
     supports: {
         align: ["full"]
     },
+    icon: 'layout',
     attributes: {
         align: {type: "string", default: "full"},
         imgID: {type: "number"},

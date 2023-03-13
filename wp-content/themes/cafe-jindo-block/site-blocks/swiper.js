@@ -6,6 +6,7 @@ wp.blocks.registerBlockType("cafeblocktheme/swiper", {
     supports: {
         align: ["full"]
     },
+    icon: 'slides',
     attributes: {
         align: {type: "string", default: "full"}
     },

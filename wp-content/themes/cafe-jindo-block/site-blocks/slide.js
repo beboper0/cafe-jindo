@@ -7,6 +7,7 @@ wp.blocks.registerBlockType("cafeblocktheme/slide", {
     supports: {
         align: ["full"]
     },
+    icon: 'slides',
     attributes: {
         align: {type: "string", default: "full"}
     },

@@ -205,8 +205,6 @@ a:active {
 --------------------------------------------- */
 .block-editor-inner-blocks {
     width: 100%;
-}
-.wp-block {
     border: 1px dotted black;
 }
 
@@ -214,4 +212,8 @@ a:active {
     .block-editor-inner-blocks {
         width: auto;
     }
+}
+
+[data-title="Image"] {
+    width: fit-content;
 }

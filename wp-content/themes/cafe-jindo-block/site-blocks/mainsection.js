@@ -6,6 +6,7 @@ wp.blocks.registerBlockType("cafeblocktheme/mainsection", {
     supports: {
         align: ["full"]
     },
+    icon: 'layout',
     attributes: {
         align: {type: "string", default: "full"},
     },

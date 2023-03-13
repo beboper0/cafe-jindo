@@ -6,6 +6,7 @@ wp.blocks.registerBlockType("cafeblocktheme/articlecontainer", {
     supports: {
         align: ["full"]
     },
+    icon: 'layout',
     attributes: {
         align: {type: "string", default: "full"},
     },

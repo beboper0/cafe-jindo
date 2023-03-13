@@ -6,6 +6,7 @@ wp.blocks.registerBlockType("cafeblocktheme/swipernav", {
     supports: {
         align: ["full"]
     },
+    icon: 'layout',
     attributes: {
         align: {type: "string", default: "full"}
     },
@@ -20,7 +21,7 @@ function EditComponent() {
     ];
     const blockProps = useBlockProps( { className: 'swiper-nav-container' } );
     const innerBlocksProps = useInnerBlocksProps(
-        blockProps, {allowedBlocks: ["cafeblocktheme/swipernavbutton"] }, { template: BLOCKS_TEMPLATE }
+        blockProps, {allowedBlocks: ["cafeblocktheme/swipernavbutton"], template: BLOCKS_TEMPLATE }
     );
 
     return (

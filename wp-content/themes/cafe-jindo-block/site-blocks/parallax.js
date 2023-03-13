@@ -6,6 +6,7 @@ wp.blocks.registerBlockType("cafeblocktheme/parallax", {
     supports: {
         align: ["full"]
     },
+    icon: 'button',
     attributes: {
         align: {type: "string", default: "full"},
     },

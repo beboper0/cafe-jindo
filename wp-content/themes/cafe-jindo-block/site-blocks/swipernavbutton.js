@@ -7,6 +7,7 @@ wp.blocks.registerBlockType("cafeblocktheme/swipernavbutton", {
     supports: {
         align: ["full"]
     },
+    icon: 'layout',
     attributes: {
         align: {type: "string", default: "full"},
         text: {type: "string"},

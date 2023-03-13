@@ -41,13 +41,20 @@
     &-order {
         font-size: 1rem;
         margin: 0;
+        display: none;
+
+        @mixin atMedium {
+            display: block;
+        }
 
         &-transparent {
             background: transparent !important;
             transition: ease-in-out 0.3s;
         }
-
     }
-
 }
 
+[data-title="Main Button"] {
+    width: fit-content;
+    margin: auto;
+}

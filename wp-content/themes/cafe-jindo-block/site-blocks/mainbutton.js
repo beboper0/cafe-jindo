@@ -1,7 +1,6 @@
 import { link } from "@wordpress/icons"
 import {ToolbarGroup, ToolbarButton, Popover, Button } from "@wordpress/components"
 import { RichText, InspectorControls, BlockControls, __experimentalLinkControl as LinkControl} from "@wordpress/block-editor"
-import { registerBlockType } from "@wordpress/blocks"
 import { useState } from "@wordpress/element"
 
 wp.blocks.registerBlockType("cafeblocktheme/mainbutton", {
@@ -13,6 +12,7 @@ wp.blocks.registerBlockType("cafeblocktheme/mainbutton", {
         linkObject: {type: "object", default: {url: ""}},
         colorName: {type: "string", default: "blue"}
     },
+    icon: 'button',
     edit: EditComponent,
     save: SaveComponent
 })

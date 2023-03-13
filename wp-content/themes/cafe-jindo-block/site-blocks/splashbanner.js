@@ -10,6 +10,7 @@ wp.blocks.registerBlockType("cafeblocktheme/splashbanner", {
     supports: {
         align: ["full"]
     },
+    icon: 'format-image',
     attributes: {
         align: {type: "string", default: "full"},
         imgID: {type: "number"},

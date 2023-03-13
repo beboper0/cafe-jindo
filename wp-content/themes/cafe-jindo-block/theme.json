@@ -51,5 +51,18 @@
     "layout": {
       "contentSize": "1100px"
     }
-  }
+  },
+  "templateParts": [
+    {
+      "name": "cafe-jindo-footer",
+      "title": "Cafe Jindo Footer",
+      "area": "footer"
+    },
+    {
+      "name": "cafe-jindo-header",
+      "title": "Cafe Jindo Header",
+      "area": "header"
+    }
+  ]
 }
+

@@ -335,7 +335,7 @@ class PlaceholderBlock {
     }
 }
 
-new PlaceholderBlock("header");
+
 
 class JSXBlock {
     function __construct($name, $renderCallback = null, $data = null) {
@@ -370,6 +370,7 @@ class JSXBlock {
     }
 }
 
+new JSXBlock('header', true);
 new JSXBlock('footer', true);
 new JSXBlock('splashbanner', true, ['fallbackimage' => site_url('/wp-content/uploads/2021/04/cafe-jindo-seating.jpg')]);
 new JSXBlock('mainbutton');
@@ -383,11 +384,11 @@ new JSXBlock('slide', true);
 new JSXBlock('swipernav', true);
 new JSXBlock('swipernavbutton');
 new JSXBlock('foodmenucontainer', true);
+new JSXBlock('cafelogo', true);
+new JSXBlock('cafenav', true);
 
-
-
-function myallowedblocks($allowed_block_types, $editor_context) {
-    return array(
+function myallowedblocks($block_editor_context, $editor_context) {
+    $cafeblocks = array(
         'core/image',
         'core/paragraph',
         'core/heading',
@@ -403,9 +404,9 @@ function myallowedblocks($allowed_block_types, $editor_context) {
         'core/stack',
         'core/social-link',
         'core/block',
+        'core/navigation',
+        'core/template-part',
         'cafeblocktheme/mainbutton',
-        'cafeblocktheme/header',
-        'cafeblocktheme/footer',
         'cafeblocktheme/splashbanner',
         'cafeblocktheme/parallax',
         'cafeblocktheme/mainsection',
@@ -417,10 +418,26 @@ function myallowedblocks($allowed_block_types, $editor_context) {
         'cafeblocktheme/swipernav',
         'cafeblocktheme/swipernavbutton',
         'cafeblocktheme/foodmenucontainer',
-        'wpforms/form-selector'
-
+        'cafeblocktheme/cafelogo',
+        'cafeblocktheme/cafenav',
+        'wpforms/form-selector',
     );
 
+    if ( 'wp_template_part' === $editor_context->post->post_type ) {
+        return array(
+            'cafeblocktheme/header',
+            'cafeblocktheme/footer',
+        );
+    }
+
+    if ( 'wp_template_part' === $editor_context->post->post_type ) {
+        return array(
+            'cafeblocktheme/header',
+            'cafeblocktheme/footer',
+        );
+    }
+
+    return $cafeblocks;
 }
 
 add_filter('allowed_block_types_all', 'myallowedblocks', 10, 2);

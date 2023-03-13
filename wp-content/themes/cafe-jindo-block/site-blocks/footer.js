@@ -1,11 +1,12 @@
 import { InnerBlocks } from "@wordpress/block-editor"
 
 wp.blocks.registerBlockType("cafeblocktheme/footer", {
-    title: "Cafe Jindo Footer",
+    title: "Footer Container",
     category: "theme",
     supports: {
         align: ["full"]
     },
+    icon: 'layout',
     attributes: {
         text: {type: "string"},
         align: {type: "string", default: "full"},

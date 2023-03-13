@@ -56,6 +56,10 @@ section {
                 font-size: 5.5rem;
             }
         }
+
+        .btn {
+            margin: auto;
+        }
     }
 }
 

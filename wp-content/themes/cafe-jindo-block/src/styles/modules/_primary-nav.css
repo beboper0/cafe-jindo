@@ -12,7 +12,6 @@
     display: flex;
     position: relative;
     width: 100%;
-    align-items:center;
     margin-left: 4em;
 
     ul {
@@ -84,4 +83,12 @@
             display: block;
         }
     }
+}
+
+[aria-label="Top menu"] {
+    justify-content: right;
+}
+
+[aria-label="Open menu"] {
+    padding: 1em 2em;
 }

@@ -9,6 +9,7 @@ wp.blocks.registerBlockType("cafeblocktheme/articleheader", {
     supports: {
         align: ["full"]
     },
+    icon: 'heading',
     attributes: {
         align: {type: "string", default: "full"},
         imgID: {type: "number"},
