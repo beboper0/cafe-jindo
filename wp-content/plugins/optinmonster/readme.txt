@@ -2,9 +2,9 @@
 Contributors: optinmonster, griffinjt, smub
 Tags: popup, popups, optin, conversion, marketing, newsletter, popup builder, popup maker, email marketing, exit popup, ecommerce, woocommerce, lightbox
 Requires at least: 4.7.0
-Tested up to: 6.1
+Tested up to: 6.2
 Requires PHP: 5.3
-Stable tag: 2.12.1
+Stable tag: 2.13.0
 License: GNU General Public License v2.0 or later
 
 🤩 Make popups & optin forms to get more email newsletter subscribers, leads, and sales - #1 most popular popup builder plugin! 🚀
@@ -461,6 +461,16 @@ Syed Balkhi
 
 **Most Recent Changes:**
 
+= Popup Builder 2.13.0 =
+* Introduce integration support with MemberPress!
+* Improve compatability with LearnPress LMS plugin
+* Fixed issue where errors could appear on the campaign output settings page preventing output settings from being edited.
+* Fixed an issue where campaign output settings could disappear making if difficult to edit the output settings.
+* Various npm package updates used for generating our JavaScript code.
+
+= Popup Builder 2.12.2 =
+* Security update to ensure OptinMonster shortcodes can only load from the campaign post-type.
+
 = Popup Builder 2.12.1 =
 * Fixed Template preview button text stuck on "Loading Preview".
 
@@ -502,9 +512,5 @@ Syed Balkhi
 * Fix display of the Quick Links widget for RTL viewers.
 * Added filter for defining the post types that will work with the auto-insertion feature.
 * Introduced some tools to improve compatibility with WordFence.
-
-= Popup Builder 2.9.0 =
-* Introduce integration support with WPForms! Now WPForms forms will be able to be embedded within campaigns, and conversions/success tracked.
-* Minification to our frontend JS helper file.
 
 **[View entire popup builder changelog](https://plugins.svn.wordpress.org/optinmonster/trunk/CHANGELOG.md)**

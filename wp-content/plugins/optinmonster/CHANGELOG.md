@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to the OptinMonster plugin will be documented in this file.
 
+### 2.13.0 - 2023-03-10
+* Introduce integration support with MemberPress!
+* Improve compatability with LearnPress LMS plugin
+* Fixed issue where errors could appear on the campaign output settings page preventing output settings from being edited.
+* Fixed an issue where campaign output settings could disappear making if difficult to edit the output settings.
+* Various npm package updates used for generating our JavaScript code.
+
+### 2.12.2 - 2023-02-10
+* Security update to ensure OptinMonster shortcodes can only load from the campaign post-type.
+
 ### 2.12.1 - 2023-02-03
 * Fixed Template preview button text stuck on "Loading Preview".
 

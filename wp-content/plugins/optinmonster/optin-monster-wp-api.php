@@ -5,7 +5,7 @@
  * Description: OptinMonster is the best WordPress popup builder plugin that helps you grow your email newsletter list and sales with email popups, exit intent popups, floating bars and more!
  * Author:      OptinMonster Popup Builder Team
  * Author URI:  https://optinmonster.com
- * Version:     2.12.1
+ * Version:     2.13.0
  * Text Domain: optin-monster-api
  * Domain Path: languages
  *
@@ -13,7 +13,7 @@
  * WC tested up to:      7.3
  * Requires at least:    4.7
  * Requires PHP:         5.3
- * Tested up to:         6.1
+ * Tested up to:         6.2
  *
  * OptinMonster is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -66,7 +66,7 @@ class OMAPI {
 	 *
 	 * @var string
 	 */
-	public $version = '2.12.1';
+	public $version = '2.13.0';
 
 	/**
 	 * The name of the plugin.
@@ -122,6 +122,7 @@ class OMAPI {
 		'elementor'     => 'OMAPI_Elementor',
 		'mailpoet'      => 'OMAPI_MailPoet',
 		'edd'           => 'OMAPI_EasyDigitalDownloads',
+		'memberpress'   => 'OMAPI_MemberPress',
 		'rest_api'      => 'OMAPI_RestApi',
 		'actions'       => 'OMAPI_Actions',
 		'menu'          => 'OMAPI_Menu',
@@ -324,6 +325,7 @@ class OMAPI {
 		$this->wpforms     = new OMAPI_WPForms();
 		$this->elementor   = new OMAPI_Elementor();
 		$this->edd         = new OMAPI_EasyDigitalDownloads();
+		$this->memberpress = new OMAPI_MemberPress();
 
 		if ( defined( 'DOING_CRON' ) && DOING_CRON && ! $this->actions ) {
 			$this->actions = new OMAPI_Actions();
@@ -394,7 +396,7 @@ class OMAPI {
 	 * @return array|bool  Array of optin data or false if none found.
 	 */
 	public function get_optin_by_slug( $slug ) {
-		$optin = get_page_by_path( sanitize_text_field( $slug ), OBJECT, 'omapi' );
+		$optin = get_page_by_path( sanitize_text_field( $slug ), OBJECT, OMAPI_Type::SLUG );
 		return $this->add_campaign_properties( $optin );
 	}
 
@@ -408,6 +410,17 @@ class OMAPI {
 	 * @return array
 	 */
 	public function collect_campaign_data( $campaign ) {
+		$campaign = $this->validate_is_campaign_type( $campaign );
+		if ( empty( $campaign ) ) {
+			return array(
+				'id'        => '',
+				'post'      => $campaign,
+				'type'      => '',
+				'inline'    => false,
+				'post_meta' => array(),
+			);
+		}
+
 		$meta = array();
 		$keys = get_post_meta( $campaign->ID );
 
@@ -456,7 +469,7 @@ class OMAPI {
 				array(
 					'no_found_rows'          => true,
 					'nopaging'               => true,
-					'post_type'              => 'omapi',
+					'post_type'              => OMAPI_Type::SLUG,
 					'posts_per_page'         => -1,
 					'update_post_term_cache' => false,
 				)
@@ -481,13 +494,31 @@ class OMAPI {
 	 * @param WP_Post $post Optin post object.
 	 */
 	public function add_campaign_properties( $post ) {
-		if ( ! empty( $post ) ) {
+		$post = $this->validate_is_campaign_type( $post );
+		if ( ! empty( $post->ID ) ) {
 			$post->campaign_type = get_post_meta( $post->ID, '_omapi_type', true );
 			$post->enabled       = ! ! get_post_meta( $post->ID, '_omapi_enabled', true );
 		}
 
 		return $post;
 
+	}
+
+	/**
+	 * Validates post object to ensure our optin post-type.
+	 *
+	 * @since 2.12.2
+	 *
+	 * @param  WP_Post $post The post object to check.
+	 *
+	 * @return WP_Post|null   Null if post-type doesn't match.
+	 */
+	public function validate_is_campaign_type( $post ) {
+		if ( ! empty( $post->post_type ) && OMAPI_Type::SLUG !== $post->post_type ) {
+			$post = null;
+		}
+
+		return $post;
 	}
 
 	/**

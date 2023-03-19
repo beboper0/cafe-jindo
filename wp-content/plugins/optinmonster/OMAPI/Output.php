@@ -93,15 +93,6 @@ class OMAPI_Output {
 	public $shortcodes = array();
 
 	/**
-	 * The OMAPI_EasyDigitalDownloads_Output instance.
-	 *
-	 * @since 2.8.0
-	 *
-	 * @var null|OMAPI_EasyDigitalDownloads_Output
-	 */
-	public $edd_output = null;
-
-	/**
 	 * Whether we are in a live campaign preview.
 	 *
 	 * @since 2.2.0
@@ -168,10 +159,6 @@ class OMAPI_Output {
 
 		// Keep these around for back-compat.
 		$this->fields = $rules->fields;
-
-		if ( OMAPI_EasyDigitalDownloads::is_active() ) {
-			$this->edd_output = new OMAPI_EasyDigitalDownloads_Output();
-		}
 
 		// phpcs:disable WordPress.Security.NonceVerification.Recommended
 		self::$live_preview       = ! empty( $_GET['om-live-preview'] )
@@ -805,6 +792,7 @@ class OMAPI_Output {
 	 * @return string         The optin campaign html.
 	 */
 	public function prepare_campaign( $optin ) {
+		$optin          = $this->base->validate_is_campaign_type( $optin );
 		$campaign_embed = ! empty( $optin->post_content )
 			? trim( html_entity_decode( stripslashes( $optin->post_content ), ENT_QUOTES, 'UTF-8' ), '\'' )
 			: '';
