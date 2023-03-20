@@ -214,6 +214,6 @@ a:active {
     }
 }
 
-[data-title="Image"] {
+[data-title="Image"], .wp-block-image {
     width: fit-content;
 }
