@@ -64,10 +64,10 @@ class Swiper {
     }
 
     elementFocus() {
-        let navItem = document.getElementsByClassName('nav-item')
+        let arr = Array.prototype.slice.call(this.navItem);
         let navIndex = this.navItem[this.slideIndex - 1]
 
-        navItem.forEach((e) => {
+        arr.forEach((e) => {
             e.classList[navIndex==e?'remove':'add']('inactive')
         })
     }
