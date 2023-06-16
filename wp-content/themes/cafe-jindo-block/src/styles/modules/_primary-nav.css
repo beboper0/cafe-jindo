@@ -68,7 +68,7 @@
         }
 
         &:hover {
-            color:$mainGrey;
+            color:$mainGrey !important;
         }
     }
 

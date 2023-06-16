@@ -7,7 +7,7 @@
 
     @mixin atMedium {
         background: transparent;
-        width: calc(100vw - 18px);
+        width: 100%;
     }
 
     &__white {

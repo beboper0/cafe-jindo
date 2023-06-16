@@ -843,7 +843,7 @@ function jetpack_get_module_info( $key ) {
 	    'deactivate' => '',
 	    'free' => '',
 	    'requires_connection' => 'Yes',
-	    'requires_user_connection' => 'Yes',
+	    'requires_user_connection' => 'No',
 	    'auto_activate' => 'Yes',
 	    'module_tags' => 'Recommended',
 	    'feature' => 'Security',
@@ -865,7 +865,7 @@ function jetpack_get_module_info( $key ) {
 	    'auto_activate' => 'No',
 	    'module_tags' => 'Social, Recommended',
 	    'feature' => 'Engagement',
-	    'additional_search_queries' => 'facebook, jetpack publicize, twitter, tumblr, linkedin, social, tweet, connections, sharing, social media, automated, automated sharing, auto publish, auto tweet and like, auto tweet, facebook auto post, facebook posting',
+	    'additional_search_queries' => 'facebook, jetpack publicize, tumblr, linkedin, social, tweet, connections, sharing, social media, automated, automated sharing, auto publish, auto tweet and like, auto tweet, facebook auto post, facebook posting',
 	    'plan_classes' => '',
 	  ),
 	  'related-posts' => 

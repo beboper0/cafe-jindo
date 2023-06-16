@@ -1,36 +1,36 @@
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 		__webpack_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
+/******/ 		__webpack_require__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
@@ -39,12 +39,12 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "compileCSS": function() { return /* binding */ compileCSS; },
-  "getCSSRules": function() { return /* binding */ getCSSRules; }
+  "compileCSS": () => (/* binding */ compileCSS),
+  "getCSSRules": () => (/* binding */ getCSSRules)
 });
 
 ;// CONCATENATED MODULE: external "lodash"
-var external_lodash_namespaceObject = window["lodash"];
+const external_lodash_namespaceObject = window["lodash"];
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/constants.js
 const VARIABLE_REFERENCE_PREFIX = 'var:';
 const VARIABLE_PATH_SEPARATOR_TOKEN_ATTRIBUTE = '|';
@@ -74,7 +74,7 @@ const VARIABLE_PATH_SEPARATOR_TOKEN_STYLE = '--';
 function generateRule(style, options, path, ruleKey) {
   const styleValue = (0,external_lodash_namespaceObject.get)(style, path);
   return styleValue ? [{
-    selector: options === null || options === void 0 ? void 0 : options.selector,
+    selector: options?.selector,
     key: ruleKey,
     value: getCSSVarFromStyleValue(styleValue)
   }] : [];
@@ -91,8 +91,7 @@ function generateRule(style, options, path, ruleKey) {
  * @return GeneratedCSSRule[]  CSS rules.
  */
 
-function generateBoxRules(style, options, path, ruleKeys) {
-  let individualProperties = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : ['top', 'right', 'bottom', 'left'];
+function generateBoxRules(style, options, path, ruleKeys, individualProperties = ['top', 'right', 'bottom', 'left']) {
   const boxStyle = (0,external_lodash_namespaceObject.get)(style, path);
 
   if (!boxStyle) {
@@ -103,7 +102,7 @@ function generateBoxRules(style, options, path, ruleKeys) {
 
   if (typeof boxStyle === 'string') {
     rules.push({
-      selector: options === null || options === void 0 ? void 0 : options.selector,
+      selector: options?.selector,
       key: ruleKeys.default,
       value: boxStyle
     });
@@ -113,8 +112,8 @@ function generateBoxRules(style, options, path, ruleKeys) {
 
       if (value) {
         acc.push({
-          selector: options === null || options === void 0 ? void 0 : options.selector,
-          key: ruleKeys === null || ruleKeys === void 0 ? void 0 : ruleKeys.individual.replace('%s', upperFirst(side)),
+          selector: options?.selector,
+          key: ruleKeys?.individual.replace('%s', upperFirst(side)),
           value
         });
       }
@@ -238,7 +237,7 @@ const borderLeft = {
   name: 'borderLeft',
   generate: createBorderEdgeGenerateFunction('left')
 };
-/* harmony default export */ var border = ([color, borderStyle, width, radius, borderTop, borderRight, borderBottom, borderLeft]);
+/* harmony default export */ const border = ([color, borderStyle, width, radius, borderTop, borderRight, borderBottom, borderLeft]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/color/background.js
 /**
@@ -251,7 +250,7 @@ const background = {
     return generateRule(style, options, ['color', 'background'], 'backgroundColor');
   }
 };
-/* harmony default export */ var color_background = (background);
+/* harmony default export */ const color_background = (background);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/color/gradient.js
 /**
@@ -264,7 +263,7 @@ const gradient = {
     return generateRule(style, options, ['color', 'gradient'], 'background');
   }
 };
-/* harmony default export */ var color_gradient = (gradient);
+/* harmony default export */ const color_gradient = (gradient);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/color/text.js
 /**
@@ -277,7 +276,7 @@ const text_text = {
     return generateRule(style, options, ['color', 'text'], 'color');
   }
 };
-/* harmony default export */ var color_text = (text_text);
+/* harmony default export */ const color_text = (text_text);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/color/index.js
 /**
@@ -286,7 +285,7 @@ const text_text = {
 
 
 
-/* harmony default export */ var styles_color = ([color_text, color_gradient, color_background]);
+/* harmony default export */ const styles_color = ([color_text, color_gradient, color_background]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/dimensions/index.js
 /**
@@ -299,7 +298,7 @@ const minHeight = {
     return generateRule(style, options, ['dimensions', 'minHeight'], 'minHeight');
   }
 };
-/* harmony default export */ var dimensions = ([minHeight]);
+/* harmony default export */ const dimensions = ([minHeight]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/shadow/index.js
 /**
@@ -312,7 +311,7 @@ const shadow = {
     return generateRule(style, options, ['shadow'], 'boxShadow');
   }
 };
-/* harmony default export */ var styles_shadow = ([shadow]);
+/* harmony default export */ const styles_shadow = ([shadow]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/outline/index.js
 /**
@@ -321,37 +320,29 @@ const shadow = {
 
 const outline_color = {
   name: 'color',
-  generate: function (style, options) {
-    let path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : ['outline', 'color'];
-    let ruleKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'outlineColor';
+  generate: (style, options, path = ['outline', 'color'], ruleKey = 'outlineColor') => {
     return generateRule(style, options, path, ruleKey);
   }
 };
 const offset = {
   name: 'offset',
-  generate: function (style, options) {
-    let path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : ['outline', 'offset'];
-    let ruleKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'outlineOffset';
+  generate: (style, options, path = ['outline', 'offset'], ruleKey = 'outlineOffset') => {
     return generateRule(style, options, path, ruleKey);
   }
 };
 const outlineStyle = {
   name: 'style',
-  generate: function (style, options) {
-    let path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : ['outline', 'style'];
-    let ruleKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'outlineStyle';
+  generate: (style, options, path = ['outline', 'style'], ruleKey = 'outlineStyle') => {
     return generateRule(style, options, path, ruleKey);
   }
 };
 const outline_width = {
   name: 'width',
-  generate: function (style, options) {
-    let path = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : ['outline', 'width'];
-    let ruleKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'outlineWidth';
+  generate: (style, options, path = ['outline', 'width'], ruleKey = 'outlineWidth') => {
     return generateRule(style, options, path, ruleKey);
   }
 };
-/* harmony default export */ var outline = ([outline_color, outlineStyle, offset, outline_width]);
+/* harmony default export */ const outline = ([outline_color, outlineStyle, offset, outline_width]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/spacing/padding.js
 /**
@@ -367,7 +358,7 @@ const padding = {
     });
   }
 };
-/* harmony default export */ var spacing_padding = (padding);
+/* harmony default export */ const spacing_padding = (padding);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/spacing/margin.js
 /**
@@ -383,7 +374,7 @@ const margin = {
     });
   }
 };
-/* harmony default export */ var spacing_margin = (margin);
+/* harmony default export */ const spacing_margin = (margin);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/spacing/index.js
 /**
@@ -391,7 +382,7 @@ const margin = {
  */
 
 
-/* harmony default export */ var spacing = ([spacing_margin, spacing_padding]);
+/* harmony default export */ const spacing = ([spacing_margin, spacing_padding]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/typography/index.js
 /**
@@ -452,7 +443,7 @@ const textTransform = {
     return generateRule(style, options, ['typography', 'textTransform'], 'textTransform');
   }
 };
-/* harmony default export */ var typography = ([fontFamily, fontSize, fontStyle, fontWeight, letterSpacing, lineHeight, textColumns, textDecoration, textTransform]);
+/* harmony default export */ const typography = ([fontFamily, fontSize, fontStyle, fontWeight, letterSpacing, lineHeight, textColumns, textDecoration, textTransform]);
 
 ;// CONCATENATED MODULE: ./packages/style-engine/build-module/styles/index.js
 /**
@@ -488,11 +479,10 @@ const styleDefinitions = [...border, ...styles_color, ...dimensions, ...outline,
  * @return A generated stylesheet or inline style declarations.
  */
 
-function compileCSS(style) {
-  let options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+function compileCSS(style, options = {}) {
   const rules = getCSSRules(style, options); // If no selector is provided, treat generated rules as inline styles to be returned as a single string.
 
-  if (!(options !== null && options !== void 0 && options.selector)) {
+  if (!options?.selector) {
     const inlineRules = [];
     rules.forEach(rule => {
       inlineRules.push(`${(0,external_lodash_namespaceObject.kebabCase)(rule.key)}: ${rule.value};`);
@@ -500,7 +490,22 @@ function compileCSS(style) {
     return inlineRules.join(' ');
   }
 
-  const groupedRules = (0,external_lodash_namespaceObject.groupBy)(rules, 'selector');
+  const groupedRules = rules.reduce((acc, rule) => {
+    const {
+      selector
+    } = rule;
+
+    if (!selector) {
+      return acc;
+    }
+
+    if (!acc[selector]) {
+      acc[selector] = [];
+    }
+
+    acc[selector].push(rule);
+    return acc;
+  }, {});
   const selectorRules = Object.keys(groupedRules).reduce((acc, subSelector) => {
     acc.push(`${subSelector} { ${groupedRules[subSelector].map(rule => `${(0,external_lodash_namespaceObject.kebabCase)(rule.key)}: ${rule.value};`).join(' ')} }`);
     return acc;
@@ -518,8 +523,7 @@ function compileCSS(style) {
  * @return A collection of objects containing the selector, if any, the CSS property key (camelcase) and parsed CSS value.
  */
 
-function getCSSRules(style) {
-  let options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+function getCSSRules(style, options = {}) {
   const rules = [];
   styleDefinitions.forEach(definition => {
     if (typeof definition.generate === 'function') {

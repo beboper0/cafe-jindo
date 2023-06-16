@@ -1,4 +1,4 @@
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ 8294:
@@ -957,7 +957,7 @@ module.exports.TinyEmitter = E;
 /***/ }),
 
 /***/ 7973:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((module, exports, __webpack_require__) => {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/*global define:false */
 /**
@@ -2023,7 +2023,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*global define:false */
 /***/ }),
 
 /***/ 5538:
-/***/ (function() {
+/***/ (() => {
 
 /**
  * adds a bindGlobal method to Mousetrap that allows you to
@@ -2103,92 +2103,92 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/*global define:false */
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
+/******/ 		__webpack_require__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 		__webpack_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
+/******/ 		__webpack_require__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	}();
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
-!function() {
+(() => {
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "__experimentalUseDialog": function() { return /* reexport */ use_dialog; },
-  "__experimentalUseDragging": function() { return /* reexport */ useDragging; },
-  "__experimentalUseDropZone": function() { return /* reexport */ useDropZone; },
-  "__experimentalUseFixedWindowList": function() { return /* reexport */ useFixedWindowList; },
-  "__experimentalUseFocusOutside": function() { return /* reexport */ useFocusOutside; },
-  "compose": function() { return /* reexport */ higher_order_compose; },
-  "createHigherOrderComponent": function() { return /* reexport */ createHigherOrderComponent; },
-  "debounce": function() { return /* reexport */ debounce; },
-  "ifCondition": function() { return /* reexport */ if_condition; },
-  "pipe": function() { return /* reexport */ higher_order_pipe; },
-  "pure": function() { return /* reexport */ higher_order_pure; },
-  "throttle": function() { return /* reexport */ throttle; },
-  "useAsyncList": function() { return /* reexport */ use_async_list; },
-  "useConstrainedTabbing": function() { return /* reexport */ use_constrained_tabbing; },
-  "useCopyOnClick": function() { return /* reexport */ useCopyOnClick; },
-  "useCopyToClipboard": function() { return /* reexport */ useCopyToClipboard; },
-  "useDebounce": function() { return /* reexport */ useDebounce; },
-  "useDisabled": function() { return /* reexport */ useDisabled; },
-  "useFocusOnMount": function() { return /* reexport */ useFocusOnMount; },
-  "useFocusReturn": function() { return /* reexport */ use_focus_return; },
-  "useFocusableIframe": function() { return /* reexport */ useFocusableIframe; },
-  "useInstanceId": function() { return /* reexport */ use_instance_id; },
-  "useIsomorphicLayoutEffect": function() { return /* reexport */ use_isomorphic_layout_effect; },
-  "useKeyboardShortcut": function() { return /* reexport */ use_keyboard_shortcut; },
-  "useMediaQuery": function() { return /* reexport */ useMediaQuery; },
-  "useMergeRefs": function() { return /* reexport */ useMergeRefs; },
-  "usePrevious": function() { return /* reexport */ usePrevious; },
-  "useReducedMotion": function() { return /* reexport */ use_reduced_motion; },
-  "useRefEffect": function() { return /* reexport */ useRefEffect; },
-  "useResizeObserver": function() { return /* reexport */ useResizeAware; },
-  "useThrottle": function() { return /* reexport */ useThrottle; },
-  "useViewportMatch": function() { return /* reexport */ use_viewport_match; },
-  "useWarnOnChange": function() { return /* reexport */ use_warn_on_change; },
-  "withGlobalEvents": function() { return /* reexport */ withGlobalEvents; },
-  "withInstanceId": function() { return /* reexport */ with_instance_id; },
-  "withSafeTimeout": function() { return /* reexport */ with_safe_timeout; },
-  "withState": function() { return /* reexport */ withState; }
+  "__experimentalUseDialog": () => (/* reexport */ use_dialog),
+  "__experimentalUseDragging": () => (/* reexport */ useDragging),
+  "__experimentalUseDropZone": () => (/* reexport */ useDropZone),
+  "__experimentalUseFixedWindowList": () => (/* reexport */ useFixedWindowList),
+  "__experimentalUseFocusOutside": () => (/* reexport */ useFocusOutside),
+  "compose": () => (/* reexport */ higher_order_compose),
+  "createHigherOrderComponent": () => (/* reexport */ createHigherOrderComponent),
+  "debounce": () => (/* reexport */ debounce),
+  "ifCondition": () => (/* reexport */ if_condition),
+  "pipe": () => (/* reexport */ higher_order_pipe),
+  "pure": () => (/* reexport */ higher_order_pure),
+  "throttle": () => (/* reexport */ throttle),
+  "useAsyncList": () => (/* reexport */ use_async_list),
+  "useConstrainedTabbing": () => (/* reexport */ use_constrained_tabbing),
+  "useCopyOnClick": () => (/* reexport */ useCopyOnClick),
+  "useCopyToClipboard": () => (/* reexport */ useCopyToClipboard),
+  "useDebounce": () => (/* reexport */ useDebounce),
+  "useDisabled": () => (/* reexport */ useDisabled),
+  "useFocusOnMount": () => (/* reexport */ useFocusOnMount),
+  "useFocusReturn": () => (/* reexport */ use_focus_return),
+  "useFocusableIframe": () => (/* reexport */ useFocusableIframe),
+  "useInstanceId": () => (/* reexport */ use_instance_id),
+  "useIsomorphicLayoutEffect": () => (/* reexport */ use_isomorphic_layout_effect),
+  "useKeyboardShortcut": () => (/* reexport */ use_keyboard_shortcut),
+  "useMediaQuery": () => (/* reexport */ useMediaQuery),
+  "useMergeRefs": () => (/* reexport */ useMergeRefs),
+  "usePrevious": () => (/* reexport */ usePrevious),
+  "useReducedMotion": () => (/* reexport */ use_reduced_motion),
+  "useRefEffect": () => (/* reexport */ useRefEffect),
+  "useResizeObserver": () => (/* reexport */ useResizeAware),
+  "useThrottle": () => (/* reexport */ useThrottle),
+  "useViewportMatch": () => (/* reexport */ use_viewport_match),
+  "useWarnOnChange": () => (/* reexport */ use_warn_on_change),
+  "withGlobalEvents": () => (/* reexport */ withGlobalEvents),
+  "withInstanceId": () => (/* reexport */ with_instance_id),
+  "withSafeTimeout": () => (/* reexport */ with_safe_timeout),
+  "withState": () => (/* reexport */ withState)
 });
 
 ;// CONCATENATED MODULE: ./node_modules/tslib/tslib.es6.js
@@ -2757,14 +2757,9 @@ const debounce = (func, wait, options) => {
     return timerId !== undefined;
   }
 
-  function debounced() {
+  function debounced(...args) {
     const time = Date.now();
     const isInvoking = shouldInvoke(time);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
     lastArgs = args;
     lastThis = this;
     lastCallTime = time;
@@ -2933,27 +2928,14 @@ const throttle = (func, wait, options) => {
  *
  * @param {boolean} reverse True if right-to-left, false for left-to-right composition.
  */
-const basePipe = function () {
-  let reverse = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
-  return function () {
-    for (var _len = arguments.length, funcs = new Array(_len), _key = 0; _key < _len; _key++) {
-      funcs[_key] = arguments[_key];
-    }
+const basePipe = (reverse = false) => (...funcs) => (...args) => {
+  const functions = funcs.flat();
 
-    return function () {
-      const functions = funcs.flat();
+  if (reverse) {
+    functions.reverse();
+  }
 
-      if (reverse) {
-        functions.reverse();
-      }
-
-      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-        args[_key2] = arguments[_key2];
-      }
-
-      return functions.reduce((prev, func) => [func(...prev)], args)[0];
-    };
-  };
+  return functions.reduce((prev, func) => [func(...prev)], args)[0];
 };
 /**
  * Composes multiple higher-order components into a single higher-order component. Performs left-to-right function
@@ -2967,7 +2949,7 @@ const basePipe = function () {
 
 const pipe = basePipe();
 
-/* harmony default export */ var higher_order_pipe = (pipe);
+/* harmony default export */ const higher_order_pipe = (pipe);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/compose.js
 /**
@@ -2984,10 +2966,10 @@ const pipe = basePipe();
  */
 
 const compose = basePipe(true);
-/* harmony default export */ var higher_order_compose = (compose);
+/* harmony default export */ const higher_order_compose = (compose);
 
 ;// CONCATENATED MODULE: external ["wp","element"]
-var external_wp_element_namespaceObject = window["wp"]["element"];
+const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/if-condition/index.js
 
 
@@ -3027,10 +3009,10 @@ function ifCondition(predicate) {
   }, 'ifCondition');
 }
 
-/* harmony default export */ var if_condition = (ifCondition);
+/* harmony default export */ const if_condition = (ifCondition);
 
 ;// CONCATENATED MODULE: external ["wp","isShallowEqual"]
-var external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
+const external_wp_isShallowEqual_namespaceObject = window["wp"]["isShallowEqual"];
 var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(external_wp_isShallowEqual_namespaceObject);
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/pure/index.js
 
@@ -3075,7 +3057,7 @@ const pure = createHigherOrderComponent(function (WrappedComponent) {
 
   };
 }, 'pure');
-/* harmony default export */ var higher_order_pure = (pure);
+/* harmony default export */ const higher_order_pure = (pure);
 
 ;// CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/extends.js
 function _extends() {
@@ -3096,7 +3078,7 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
-var external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
+const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/with-global-events/listener.js
 /**
@@ -3148,9 +3130,7 @@ class Listener {
   handleEvent(
   /** @type {any} */
   event) {
-    var _this$listeners$event;
-
-    (_this$listeners$event = this.listeners[event.type]) === null || _this$listeners$event === void 0 ? void 0 : _this$listeners$event.forEach((
+    this.listeners[event.type]?.forEach((
     /** @type {any} */
     instance) => {
       instance.handleEvent(event);
@@ -3159,7 +3139,7 @@ class Listener {
 
 }
 
-/* harmony default export */ var listener = (Listener);
+/* harmony default export */ const listener = (Listener);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/with-global-events/index.js
 
@@ -3319,10 +3299,10 @@ function useInstanceId(object, prefix, preferredId) {
     if (preferredId) return preferredId;
     const id = createId(object);
     return prefix ? `${prefix}-${id}` : id;
-  }, [object]);
+  }, [object, preferredId, prefix]);
 }
 
-/* harmony default export */ var use_instance_id = (useInstanceId);
+/* harmony default export */ const use_instance_id = (useInstanceId);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/with-instance-id/index.js
 
@@ -3347,7 +3327,7 @@ const withInstanceId = createHigherOrderComponent(WrappedComponent => {
     }));
   };
 }, 'instanceId');
-/* harmony default export */ var with_instance_id = (withInstanceId);
+/* harmony default export */ const with_instance_id = (withInstanceId);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/with-safe-timeout/index.js
 
@@ -3413,7 +3393,7 @@ const withSafeTimeout = createHigherOrderComponent(OriginalComponent => {
 
   };
 }, 'withSafeTimeout');
-/* harmony default export */ var with_safe_timeout = (withSafeTimeout);
+/* harmony default export */ const with_safe_timeout = (withSafeTimeout);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/higher-order/with-state/index.js
 
@@ -3440,8 +3420,7 @@ const withSafeTimeout = createHigherOrderComponent(OriginalComponent => {
  * @return {any} A higher order component wrapper accepting a component that takes the state props + its own props + `setState` and returning a component that only accepts the own props.
  */
 
-function withState() {
-  let initialState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+function withState(initialState = {}) {
   external_wp_deprecated_default()('wp.compose.withState', {
     since: '5.8',
     alternative: 'wp.element.useState'
@@ -3467,9 +3446,9 @@ function withState() {
 }
 
 ;// CONCATENATED MODULE: external ["wp","keycodes"]
-var external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
+const external_wp_keycodes_namespaceObject = window["wp"]["keycodes"];
 ;// CONCATENATED MODULE: external ["wp","dom"]
-var external_wp_dom_namespaceObject = window["wp"]["dom"];
+const external_wp_dom_namespaceObject = window["wp"]["dom"];
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-ref-effect/index.js
 /**
  * External dependencies
@@ -3576,7 +3555,7 @@ function useConstrainedTabbing() {
         event.preventDefault();
         /** @type {HTMLElement} */
 
-        nextElement === null || nextElement === void 0 ? void 0 : nextElement.focus();
+        nextElement?.focus();
         return;
       } // If the element that is about to receive focus is inside the
       // area, rely on native browsers behavior and let tabbing follow
@@ -3610,7 +3589,7 @@ function useConstrainedTabbing() {
   }, []);
 }
 
-/* harmony default export */ var use_constrained_tabbing = (useConstrainedTabbing);
+/* harmony default export */ const use_constrained_tabbing = (useConstrainedTabbing);
 
 // EXTERNAL MODULE: ./node_modules/clipboard/dist/clipboard.js
 var dist_clipboard = __webpack_require__(8294);
@@ -3642,9 +3621,7 @@ var clipboard_default = /*#__PURE__*/__webpack_require__.n(dist_clipboard);
  *                   timeout.
  */
 
-function useCopyOnClick(ref, text) {
-  let timeout = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 4000;
-
+function useCopyOnClick(ref, text, timeout = 4000) {
   /* eslint-enable jsdoc/no-undefined-types */
   external_wp_deprecated_default()('wp.compose.useCopyOnClick', {
     since: '5.8',
@@ -3666,11 +3643,10 @@ function useCopyOnClick(ref, text) {
     clipboard.current = new (clipboard_default())(ref.current, {
       text: () => typeof text === 'function' ? text() : text
     });
-    clipboard.current.on('success', _ref => {
-      let {
-        clearSelection,
-        trigger
-      } = _ref;
+    clipboard.current.on('success', ({
+      clearSelection,
+      trigger
+    }) => {
       // Clearing selection will move focus back to the triggering button,
       // ensuring that it is not reset to the body, and further that it is
       // kept within the rendered node.
@@ -3749,10 +3725,9 @@ function useCopyToClipboard(text, onSuccess) {
       }
 
     });
-    clipboard.on('success', _ref => {
-      let {
-        clearSelection
-      } = _ref;
+    clipboard.on('success', ({
+      clearSelection
+    }) => {
       // Clearing selection will move focus back to the triggering
       // button, ensuring that it is not reset to the body, and
       // further that it is kept within the rendered node.
@@ -3799,41 +3774,62 @@ function useCopyToClipboard(text, onSuccess) {
  * ```
  */
 
-function useFocusOnMount() {
-  let focusOnMount = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'firstElement';
+function useFocusOnMount(focusOnMount = 'firstElement') {
   const focusOnMountRef = (0,external_wp_element_namespaceObject.useRef)(focusOnMount);
-  (0,external_wp_element_namespaceObject.useEffect)(() => {
-    focusOnMountRef.current = focusOnMount;
-  }, [focusOnMount]);
-  return (0,external_wp_element_namespaceObject.useCallback)(node => {
-    var _node$ownerDocument$a, _node$ownerDocument;
+  /**
+   * Sets focus on a DOM element.
+   *
+   * @param {HTMLElement} target The DOM element to set focus to.
+   * @return {void}
+   */
 
-    if (!node || focusOnMountRef.current === false) {
-      return;
-    }
-
-    if (node.contains((_node$ownerDocument$a = (_node$ownerDocument = node.ownerDocument) === null || _node$ownerDocument === void 0 ? void 0 : _node$ownerDocument.activeElement) !== null && _node$ownerDocument$a !== void 0 ? _node$ownerDocument$a : null)) {
-      return;
-    }
-
-    let target = node;
-
-    if (focusOnMountRef.current === 'firstElement') {
-      const firstTabbable = external_wp_dom_namespaceObject.focus.tabbable.find(node)[0];
-
-      if (firstTabbable) {
-        target =
-        /** @type {HTMLElement} */
-        firstTabbable;
-      }
-    }
-
+  const setFocus = target => {
     target.focus({
       // When focusing newly mounted dialogs,
       // the position of the popover is often not right on the first render
       // This prevents the layout shifts when focusing the dialogs.
       preventScroll: true
     });
+  };
+  /** @type {import('react').MutableRefObject<ReturnType<setTimeout> | undefined>} */
+
+
+  const timerId = (0,external_wp_element_namespaceObject.useRef)();
+  (0,external_wp_element_namespaceObject.useEffect)(() => {
+    focusOnMountRef.current = focusOnMount;
+  }, [focusOnMount]);
+  (0,external_wp_element_namespaceObject.useEffect)(() => {
+    return () => {
+      if (timerId.current) {
+        clearTimeout(timerId.current);
+      }
+    };
+  }, []);
+  return (0,external_wp_element_namespaceObject.useCallback)(node => {
+    var _node$ownerDocument$a;
+
+    if (!node || focusOnMountRef.current === false) {
+      return;
+    }
+
+    if (node.contains((_node$ownerDocument$a = node.ownerDocument?.activeElement) !== null && _node$ownerDocument$a !== void 0 ? _node$ownerDocument$a : null)) {
+      return;
+    }
+
+    if (focusOnMountRef.current === 'firstElement') {
+      timerId.current = setTimeout(() => {
+        const firstTabbable = external_wp_dom_namespaceObject.focus.tabbable.find(node)[0];
+
+        if (firstTabbable) {
+          setFocus(
+          /** @type {HTMLElement} */
+          firstTabbable);
+        }
+      }, 0);
+      return;
+    }
+
+    setFocus(node);
   }, []);
 }
 
@@ -3888,11 +3884,9 @@ function useFocusReturn(onFocusReturn) {
 
       focusedBeforeMount.current = node.ownerDocument.activeElement;
     } else if (focusedBeforeMount.current) {
-      var _ref$current, _ref$current2, _ref$current3;
+      const isFocused = ref.current?.contains(ref.current?.ownerDocument.activeElement);
 
-      const isFocused = (_ref$current = ref.current) === null || _ref$current === void 0 ? void 0 : _ref$current.contains((_ref$current2 = ref.current) === null || _ref$current2 === void 0 ? void 0 : _ref$current2.ownerDocument.activeElement);
-
-      if ((_ref$current3 = ref.current) !== null && _ref$current3 !== void 0 && _ref$current3.isConnected && !isFocused) {
+      if (ref.current?.isConnected && !isFocused) {
         return;
       } // Defer to the component's own explicit focus return behavior, if
       // specified. This allows for support that the `onFocusReturn`
@@ -3903,16 +3897,14 @@ function useFocusReturn(onFocusReturn) {
       if (onFocusReturnRef.current) {
         onFocusReturnRef.current();
       } else {
-        var _focusedBeforeMount$c;
-
         /** @type {null | HTMLElement} */
-        (_focusedBeforeMount$c = focusedBeforeMount.current) === null || _focusedBeforeMount$c === void 0 ? void 0 : _focusedBeforeMount$c.focus();
+        focusedBeforeMount.current?.focus();
       }
     }
   }, []);
 }
 
-/* harmony default export */ var use_focus_return = (useFocusReturn);
+/* harmony default export */ const use_focus_return = (useFocusReturn);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-focus-outside/index.js
 /**
@@ -4029,8 +4021,6 @@ function useFocusOutside(onFocusOutside) {
    */
 
   const queueBlurCheck = (0,external_wp_element_namespaceObject.useCallback)(event => {
-    var _event$relatedTarget;
-
     // React does not allow using an event reference asynchronously
     // due to recycling behavior, except when explicitly persisted.
     event.persist(); // Skip blur check if clicking button. See `normalizeButtonFocus`.
@@ -4048,7 +4038,7 @@ function useFocusOutside(onFocusOutside) {
 
     const ignoreForRelatedTarget = event.target.getAttribute('data-unstable-ignore-focus-outside-for-relatedtarget');
 
-    if (ignoreForRelatedTarget && (_event$relatedTarget = event.relatedTarget) !== null && _event$relatedTarget !== void 0 && _event$relatedTarget.closest(ignoreForRelatedTarget)) {
+    if (ignoreForRelatedTarget && event.relatedTarget?.closest(ignoreForRelatedTarget)) {
       return;
     }
 
@@ -4246,13 +4236,11 @@ function useDialog(options) {
   const focusOnMountRef = useFocusOnMount(options.focusOnMount);
   const focusReturnRef = use_focus_return();
   const focusOutsideProps = useFocusOutside(event => {
-    var _currentOptions$curre, _currentOptions$curre2;
-
     // This unstable prop  is here only to manage backward compatibility
     // for the Popover component otherwise, the onClose should be enough.
-    if ((_currentOptions$curre = currentOptions.current) !== null && _currentOptions$curre !== void 0 && _currentOptions$curre.__unstableOnClose) {
+    if (currentOptions.current?.__unstableOnClose) {
       currentOptions.current.__unstableOnClose('focus-outside', event);
-    } else if ((_currentOptions$curre2 = currentOptions.current) !== null && _currentOptions$curre2 !== void 0 && _currentOptions$curre2.onClose) {
+    } else if (currentOptions.current?.onClose) {
       currentOptions.current.onClose();
     }
   });
@@ -4262,10 +4250,8 @@ function useDialog(options) {
     }
 
     node.addEventListener('keydown', event => {
-      var _currentOptions$curre3;
-
       // Close on escape.
-      if (event.keyCode === external_wp_keycodes_namespaceObject.ESCAPE && !event.defaultPrevented && (_currentOptions$curre3 = currentOptions.current) !== null && _currentOptions$curre3 !== void 0 && _currentOptions$curre3.onClose) {
+      if (event.keyCode === external_wp_keycodes_namespaceObject.ESCAPE && !event.defaultPrevented && currentOptions.current?.onClose) {
         event.preventDefault();
         currentOptions.current.onClose();
       }
@@ -4276,7 +4262,7 @@ function useDialog(options) {
   }];
 }
 
-/* harmony default export */ var use_dialog = (useDialog);
+/* harmony default export */ const use_dialog = (useDialog);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-disabled/index.js
 /**
@@ -4311,18 +4297,15 @@ function useDialog(options) {
  * ```
  */
 
-function useDisabled() {
-  let {
-    isDisabled: isDisabledProp = false
-  } = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+function useDisabled({
+  isDisabled: isDisabledProp = false
+} = {}) {
   return useRefEffect(node => {
-    var _node$ownerDocument;
-
     if (isDisabledProp) {
       return;
     }
 
-    const defaultView = node === null || node === void 0 ? void 0 : (_node$ownerDocument = node.ownerDocument) === null || _node$ownerDocument === void 0 ? void 0 : _node$ownerDocument.defaultView;
+    const defaultView = node?.ownerDocument?.defaultView;
 
     if (!defaultView) {
       return;
@@ -4382,7 +4365,7 @@ function useDisabled() {
  */
 
 const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? external_wp_element_namespaceObject.useLayoutEffect : external_wp_element_namespaceObject.useEffect;
-/* harmony default export */ var use_isomorphic_layout_effect = (useIsomorphicLayoutEffect);
+/* harmony default export */ const use_isomorphic_layout_effect = (useIsomorphicLayoutEffect);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-dragging/index.js
 /**
@@ -4403,12 +4386,11 @@ const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? external_wp_el
  * @param {(e?: MouseEvent) => void}                props.onDragEnd
  */
 
-function useDragging(_ref) {
-  let {
-    onDragStart,
-    onDragMove,
-    onDragEnd
-  } = _ref;
+function useDragging({
+  onDragStart,
+  onDragMove,
+  onDragEnd
+}) {
   const [isDragging, setIsDragging] = (0,external_wp_element_namespaceObject.useState)(false);
   const eventsRef = (0,external_wp_element_namespaceObject.useRef)({
     onDragStart,
@@ -4503,14 +4485,13 @@ var mousetrap_global_bind = __webpack_require__(5538);
 
 function useKeyboardShortcut(
 /* eslint-enable jsdoc/valid-types */
-shortcuts, callback) {
-  let {
-    bindGlobal = false,
-    eventName = 'keydown',
-    isDisabled = false,
-    // This is important for performance considerations.
-    target
-  } = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+shortcuts, callback, {
+  bindGlobal = false,
+  eventName = 'keydown',
+  isDisabled = false,
+  // This is important for performance considerations.
+  target
+} = {}) {
   const currentCallback = (0,external_wp_element_namespaceObject.useRef)(callback);
   (0,external_wp_element_namespaceObject.useEffect)(() => {
     currentCallback.current = callback;
@@ -4544,12 +4525,13 @@ shortcuts, callback) {
 
       const bindFn = bindGlobal ? 'bindGlobal' : 'bind'; // @ts-ignore `bindGlobal` is an undocumented property
 
-      mousetrap[bindFn](shortcut, function () {
-        return (
-          /* eslint-enable jsdoc/valid-types */
-          currentCallback.current(...arguments)
-        );
-      }, eventName);
+      mousetrap[bindFn](shortcut, (
+      /* eslint-disable jsdoc/valid-types */
+
+      /** @type {[e: import('mousetrap').ExtendedKeyboardEvent, combo: string]} */
+      ...args) =>
+      /* eslint-enable jsdoc/valid-types */
+      currentCallback.current(...args), eventName);
     });
     return () => {
       mousetrap.reset();
@@ -4557,7 +4539,7 @@ shortcuts, callback) {
   }, [shortcuts, bindGlobal, eventName, target, isDisabled]);
 }
 
-/* harmony default export */ var use_keyboard_shortcut = (useKeyboardShortcut);
+/* harmony default export */ const use_keyboard_shortcut = (useKeyboardShortcut);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-media-query/index.js
 /**
@@ -4565,29 +4547,52 @@ shortcuts, callback) {
  */
 
 /**
+ * A new MediaQueryList object for the media query
+ *
+ * @param {string} [query] Media Query.
+ * @return {MediaQueryList|null} A new object for the media query
+ */
+
+function getMediaQueryList(query) {
+  if (query && typeof window !== 'undefined' && typeof window.matchMedia === 'function') {
+    return window.matchMedia(query);
+  }
+
+  return null;
+}
+/**
  * Runs a media query and returns its value when it changes.
  *
  * @param {string} [query] Media Query.
  * @return {boolean} return value of the media query.
  */
 
+
 function useMediaQuery(query) {
-  const [match, setMatch] = (0,external_wp_element_namespaceObject.useState)(() => !!(query && typeof window !== 'undefined' && window.matchMedia(query).matches));
-  (0,external_wp_element_namespaceObject.useEffect)(() => {
-    if (!query) {
-      return;
-    }
+  const source = (0,external_wp_element_namespaceObject.useMemo)(() => {
+    const mediaQueryList = getMediaQueryList(query);
+    return {
+      /** @type {(onStoreChange: () => void) => () => void} */
+      subscribe(onStoreChange) {
+        if (!mediaQueryList) {
+          return () => {};
+        }
 
-    const updateMatch = () => setMatch(window.matchMedia(query).matches);
+        mediaQueryList.addEventListener('change', onStoreChange);
+        return () => {
+          mediaQueryList.removeEventListener('change', onStoreChange);
+        };
+      },
 
-    updateMatch();
-    const list = window.matchMedia(query);
-    list.addListener(updateMatch);
-    return () => {
-      list.removeListener(updateMatch);
+      getValue() {
+        var _mediaQueryList$match;
+
+        return (_mediaQueryList$match = mediaQueryList?.matches) !== null && _mediaQueryList$match !== void 0 ? _mediaQueryList$match : false;
+      }
+
     };
   }, [query]);
-  return !!query && match;
+  return (0,external_wp_element_namespaceObject.useSyncExternalStore)(source.subscribe, source.getValue, () => false);
 }
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-previous/index.js
@@ -4628,7 +4633,7 @@ function usePrevious(value) {
 
 const useReducedMotion = () => useMediaQuery('(prefers-reduced-motion: reduce)');
 
-/* harmony default export */ var use_reduced_motion = (useReducedMotion);
+/* harmony default export */ const use_reduced_motion = (useReducedMotion);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-viewport-match/index.js
 /**
@@ -4703,8 +4708,7 @@ null);
  * @return {boolean} Whether viewport matches query.
  */
 
-const useViewportMatch = function (breakpoint) {
-  let operator = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '>=';
+const useViewportMatch = (breakpoint, operator = '>=') => {
   const simulatedWidth = (0,external_wp_element_namespaceObject.useContext)(ViewportMatchWidthContext);
   const mediaQuery = !simulatedWidth && `(${CONDITIONS[operator]}: ${BREAKPOINTS[breakpoint]}px)`;
   const mediaQueryResult = useMediaQuery(mediaQuery || undefined);
@@ -4717,7 +4721,7 @@ const useViewportMatch = function (breakpoint) {
 };
 
 useViewportMatch.__experimentalWidthProvider = ViewportMatchWidthContext.Provider;
-/* harmony default export */ var use_viewport_match = (useViewportMatch);
+/* harmony default export */ const use_viewport_match = (useViewportMatch);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-resize-observer/index.js
 
@@ -4832,8 +4836,7 @@ const extractSize = (entry, boxProp, sizeType) => {
   entry[boxProp][sizeType];
 };
 
-function useResizeObserver() {
-  let opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+function useResizeObserver(opts = {}) {
   // Saving the callback as a ref. With this, I don't need to put onResize in the
   // effect dep array, and just passing in an anonymous function without memoising
   // will not reinstantiate the hook's ResizeObserver.
@@ -4971,7 +4974,7 @@ function useResizeAware() {
 }
 
 ;// CONCATENATED MODULE: external ["wp","priorityQueue"]
-var external_wp_priorityQueue_namespaceObject = window["wp"]["priorityQueue"];
+const external_wp_priorityQueue_namespaceObject = window["wp"]["priorityQueue"];
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-async-list/index.js
 /**
  * WordPress dependencies
@@ -5012,10 +5015,9 @@ function getFirstItemsPresentInState(list, state) {
  */
 
 
-function useAsyncList(list) {
-  let config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
-    step: 1
-  };
+function useAsyncList(list, config = {
+  step: 1
+}) {
   const {
     step = 1
   } = config;
@@ -5044,7 +5046,7 @@ function useAsyncList(list) {
   return current;
 }
 
-/* harmony default export */ var use_async_list = (useAsyncList);
+/* harmony default export */ const use_async_list = (useAsyncList);
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-warn-on-change/index.js
 /**
@@ -5074,12 +5076,9 @@ function useAsyncList(list) {
  * @param {string} prefix Just a prefix to show when console logging.
  */
 
-function useWarnOnChange(object) {
-  let prefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'Change detection';
+function useWarnOnChange(object, prefix = 'Change detection') {
   const previousValues = usePrevious(object);
-  Object.entries(previousValues !== null && previousValues !== void 0 ? previousValues : []).forEach(_ref => {
-    let [key, value] = _ref;
-
+  Object.entries(previousValues !== null && previousValues !== void 0 ? previousValues : []).forEach(([key, value]) => {
     if (value !== object[
     /** @type {keyof typeof object} */
     key]) {
@@ -5093,10 +5092,10 @@ function useWarnOnChange(object) {
   });
 }
 
-/* harmony default export */ var use_warn_on_change = (useWarnOnChange);
+/* harmony default export */ const use_warn_on_change = (useWarnOnChange);
 
 ;// CONCATENATED MODULE: external "React"
-var external_React_namespaceObject = window["React"];
+const external_React_namespaceObject = window["React"];
 ;// CONCATENATED MODULE: ./node_modules/use-memo-one/dist/use-memo-one.esm.js
 
 
@@ -5255,40 +5254,45 @@ function useFreshRef(value) {
 /**
  * A hook to facilitate drag and drop handling.
  *
- * @param {Object}                  props               Named parameters.
- * @param {boolean}                 [props.isDisabled]  Whether or not to disable the drop zone.
- * @param {(e: DragEvent) => void}  [props.onDragStart] Called when dragging has started.
- * @param {(e: DragEvent) => void}  [props.onDragEnter] Called when the zone is entered.
- * @param {(e: DragEvent) => void}  [props.onDragOver]  Called when the zone is moved within.
- * @param {(e: DragEvent) => void}  [props.onDragLeave] Called when the zone is left.
- * @param {(e: MouseEvent) => void} [props.onDragEnd]   Called when dragging has ended.
- * @param {(e: DragEvent) => void}  [props.onDrop]      Called when dropping in the zone.
+ * @param {Object}                  props                   Named parameters.
+ * @param {?HTMLElement}            [props.dropZoneElement] Optional element to be used as the drop zone.
+ * @param {boolean}                 [props.isDisabled]      Whether or not to disable the drop zone.
+ * @param {(e: DragEvent) => void}  [props.onDragStart]     Called when dragging has started.
+ * @param {(e: DragEvent) => void}  [props.onDragEnter]     Called when the zone is entered.
+ * @param {(e: DragEvent) => void}  [props.onDragOver]      Called when the zone is moved within.
+ * @param {(e: DragEvent) => void}  [props.onDragLeave]     Called when the zone is left.
+ * @param {(e: MouseEvent) => void} [props.onDragEnd]       Called when dragging has ended.
+ * @param {(e: DragEvent) => void}  [props.onDrop]          Called when dropping in the zone.
  *
  * @return {import('react').RefCallback<HTMLElement>} Ref callback to be passed to the drop zone element.
  */
 
 
-function useDropZone(_ref) {
-  let {
-    isDisabled,
-    onDrop: _onDrop,
-    onDragStart: _onDragStart,
-    onDragEnter: _onDragEnter,
-    onDragLeave: _onDragLeave,
-    onDragEnd: _onDragEnd,
-    onDragOver: _onDragOver
-  } = _ref;
+function useDropZone({
+  dropZoneElement,
+  isDisabled,
+  onDrop: _onDrop,
+  onDragStart: _onDragStart,
+  onDragEnter: _onDragEnter,
+  onDragLeave: _onDragLeave,
+  onDragEnd: _onDragEnd,
+  onDragOver: _onDragOver
+}) {
   const onDropRef = useFreshRef(_onDrop);
   const onDragStartRef = useFreshRef(_onDragStart);
   const onDragEnterRef = useFreshRef(_onDragEnter);
   const onDragLeaveRef = useFreshRef(_onDragLeave);
   const onDragEndRef = useFreshRef(_onDragEnd);
   const onDragOverRef = useFreshRef(_onDragOver);
-  return useRefEffect(element => {
+  return useRefEffect(elem => {
     if (isDisabled) {
       return;
-    }
+    } // If a custom dropZoneRef is passed, use that instead of the element.
+    // This allows the dropzone to cover an expanded area, rather than
+    // be restricted to the area of the ref returned by this hook.
 
+
+    const element = dropZoneElement !== null && dropZoneElement !== void 0 ? dropZoneElement : elem;
     let isDragging = false;
     const {
       ownerDocument
@@ -5452,7 +5456,8 @@ function useDropZone(_ref) {
       ownerDocument.removeEventListener('mousemove', maybeDragEnd);
       ownerDocument.removeEventListener('dragenter', maybeDragStart);
     };
-  }, [isDisabled]);
+  }, [isDisabled, dropZoneElement] // Refresh when the passed in dropZoneElement changes.
+  );
 }
 
 ;// CONCATENATED MODULE: ./packages/compose/build-module/hooks/use-focusable-iframe/index.js
@@ -5541,8 +5546,8 @@ const DEFAULT_INIT_WINDOW_SIZE = 30;
 function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
   var _options$initWindowSi, _options$useWindowing;
 
-  const initWindowSize = (_options$initWindowSi = options === null || options === void 0 ? void 0 : options.initWindowSize) !== null && _options$initWindowSi !== void 0 ? _options$initWindowSi : DEFAULT_INIT_WINDOW_SIZE;
-  const useWindowing = (_options$useWindowing = options === null || options === void 0 ? void 0 : options.useWindowing) !== null && _options$useWindowing !== void 0 ? _options$useWindowing : true;
+  const initWindowSize = (_options$initWindowSi = options?.initWindowSize) !== null && _options$initWindowSi !== void 0 ? _options$initWindowSi : DEFAULT_INIT_WINDOW_SIZE;
+  const useWindowing = (_options$useWindowing = options?.useWindowing) !== null && _options$useWindowing !== void 0 ? _options$useWindowing : true;
   const [fixedListWindow, setFixedListWindow] = (0,external_wp_element_namespaceObject.useState)({
     visibleItems: initWindowSize,
     start: 0,
@@ -5554,8 +5559,6 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
     }
   });
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
-    var _scrollContainer$owne, _scrollContainer$owne2, _scrollContainer$owne3, _scrollContainer$owne4;
-
     if (!useWindowing) {
       return;
     }
@@ -5573,7 +5576,7 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
 
       const visibleItems = Math.ceil(scrollContainer.clientHeight / itemHeight); // Aim to keep opening list view fast, afterward we can optimize for scrolling.
 
-      const windowOverscan = initRender ? visibleItems : (_options$windowOversc = options === null || options === void 0 ? void 0 : options.windowOverscan) !== null && _options$windowOversc !== void 0 ? _options$windowOversc : visibleItems;
+      const windowOverscan = initRender ? visibleItems : (_options$windowOversc = options?.windowOverscan) !== null && _options$windowOversc !== void 0 ? _options$windowOversc : visibleItems;
       const firstViewableIndex = Math.floor(scrollContainer.scrollTop / itemHeight);
       const start = Math.max(0, firstViewableIndex - windowOverscan);
       const end = Math.min(totalItems - 1, firstViewableIndex + visibleItems + windowOverscan);
@@ -5601,19 +5604,15 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
     const debounceMeasureList = debounce(() => {
       measureWindow();
     }, 16);
-    scrollContainer === null || scrollContainer === void 0 ? void 0 : scrollContainer.addEventListener('scroll', debounceMeasureList);
-    scrollContainer === null || scrollContainer === void 0 ? void 0 : (_scrollContainer$owne = scrollContainer.ownerDocument) === null || _scrollContainer$owne === void 0 ? void 0 : (_scrollContainer$owne2 = _scrollContainer$owne.defaultView) === null || _scrollContainer$owne2 === void 0 ? void 0 : _scrollContainer$owne2.addEventListener('resize', debounceMeasureList);
-    scrollContainer === null || scrollContainer === void 0 ? void 0 : (_scrollContainer$owne3 = scrollContainer.ownerDocument) === null || _scrollContainer$owne3 === void 0 ? void 0 : (_scrollContainer$owne4 = _scrollContainer$owne3.defaultView) === null || _scrollContainer$owne4 === void 0 ? void 0 : _scrollContainer$owne4.addEventListener('resize', debounceMeasureList);
+    scrollContainer?.addEventListener('scroll', debounceMeasureList);
+    scrollContainer?.ownerDocument?.defaultView?.addEventListener('resize', debounceMeasureList);
+    scrollContainer?.ownerDocument?.defaultView?.addEventListener('resize', debounceMeasureList);
     return () => {
-      var _scrollContainer$owne5, _scrollContainer$owne6;
-
-      scrollContainer === null || scrollContainer === void 0 ? void 0 : scrollContainer.removeEventListener('scroll', debounceMeasureList);
-      scrollContainer === null || scrollContainer === void 0 ? void 0 : (_scrollContainer$owne5 = scrollContainer.ownerDocument) === null || _scrollContainer$owne5 === void 0 ? void 0 : (_scrollContainer$owne6 = _scrollContainer$owne5.defaultView) === null || _scrollContainer$owne6 === void 0 ? void 0 : _scrollContainer$owne6.removeEventListener('resize', debounceMeasureList);
+      scrollContainer?.removeEventListener('scroll', debounceMeasureList);
+      scrollContainer?.ownerDocument?.defaultView?.removeEventListener('resize', debounceMeasureList);
     };
   }, [itemHeight, elementRef, totalItems]);
   (0,external_wp_element_namespaceObject.useLayoutEffect)(() => {
-    var _scrollContainer$owne7, _scrollContainer$owne8;
-
     if (!useWindowing) {
       return;
     }
@@ -5626,39 +5625,37 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
       switch (event.keyCode) {
         case external_wp_keycodes_namespaceObject.HOME:
           {
-            return scrollContainer === null || scrollContainer === void 0 ? void 0 : scrollContainer.scrollTo({
+            return scrollContainer?.scrollTo({
               top: 0
             });
           }
 
         case external_wp_keycodes_namespaceObject.END:
           {
-            return scrollContainer === null || scrollContainer === void 0 ? void 0 : scrollContainer.scrollTo({
+            return scrollContainer?.scrollTo({
               top: totalItems * itemHeight
             });
           }
 
         case external_wp_keycodes_namespaceObject.PAGEUP:
           {
-            return scrollContainer === null || scrollContainer === void 0 ? void 0 : scrollContainer.scrollTo({
+            return scrollContainer?.scrollTo({
               top: scrollContainer.scrollTop - fixedListWindow.visibleItems * itemHeight
             });
           }
 
         case external_wp_keycodes_namespaceObject.PAGEDOWN:
           {
-            return scrollContainer === null || scrollContainer === void 0 ? void 0 : scrollContainer.scrollTo({
+            return scrollContainer?.scrollTo({
               top: scrollContainer.scrollTop + fixedListWindow.visibleItems * itemHeight
             });
           }
       }
     };
 
-    scrollContainer === null || scrollContainer === void 0 ? void 0 : (_scrollContainer$owne7 = scrollContainer.ownerDocument) === null || _scrollContainer$owne7 === void 0 ? void 0 : (_scrollContainer$owne8 = _scrollContainer$owne7.defaultView) === null || _scrollContainer$owne8 === void 0 ? void 0 : _scrollContainer$owne8.addEventListener('keydown', handleKeyDown);
+    scrollContainer?.ownerDocument?.defaultView?.addEventListener('keydown', handleKeyDown);
     return () => {
-      var _scrollContainer$owne9, _scrollContainer$owne10;
-
-      scrollContainer === null || scrollContainer === void 0 ? void 0 : (_scrollContainer$owne9 = scrollContainer.ownerDocument) === null || _scrollContainer$owne9 === void 0 ? void 0 : (_scrollContainer$owne10 = _scrollContainer$owne9.defaultView) === null || _scrollContainer$owne10 === void 0 ? void 0 : _scrollContainer$owne10.removeEventListener('keydown', handleKeyDown);
+      scrollContainer?.ownerDocument?.defaultView?.removeEventListener('keydown', handleKeyDown);
     };
   }, [totalItems, itemHeight, elementRef, fixedListWindow.visibleItems]);
   return [fixedListWindow, setFixedListWindow];
@@ -5709,7 +5706,8 @@ function useFixedWindowList(elementRef, itemHeight, totalItems, options) {
 
 
 
-}();
+})();
+
 (window.wp = window.wp || {}).compose = __webpack_exports__;
 /******/ })()
 ;

@@ -4,7 +4,7 @@ Tags: popup, popups, optin, conversion, marketing, newsletter, popup builder, po
 Requires at least: 4.7.0
 Tested up to: 6.2
 Requires PHP: 5.3
-Stable tag: 2.13.0
+Stable tag: 2.13.4
 License: GNU General Public License v2.0 or later
 
 🤩 Make popups & optin forms to get more email newsletter subscribers, leads, and sales - #1 most popular popup builder plugin! 🚀
@@ -460,6 +460,31 @@ Syed Balkhi
 == Changelog ==
 
 **Most Recent Changes:**
+
+= Popup Builder 2.13.4 =
+* Fixed a bug where elementor support could cause JavaScript errors.
+* Fixed various issues the could occur as a result of connecting to the OptinMonster app as a sub-account.
+* Added information to the account connection setting to make it easier to see which account is connected.
+* Improved support for Australian time zones
+* Improved support for Gravity Forms.
+* Updates to npm packages used to build JS.
+
+= Popup Builder 2.13.3 =
+* Skipped.
+
+= Popup Builder 2.13.2 =
+* Changes to display rule display to prepare for future upgrades.
+* Updates to npm packages used to build JS.
+* Fixed error that could occur for sites running the Easy Digital Downloads integration and PHP 8.
+* Reorganization of display rule categories on the "Personalization" settings page.
+* Fixed PHP warning that could occur when determining which campaigns to output on a page.
+
+= Popup Builder 2.13.1 =
+* Added announcements/product education widgets to the Dashboard page.
+* Fixed an issue where initiating a campaign search failed to reset pagination.
+* Fixed the incorrect number of campaigns listed in "Lite vs Pro" comparison table.
+* Updated the support link to point to WordPress.org support for free users.
+* Maintenance updates for an npm package, Babel configuration.
 
 = Popup Builder 2.13.0 =
 * Introduce integration support with MemberPress!
